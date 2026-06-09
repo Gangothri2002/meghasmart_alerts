@@ -529,3 +529,4 @@ A8-011,GVM202601485,External Device,LEAK_STARTED,Alert,2026-06-08T11:45:55.931Z,
 A8-011,GVM202601485,External Device,LEAK_STARTED,Alert,2026-06-08T12:00:55.100Z,2026-06-08T12:01:09.929Z,0,Leak resolved. Duration: 0 minutes
 A8-011,GVM202601485,External Device,STATUS_CHANGED,Online,2026-06-09T04:19:24.160Z,,,Status changed from Unknown to Online
 A8-010,GVM202601483,External Device,STATUS_CHANGED,Online,2026-06-09T04:19:24.364Z,,,Status changed from Unknown to Online
+A8-010,GVM202601483,External Device,LEAK_STARTED,Alert,2026-06-09T04:58:33.301Z,2026-06-09T04:58:46.310Z,0,Leak resolved. Duration: 0 minutes

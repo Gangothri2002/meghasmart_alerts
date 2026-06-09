@@ -357,3 +357,4 @@ A9-001,GVM202601484,External Device,LEAK_STARTED,Alert,2026-06-08T11:56:25.299Z,
 A9-002,GVM202601486,External Device,LEAK_STARTED,Alert,2026-06-08T12:02:36.988Z,2026-06-08T12:02:50.890Z,0,Leak resolved. Duration: 0 minutes
 A9-001,GVM202601484,External Device,STATUS_CHANGED,Online,2026-06-09T04:19:24.172Z,,,Status changed from Unknown to Online
 A9-002,GVM202601486,External Device,STATUS_CHANGED,Online,2026-06-09T04:19:24.372Z,,,Status changed from Unknown to Online
+A9-001,GVM202601484,External Device,LEAK_STARTED,Alert,2026-06-09T04:58:36.270Z,2026-06-09T04:58:51.195Z,0,Leak resolved. Duration: 0 minutes

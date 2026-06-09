@@ -3232,28 +3232,7 @@ app.post('/api/retail-devices/add', checkAuth, (req, res) => {
   return res.json({ success: true, deviceId: newDeviceId, created: true });
 });
 
-// Start server
-const PORT = process.env.PORT || 5000;
-const server = app.listen(PORT, () => {
-  console.log(`Megha Smart is running on http://localhost:${PORT}`);
-});
-
-// Handle port already in use error
-server.on('error', (err) => {
-  if (err.code === 'EADDRINUSE') {
-    console.error(`\n❌ ERROR: Port ${PORT} is already in use!`);
-    console.error(`\nSOLUTION:`);
-    console.error(`1. Open Command Prompt as Administrator`);
-    console.error(`2. Run: netstat -ano | findstr :${PORT}`);
-    console.error(`3. Find the PID and run: taskkill /PID <PID> /F`);
-    console.error(`\nOR try one of these commands:\n`);
-    console.error(`taskkill /F /IM node.exe`);
-    console.error(`taskkill /F /IM chrome.exe`);
-    console.error(`netsh int ipv4 set dynamic tcp start=49152 num=16384`);
-    process.exit(1);
-  }
-});
-
-// export helper(s) for testing or future use
-module.exports = { getCommunityDataByEmail };
+// Export the Express app so Vercel can handle requests with a serverless wrapper.
+module.exports = app;
+module.exports.getCommunityDataByEmail = getCommunityDataByEmail;
   

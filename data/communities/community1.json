@@ -4,513 +4,9 @@
   "email": "customer1@meghasmart.com",
   "devices": [
     {
-      "flatNo": "A8-042",
-      "deviceId": "GVM202600167",
-      "sensorType": "Smoke Detector",
-      "status": 2
-    },
-    {
-      "flatNo": "A8-021",
-      "deviceId": "GVM202600034",
-      "sensorType": "Gas Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A8-011",
-      "deviceId": "GVM202600071",
-      "sensorType": "Temperature Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A10-013",
-      "deviceId": "GVM202600036",
-      "sensorType": "Humidity Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A9-082",
-      "deviceId": "GVM202600147",
-      "sensorType": "Multi-Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A18-054",
-      "deviceId": "GVM202600056",
-      "sensorType": "Smoke Detector",
-      "status": 2
-    },
-    {
       "flatNo": "A2-082",
       "deviceId": "GVM202600001",
       "sensorType": "Smoke Detector",
-      "status": 2
-    },
-    {
-      "flatNo": "A8-074",
-      "deviceId": "GVM202600097",
-      "sensorType": "Humidity Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A17-012",
-      "deviceId": "GVM202600194",
-      "sensorType": "Gas Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A1-102",
-      "deviceId": "GVM202600179",
-      "sensorType": "Humidity Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A2-053",
-      "deviceId": "GVM202600171",
-      "sensorType": "Humidity Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A17-033",
-      "deviceId": "GVM202600026",
-      "sensorType": "Humidity Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A12-062",
-      "deviceId": "GVM202600084",
-      "sensorType": "Humidity Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A18-053",
-      "deviceId": "GVM202600178",
-      "sensorType": "Smoke Detector",
-      "status": 2
-    },
-    {
-      "flatNo": "A11-065",
-      "deviceId": "GVM202600174",
-      "sensorType": "Multi-Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A5-023",
-      "deviceId": "GVM202600008",
-      "sensorType": "Smoke Detector",
-      "status": 2
-    },
-    {
-      "flatNo": "A15-103",
-      "deviceId": "GVM202600016",
-      "sensorType": "Smoke Detector",
-      "status": 2
-    },
-    {
-      "flatNo": "A14-064",
-      "deviceId": "GVM202600200",
-      "sensorType": "Smoke Detector",
-      "status": 2
-    },
-    {
-      "flatNo": "A10-071",
-      "deviceId": "GVM202600011",
-      "sensorType": "Humidity Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A17-011",
-      "deviceId": "GVM202600089",
-      "sensorType": "Multi-Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A15-092",
-      "deviceId": "GVM202600073",
-      "sensorType": "Multi-Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A15-042",
-      "deviceId": "GVM202600070",
-      "sensorType": "Multi-Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A13-061",
-      "deviceId": "GVM202600033",
-      "sensorType": "Gas Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A4-031",
-      "deviceId": "GVM202600007",
-      "sensorType": "Temperature Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A17-063",
-      "deviceId": "GVM202600196",
-      "sensorType": "Smoke Detector",
-      "status": 2
-    },
-    {
-      "flatNo": "A10-074",
-      "deviceId": "GVM202600045",
-      "sensorType": "Gas Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A12-041",
-      "deviceId": "GVM202600136",
-      "sensorType": "Gas Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A1-032",
-      "deviceId": "GVM202600117",
-      "sensorType": "Temperature Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A1-082",
-      "deviceId": "GVM202600064",
-      "sensorType": "Smoke Detector",
-      "status": 2
-    },
-    {
-      "flatNo": "A8-054",
-      "deviceId": "GVM202600186",
-      "sensorType": "Humidity Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A15-012",
-      "deviceId": "GVM202600037",
-      "sensorType": "Humidity Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A4-041",
-      "deviceId": "GVM202600176",
-      "sensorType": "Smoke Detector",
-      "status": 2
-    },
-    {
-      "flatNo": "A15-051",
-      "deviceId": "GVM202600031",
-      "sensorType": "Gas Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A17-071",
-      "deviceId": "GVM202600009",
-      "sensorType": "Temperature Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A13-045",
-      "deviceId": "GVM202600122",
-      "sensorType": "Multi-Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A13-092",
-      "deviceId": "GVM202600104",
-      "sensorType": "Temperature Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A20-033",
-      "deviceId": "GVM202600098",
-      "sensorType": "Smoke Detector",
-      "status": 2
-    },
-    {
-      "flatNo": "A5-012",
-      "deviceId": "GVM202600153",
-      "sensorType": "Smoke Detector",
-      "status": 2
-    },
-    {
-      "flatNo": "A1-103",
-      "deviceId": "GVM202600160",
-      "sensorType": "Gas Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A8-045",
-      "deviceId": "GVM202600027",
-      "sensorType": "Smoke Detector",
-      "status": 2
-    },
-    {
-      "flatNo": "A9-053",
-      "deviceId": "GVM202600144",
-      "sensorType": "Humidity Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A15-102",
-      "deviceId": "GVM202600161",
-      "sensorType": "Multi-Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A7-041",
-      "deviceId": "GVM202600003",
-      "sensorType": "Multi-Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A13-071",
-      "deviceId": "GVM202600137",
-      "sensorType": "Gas Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A9-084",
-      "deviceId": "GVM202600029",
-      "sensorType": "Gas Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A20-024",
-      "deviceId": "GVM202600038",
-      "sensorType": "Temperature Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A13-073",
-      "deviceId": "GVM202600134",
-      "sensorType": "Temperature Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A13-031",
-      "deviceId": "GVM202600095",
-      "sensorType": "Smoke Detector",
-      "status": 2
-    },
-    {
-      "flatNo": "A10-071",
-      "deviceId": "GVM202600203",
-      "sensorType": "Temperature Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A8-061",
-      "deviceId": "GVM202600074",
-      "sensorType": "Multi-Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A8-043",
-      "deviceId": "GVM202600143",
-      "sensorType": "Temperature Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A2-071",
-      "deviceId": "GVM202600108",
-      "sensorType": "Humidity Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A16-062",
-      "deviceId": "GVM202600146",
-      "sensorType": "Gas Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A1-071",
-      "deviceId": "GVM202600126",
-      "sensorType": "Smoke Detector",
-      "status": 2
-    },
-    {
-      "flatNo": "A20-101",
-      "deviceId": "GVM202600149",
-      "sensorType": "Multi-Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A19-031",
-      "deviceId": "GVM202600050",
-      "sensorType": "Humidity Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A16-043",
-      "deviceId": "GVM202600125",
-      "sensorType": "Gas Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A5-094",
-      "deviceId": "GVM202600101",
-      "sensorType": "Temperature Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A16-084",
-      "deviceId": "GVM202600187",
-      "sensorType": "Multi-Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A15-065",
-      "deviceId": "GVM202600166",
-      "sensorType": "Gas Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A10-093",
-      "deviceId": "GVM202600119",
-      "sensorType": "Humidity Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A1-014",
-      "deviceId": "GVM202600040",
-      "sensorType": "Temperature Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A12-103",
-      "deviceId": "GVM202600109",
-      "sensorType": "Temperature Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A18-031",
-      "deviceId": "GVM202600157",
-      "sensorType": "Temperature Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A6-051",
-      "deviceId": "GVM202600013",
-      "sensorType": "Gas Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A11-041",
-      "deviceId": "GVM202600018",
-      "sensorType": "Humidity Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A3-063",
-      "deviceId": "GVM202600112",
-      "sensorType": "Smoke Detector",
-      "status": 2
-    },
-    {
-      "flatNo": "A15-065",
-      "deviceId": "GVM202600078",
-      "sensorType": "Smoke Detector",
-      "status": 2
-    },
-    {
-      "flatNo": "A2-062",
-      "deviceId": "GVM202600012",
-      "sensorType": "Humidity Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A5-044",
-      "deviceId": "GVM202600091",
-      "sensorType": "Temperature Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A18-022",
-      "deviceId": "GVM202600140",
-      "sensorType": "Humidity Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A10-044",
-      "deviceId": "GVM202600081",
-      "sensorType": "Humidity Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A19-072",
-      "deviceId": "GVM202600048",
-      "sensorType": "Temperature Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A2-014",
-      "deviceId": "GVM202600193",
-      "sensorType": "Gas Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A16-055",
-      "deviceId": "GVM202600077",
-      "sensorType": "Gas Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A19-101",
-      "deviceId": "GVM202600155",
-      "sensorType": "Gas Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A16-032",
-      "deviceId": "GVM202600005",
-      "sensorType": "Temperature Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A8-021",
-      "deviceId": "GVM202600035",
-      "sensorType": "Gas Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A4-061",
-      "deviceId": "GVM202600047",
-      "sensorType": "Humidity Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A1-051",
-      "deviceId": "GVM202600014",
-      "sensorType": "Multi-Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A17-021",
-      "deviceId": "GVM202600177",
-      "sensorType": "Smoke Detector",
-      "status": 2
-    },
-    {
-      "flatNo": "A6-052",
-      "deviceId": "GVM202600088",
-      "sensorType": "Smoke Detector",
-      "status": 2
-    },
-    {
-      "flatNo": "A14-105",
-      "deviceId": "GVM202600006",
-      "sensorType": "Humidity Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A19-011",
-      "deviceId": "GVM202600182",
-      "sensorType": "Gas Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A10-013",
-      "deviceId": "GVM202600059",
-      "sensorType": "Humidity Sensor",
       "status": 2
     },
     {
@@ -520,57 +16,45 @@
       "status": 2
     },
     {
-      "flatNo": "A9-052",
-      "deviceId": "GVM202600058",
+      "flatNo": "A7-041",
+      "deviceId": "GVM202600003",
       "sensorType": "Multi-Sensor",
       "status": 2
     },
     {
-      "flatNo": "A17-013",
-      "deviceId": "GVM202600060",
-      "sensorType": "Temperature Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A13-034",
-      "deviceId": "GVM202600087",
-      "sensorType": "Gas Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A6-074",
-      "deviceId": "GVM202600072",
-      "sensorType": "Smoke Detector",
-      "status": 2
-    },
-    {
-      "flatNo": "A10-015",
-      "deviceId": "GVM202600139",
-      "sensorType": "Temperature Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A9-095",
-      "deviceId": "GVM202600057",
-      "sensorType": "Multi-Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A19-081",
-      "deviceId": "GVM202600065",
-      "sensorType": "Smoke Detector",
-      "status": 2
-    },
-    {
-      "flatNo": "A11-064",
-      "deviceId": "GVM202600021",
-      "sensorType": "Temperature Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A4-073",
-      "deviceId": "GVM202600046",
+      "flatNo": "A6-033",
+      "deviceId": "GVM202600004",
       "sensorType": "Humidity Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A16-032",
+      "deviceId": "GVM202600005",
+      "sensorType": "Temperature Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A14-105",
+      "deviceId": "GVM202600006",
+      "sensorType": "Humidity Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A4-031",
+      "deviceId": "GVM202600007",
+      "sensorType": "Temperature Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A5-023",
+      "deviceId": "GVM202600008",
+      "sensorType": "Smoke Detector",
+      "status": 2
+    },
+    {
+      "flatNo": "A17-071",
+      "deviceId": "GVM202600009",
+      "sensorType": "Temperature Sensor",
       "status": 2
     },
     {
@@ -580,147 +64,27 @@
       "status": 2
     },
     {
-      "flatNo": "A17-034",
-      "deviceId": "GVM202600145",
-      "sensorType": "Temperature Sensor",
+      "flatNo": "A10-071",
+      "deviceId": "GVM202600011",
+      "sensorType": "Humidity Sensor",
       "status": 2
     },
     {
-      "flatNo": "A12-065",
-      "deviceId": "GVM202600163",
+      "flatNo": "A2-062",
+      "deviceId": "GVM202600012",
+      "sensorType": "Humidity Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A6-051",
+      "deviceId": "GVM202600013",
+      "sensorType": "Gas Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A1-051",
+      "deviceId": "GVM202600014",
       "sensorType": "Multi-Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A14-031",
-      "deviceId": "GVM202600127",
-      "sensorType": "Smoke Detector",
-      "status": 2
-    },
-    {
-      "flatNo": "A10-041",
-      "deviceId": "GVM202600202",
-      "sensorType": "Humidity Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A14-104",
-      "deviceId": "GVM202600185",
-      "sensorType": "Gas Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A19-094",
-      "deviceId": "GVM202600159",
-      "sensorType": "Humidity Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A6-053",
-      "deviceId": "GVM202600158",
-      "sensorType": "Smoke Detector",
-      "status": 2
-    },
-    {
-      "flatNo": "A14-105",
-      "deviceId": "GVM202600042",
-      "sensorType": "Gas Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A3-082",
-      "deviceId": "GVM202600044",
-      "sensorType": "Temperature Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A13-064",
-      "deviceId": "GVM202600039",
-      "sensorType": "Gas Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A15-074",
-      "deviceId": "GVM202600055",
-      "sensorType": "Temperature Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A6-022",
-      "deviceId": "GVM202600195",
-      "sensorType": "Multi-Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A15-105",
-      "deviceId": "GVM202600096",
-      "sensorType": "Temperature Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A5-091",
-      "deviceId": "GVM202600111",
-      "sensorType": "Temperature Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A13-081",
-      "deviceId": "GVM202600025",
-      "sensorType": "Temperature Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A13-054",
-      "deviceId": "GVM202600051",
-      "sensorType": "Gas Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A18-013",
-      "deviceId": "GVM202600062",
-      "sensorType": "Humidity Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A8-074",
-      "deviceId": "GVM202600100",
-      "sensorType": "Multi-Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A15-082",
-      "deviceId": "GVM202600189",
-      "sensorType": "Gas Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A12-053",
-      "deviceId": "GVM202600024",
-      "sensorType": "Gas Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A16-024",
-      "deviceId": "GVM202600183",
-      "sensorType": "Smoke Detector",
-      "status": 2
-    },
-    {
-      "flatNo": "A1-083",
-      "deviceId": "GVM202600076",
-      "sensorType": "Humidity Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A16-101",
-      "deviceId": "GVM202600180",
-      "sensorType": "Temperature Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A9-055",
-      "deviceId": "GVM202600099",
-      "sensorType": "Temperature Sensor",
       "status": 2
     },
     {
@@ -730,75 +94,21 @@
       "status": 2
     },
     {
-      "flatNo": "A3-025",
-      "deviceId": "GVM202600116",
-      "sensorType": "Temperature Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A3-025",
-      "deviceId": "GVM202600063",
+      "flatNo": "A15-103",
+      "deviceId": "GVM202600016",
       "sensorType": "Smoke Detector",
       "status": 2
     },
     {
-      "flatNo": "A9-072",
-      "deviceId": "GVM202600168",
-      "sensorType": "Humidity Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A15-013",
-      "deviceId": "GVM202600115",
+      "flatNo": "A7-071",
+      "deviceId": "GVM202600017",
       "sensorType": "Smoke Detector",
       "status": 2
     },
     {
-      "flatNo": "A17-061",
-      "deviceId": "GVM202600082",
-      "sensorType": "Multi-Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A15-045",
-      "deviceId": "GVM202600092",
-      "sensorType": "Multi-Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A11-074",
-      "deviceId": "GVM202600061",
-      "sensorType": "Temperature Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A15-102",
-      "deviceId": "GVM202600068",
+      "flatNo": "A11-041",
+      "deviceId": "GVM202600018",
       "sensorType": "Humidity Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A14-045",
-      "deviceId": "GVM202600201",
-      "sensorType": "Multi-Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A8-103",
-      "deviceId": "GVM202600138",
-      "sensorType": "Smoke Detector",
-      "status": 2
-    },
-    {
-      "flatNo": "A6-021",
-      "deviceId": "GVM202600085",
-      "sensorType": "Humidity Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A13-032",
-      "deviceId": "GVM202600165",
-      "sensorType": "Multi-Sensor",
       "status": 2
     },
     {
@@ -808,56 +118,14 @@
       "status": 2
     },
     {
-      "flatNo": "A16-083",
-      "deviceId": "GVM202600124",
-      "sensorType": "Smoke Detector",
-      "status": 2
-    },
-    {
-      "flatNo": "A1-094",
-      "deviceId": "GVM202600184",
-      "sensorType": "Smoke Detector",
-      "status": 2
-    },
-    {
-      "flatNo": "A4-082",
-      "deviceId": "GVM202600110",
+      "flatNo": "A2-022",
+      "deviceId": "GVM202600020",
       "sensorType": "Gas Sensor",
       "status": 2
     },
     {
-      "flatNo": "A20-072",
-      "deviceId": "GVM202600103",
-      "sensorType": "Humidity Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A14-021",
-      "deviceId": "GVM202600150",
-      "sensorType": "Humidity Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A19-034",
-      "deviceId": "GVM202600128",
-      "sensorType": "Temperature Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A10-011",
-      "deviceId": "GVM202600204",
-      "sensorType": "Multi-Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A2-012",
-      "deviceId": "GVM202600199",
-      "sensorType": "Temperature Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A8-052",
-      "deviceId": "GVM202600105",
+      "flatNo": "A11-064",
+      "deviceId": "GVM202600021",
       "sensorType": "Temperature Sensor",
       "status": 2
     },
@@ -868,261 +136,33 @@
       "status": 2
     },
     {
-      "flatNo": "A16-045",
-      "deviceId": "GVM202600198",
-      "sensorType": "Temperature Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A8-102",
-      "deviceId": "GVM202600054",
-      "sensorType": "Multi-Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A20-065",
-      "deviceId": "GVM202600030",
-      "sensorType": "Multi-Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A4-041",
-      "deviceId": "GVM202600066",
-      "sensorType": "Humidity Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A12-053",
-      "deviceId": "GVM202600191",
-      "sensorType": "Gas Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A1-032",
-      "deviceId": "GVM202600053",
-      "sensorType": "Gas Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A5-023",
-      "deviceId": "GVM202600113",
-      "sensorType": "Smoke Detector",
-      "status": 2
-    },
-    {
-      "flatNo": "A5-072",
-      "deviceId": "GVM202600120",
-      "sensorType": "Temperature Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A2-054",
-      "deviceId": "GVM202600175",
-      "sensorType": "Smoke Detector",
-      "status": 2
-    },
-    {
-      "flatNo": "A4-075",
-      "deviceId": "GVM202600197",
-      "sensorType": "Temperature Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A4-021",
-      "deviceId": "GVM202600141",
-      "sensorType": "Temperature Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A14-063",
-      "deviceId": "GVM202600079",
-      "sensorType": "Gas Sensor",
-      "status": 2
-    },
-    {
       "flatNo": "A17-082",
       "deviceId": "GVM202600023",
       "sensorType": "Smoke Detector",
       "status": 2
     },
     {
-      "flatNo": "A6-045",
-      "deviceId": "GVM202600107",
-      "sensorType": "Smoke Detector",
-      "status": 2
-    },
-    {
-      "flatNo": "A16-023",
-      "deviceId": "GVM202600130",
-      "sensorType": "Temperature Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A9-061",
-      "deviceId": "GVM202600093",
-      "sensorType": "Humidity Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A2-014",
-      "deviceId": "GVM202600131",
-      "sensorType": "Smoke Detector",
-      "status": 2
-    },
-    {
-      "flatNo": "A13-093",
-      "deviceId": "GVM202600133",
-      "sensorType": "Multi-Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A10-105",
-      "deviceId": "GVM202600169",
+      "flatNo": "A12-053",
+      "deviceId": "GVM202600024",
       "sensorType": "Gas Sensor",
       "status": 2
     },
     {
-      "flatNo": "A3-051",
-      "deviceId": "GVM202600049",
-      "sensorType": "Humidity Sensor",
+      "flatNo": "A13-081",
+      "deviceId": "GVM202600025",
+      "sensorType": "Temperature Sensor",
       "status": 2
     },
     {
       "flatNo": "A17-033",
-      "deviceId": "GVM202600170",
-      "sensorType": "Smoke Detector",
-      "status": 2
-    },
-    {
-      "flatNo": "A17-033",
-      "deviceId": "GVM202600067",
+      "deviceId": "GVM202600026",
       "sensorType": "Humidity Sensor",
       "status": 2
     },
     {
-      "flatNo": "A12-071",
-      "deviceId": "GVM202600043",
-      "sensorType": "Temperature Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A10-033",
-      "deviceId": "GVM202600173",
-      "sensorType": "Humidity Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A19-083",
-      "deviceId": "GVM202600118",
-      "sensorType": "Multi-Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A11-105",
-      "deviceId": "GVM202600151",
-      "sensorType": "Temperature Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A14-051",
-      "deviceId": "GVM202600114",
+      "flatNo": "A8-045",
+      "deviceId": "GVM202600027",
       "sensorType": "Smoke Detector",
-      "status": 2
-    },
-    {
-      "flatNo": "A9-024",
-      "deviceId": "GVM202600135",
-      "sensorType": "Humidity Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A10-071",
-      "deviceId": "GVM202600154",
-      "sensorType": "Gas Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A6-033",
-      "deviceId": "GVM202600172",
-      "sensorType": "Multi-Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A6-073",
-      "deviceId": "GVM202600123",
-      "sensorType": "Temperature Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A12-055",
-      "deviceId": "GVM202600106",
-      "sensorType": "Gas Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A2-022",
-      "deviceId": "GVM202600020",
-      "sensorType": "Gas Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A13-055",
-      "deviceId": "GVM202600121",
-      "sensorType": "Smoke Detector",
-      "status": 2
-    },
-    {
-      "flatNo": "A12-052",
-      "deviceId": "GVM202600090",
-      "sensorType": "Humidity Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A12-052",
-      "deviceId": "GVM202600080",
-      "sensorType": "Multi-Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A7-071",
-      "deviceId": "GVM202600017",
-      "sensorType": "Smoke Detector",
-      "status": 2
-    },
-    {
-      "flatNo": "A16-034",
-      "deviceId": "GVM202600181",
-      "sensorType": "Temperature Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A1-082",
-      "deviceId": "GVM202600164",
-      "sensorType": "Humidity Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A10-025",
-      "deviceId": "GVM202600152",
-      "sensorType": "Gas Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A10-073",
-      "deviceId": "GVM202600192",
-      "sensorType": "Smoke Detector",
-      "status": 2
-    },
-    {
-      "flatNo": "A7-085",
-      "deviceId": "GVM202600041",
-      "sensorType": "Gas Sensor",
-      "status": 2
-    },
-    {
-      "flatNo": "A12-042",
-      "deviceId": "GVM202600102",
-      "sensorType": "Gas Sensor",
       "status": 2
     },
     {
@@ -1132,32 +172,134 @@
       "status": 2
     },
     {
-      "flatNo": "A5-061",
-      "deviceId": "GVM202600129",
+      "flatNo": "A9-084",
+      "deviceId": "GVM202600029",
       "sensorType": "Gas Sensor",
       "status": 2
     },
     {
-      "flatNo": "A15-062",
-      "deviceId": "GVM202600190",
-      "sensorType": "Smoke Detector",
+      "flatNo": "A20-065",
+      "deviceId": "GVM202600030",
+      "sensorType": "Multi-Sensor",
       "status": 2
     },
     {
-      "flatNo": "A20-045",
-      "deviceId": "GVM202600132",
+      "flatNo": "A15-051",
+      "deviceId": "GVM202600031",
+      "sensorType": "Gas Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A13-061",
+      "deviceId": "GVM202600033",
+      "sensorType": "Gas Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A8-021",
+      "deviceId": "GVM202600034",
+      "sensorType": "Gas Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A8-021",
+      "deviceId": "GVM202600035",
+      "sensorType": "Gas Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A10-013",
+      "deviceId": "GVM202600036",
       "sensorType": "Humidity Sensor",
       "status": 2
     },
     {
-      "flatNo": "A6-033",
-      "deviceId": "GVM202600004",
+      "flatNo": "A15-012",
+      "deviceId": "GVM202600037",
       "sensorType": "Humidity Sensor",
       "status": 2
     },
     {
-      "flatNo": "A10-073",
-      "deviceId": "GVM202600162",
+      "flatNo": "A20-024",
+      "deviceId": "GVM202600038",
+      "sensorType": "Temperature Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A13-064",
+      "deviceId": "GVM202600039",
+      "sensorType": "Gas Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A1-014",
+      "deviceId": "GVM202600040",
+      "sensorType": "Temperature Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A7-085",
+      "deviceId": "GVM202600041",
+      "sensorType": "Gas Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A14-105",
+      "deviceId": "GVM202600042",
+      "sensorType": "Gas Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A12-071",
+      "deviceId": "GVM202600043",
+      "sensorType": "Temperature Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A3-082",
+      "deviceId": "GVM202600044",
+      "sensorType": "Temperature Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A10-074",
+      "deviceId": "GVM202600045",
+      "sensorType": "Gas Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A4-073",
+      "deviceId": "GVM202600046",
+      "sensorType": "Humidity Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A4-061",
+      "deviceId": "GVM202600047",
+      "sensorType": "Humidity Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A19-072",
+      "deviceId": "GVM202600048",
+      "sensorType": "Temperature Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A3-051",
+      "deviceId": "GVM202600049",
+      "sensorType": "Humidity Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A19-031",
+      "deviceId": "GVM202600050",
+      "sensorType": "Humidity Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A13-054",
+      "deviceId": "GVM202600051",
       "sensorType": "Gas Sensor",
       "status": 2
     },
@@ -1168,15 +310,135 @@
       "status": 2
     },
     {
+      "flatNo": "A1-032",
+      "deviceId": "GVM202600053",
+      "sensorType": "Gas Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A8-102",
+      "deviceId": "GVM202600054",
+      "sensorType": "Multi-Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A15-074",
+      "deviceId": "GVM202600055",
+      "sensorType": "Temperature Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A18-054",
+      "deviceId": "GVM202600056",
+      "sensorType": "Smoke Detector",
+      "status": 2
+    },
+    {
+      "flatNo": "A9-095",
+      "deviceId": "GVM202600057",
+      "sensorType": "Multi-Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A9-052",
+      "deviceId": "GVM202600058",
+      "sensorType": "Multi-Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A10-013",
+      "deviceId": "GVM202600059",
+      "sensorType": "Humidity Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A17-013",
+      "deviceId": "GVM202600060",
+      "sensorType": "Temperature Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A11-074",
+      "deviceId": "GVM202600061",
+      "sensorType": "Temperature Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A18-013",
+      "deviceId": "GVM202600062",
+      "sensorType": "Humidity Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A3-025",
+      "deviceId": "GVM202600063",
+      "sensorType": "Smoke Detector",
+      "status": 2
+    },
+    {
+      "flatNo": "A1-082",
+      "deviceId": "GVM202600064",
+      "sensorType": "Smoke Detector",
+      "status": 2
+    },
+    {
+      "flatNo": "A19-081",
+      "deviceId": "GVM202600065",
+      "sensorType": "Smoke Detector",
+      "status": 2
+    },
+    {
+      "flatNo": "A4-041",
+      "deviceId": "GVM202600066",
+      "sensorType": "Humidity Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A17-033",
+      "deviceId": "GVM202600067",
+      "sensorType": "Humidity Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A15-102",
+      "deviceId": "GVM202600068",
+      "sensorType": "Humidity Sensor",
+      "status": 2
+    },
+    {
       "flatNo": "A12-013",
       "deviceId": "GVM202600069",
       "sensorType": "Multi-Sensor",
       "status": 2
     },
     {
-      "flatNo": "A3-024",
-      "deviceId": "GVM202600094",
+      "flatNo": "A15-042",
+      "deviceId": "GVM202600070",
+      "sensorType": "Multi-Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A8-011",
+      "deviceId": "GVM202600071",
+      "sensorType": "Temperature Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A6-074",
+      "deviceId": "GVM202600072",
       "sensorType": "Smoke Detector",
+      "status": 2
+    },
+    {
+      "flatNo": "A15-092",
+      "deviceId": "GVM202600073",
+      "sensorType": "Multi-Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A8-061",
+      "deviceId": "GVM202600074",
+      "sensorType": "Multi-Sensor",
       "status": 2
     },
     {
@@ -1186,14 +448,44 @@
       "status": 2
     },
     {
-      "flatNo": "A6-071",
-      "deviceId": "GVM202600156",
-      "sensorType": "Temperature Sensor",
+      "flatNo": "A1-083",
+      "deviceId": "GVM202600076",
+      "sensorType": "Humidity Sensor",
       "status": 2
     },
     {
-      "flatNo": "A5-084",
-      "deviceId": "GVM202600148",
+      "flatNo": "A16-055",
+      "deviceId": "GVM202600077",
+      "sensorType": "Gas Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A15-065",
+      "deviceId": "GVM202600078",
+      "sensorType": "Smoke Detector",
+      "status": 2
+    },
+    {
+      "flatNo": "A14-063",
+      "deviceId": "GVM202600079",
+      "sensorType": "Gas Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A12-052",
+      "deviceId": "GVM202600080",
+      "sensorType": "Multi-Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A10-044",
+      "deviceId": "GVM202600081",
+      "sensorType": "Humidity Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A17-061",
+      "deviceId": "GVM202600082",
       "sensorType": "Multi-Sensor",
       "status": 2
     },
@@ -1204,9 +496,351 @@
       "status": 2
     },
     {
+      "flatNo": "A12-062",
+      "deviceId": "GVM202600084",
+      "sensorType": "Humidity Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A6-021",
+      "deviceId": "GVM202600085",
+      "sensorType": "Humidity Sensor",
+      "status": 2
+    },
+    {
       "flatNo": "A6-092",
       "deviceId": "GVM202600086",
       "sensorType": "Humidity Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A13-034",
+      "deviceId": "GVM202600087",
+      "sensorType": "Gas Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A6-052",
+      "deviceId": "GVM202600088",
+      "sensorType": "Smoke Detector",
+      "status": 2
+    },
+    {
+      "flatNo": "A17-011",
+      "deviceId": "GVM202600089",
+      "sensorType": "Multi-Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A12-052",
+      "deviceId": "GVM202600090",
+      "sensorType": "Humidity Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A5-044",
+      "deviceId": "GVM202600091",
+      "sensorType": "Temperature Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A15-045",
+      "deviceId": "GVM202600092",
+      "sensorType": "Multi-Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A9-061",
+      "deviceId": "GVM202600093",
+      "sensorType": "Humidity Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A3-024",
+      "deviceId": "GVM202600094",
+      "sensorType": "Smoke Detector",
+      "status": 2
+    },
+    {
+      "flatNo": "A13-031",
+      "deviceId": "GVM202600095",
+      "sensorType": "Smoke Detector",
+      "status": 2
+    },
+    {
+      "flatNo": "A15-105",
+      "deviceId": "GVM202600096",
+      "sensorType": "Temperature Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A8-074",
+      "deviceId": "GVM202600097",
+      "sensorType": "Humidity Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A20-033",
+      "deviceId": "GVM202600098",
+      "sensorType": "Smoke Detector",
+      "status": 2
+    },
+    {
+      "flatNo": "A9-055",
+      "deviceId": "GVM202600099",
+      "sensorType": "Temperature Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A8-074",
+      "deviceId": "GVM202600100",
+      "sensorType": "Multi-Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A5-094",
+      "deviceId": "GVM202600101",
+      "sensorType": "Temperature Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A12-042",
+      "deviceId": "GVM202600102",
+      "sensorType": "Gas Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A20-072",
+      "deviceId": "GVM202600103",
+      "sensorType": "Humidity Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A13-092",
+      "deviceId": "GVM202600104",
+      "sensorType": "Temperature Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A8-052",
+      "deviceId": "GVM202600105",
+      "sensorType": "Temperature Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A12-055",
+      "deviceId": "GVM202600106",
+      "sensorType": "Gas Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A6-045",
+      "deviceId": "GVM202600107",
+      "sensorType": "Smoke Detector",
+      "status": 2
+    },
+    {
+      "flatNo": "A2-071",
+      "deviceId": "GVM202600108",
+      "sensorType": "Humidity Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A12-103",
+      "deviceId": "GVM202600109",
+      "sensorType": "Temperature Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A4-082",
+      "deviceId": "GVM202600110",
+      "sensorType": "Gas Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A5-091",
+      "deviceId": "GVM202600111",
+      "sensorType": "Temperature Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A3-063",
+      "deviceId": "GVM202600112",
+      "sensorType": "Smoke Detector",
+      "status": 2
+    },
+    {
+      "flatNo": "A5-023",
+      "deviceId": "GVM202600113",
+      "sensorType": "Smoke Detector",
+      "status": 2
+    },
+    {
+      "flatNo": "A14-051",
+      "deviceId": "GVM202600114",
+      "sensorType": "Smoke Detector",
+      "status": 2
+    },
+    {
+      "flatNo": "A15-013",
+      "deviceId": "GVM202600115",
+      "sensorType": "Smoke Detector",
+      "status": 2
+    },
+    {
+      "flatNo": "A3-025",
+      "deviceId": "GVM202600116",
+      "sensorType": "Temperature Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A1-032",
+      "deviceId": "GVM202600117",
+      "sensorType": "Temperature Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A19-083",
+      "deviceId": "GVM202600118",
+      "sensorType": "Multi-Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A10-093",
+      "deviceId": "GVM202600119",
+      "sensorType": "Humidity Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A5-072",
+      "deviceId": "GVM202600120",
+      "sensorType": "Temperature Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A13-055",
+      "deviceId": "GVM202600121",
+      "sensorType": "Smoke Detector",
+      "status": 2
+    },
+    {
+      "flatNo": "A13-045",
+      "deviceId": "GVM202600122",
+      "sensorType": "Multi-Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A6-073",
+      "deviceId": "GVM202600123",
+      "sensorType": "Temperature Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A16-083",
+      "deviceId": "GVM202600124",
+      "sensorType": "Smoke Detector",
+      "status": 2
+    },
+    {
+      "flatNo": "A16-043",
+      "deviceId": "GVM202600125",
+      "sensorType": "Gas Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A1-071",
+      "deviceId": "GVM202600126",
+      "sensorType": "Smoke Detector",
+      "status": 2
+    },
+    {
+      "flatNo": "A14-031",
+      "deviceId": "GVM202600127",
+      "sensorType": "Smoke Detector",
+      "status": 2
+    },
+    {
+      "flatNo": "A19-034",
+      "deviceId": "GVM202600128",
+      "sensorType": "Temperature Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A5-061",
+      "deviceId": "GVM202600129",
+      "sensorType": "Gas Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A16-023",
+      "deviceId": "GVM202600130",
+      "sensorType": "Temperature Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A2-014",
+      "deviceId": "GVM202600131",
+      "sensorType": "Smoke Detector",
+      "status": 2
+    },
+    {
+      "flatNo": "A20-045",
+      "deviceId": "GVM202600132",
+      "sensorType": "Humidity Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A13-093",
+      "deviceId": "GVM202600133",
+      "sensorType": "Multi-Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A13-073",
+      "deviceId": "GVM202600134",
+      "sensorType": "Temperature Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A9-024",
+      "deviceId": "GVM202600135",
+      "sensorType": "Humidity Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A12-041",
+      "deviceId": "GVM202600136",
+      "sensorType": "Gas Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A13-071",
+      "deviceId": "GVM202600137",
+      "sensorType": "Gas Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A8-103",
+      "deviceId": "GVM202600138",
+      "sensorType": "Smoke Detector",
+      "status": 2
+    },
+    {
+      "flatNo": "A10-015",
+      "deviceId": "GVM202600139",
+      "sensorType": "Temperature Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A18-022",
+      "deviceId": "GVM202600140",
+      "sensorType": "Humidity Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A4-021",
+      "deviceId": "GVM202600141",
+      "sensorType": "Temperature Sensor",
       "status": 2
     },
     {
@@ -1216,9 +850,507 @@
       "status": 2
     },
     {
+      "flatNo": "A8-043",
+      "deviceId": "GVM202600143",
+      "sensorType": "Temperature Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A9-053",
+      "deviceId": "GVM202600144",
+      "sensorType": "Humidity Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A17-034",
+      "deviceId": "GVM202600145",
+      "sensorType": "Temperature Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A16-062",
+      "deviceId": "GVM202600146",
+      "sensorType": "Gas Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A9-082",
+      "deviceId": "GVM202600147",
+      "sensorType": "Multi-Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A5-084",
+      "deviceId": "GVM202600148",
+      "sensorType": "Multi-Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A20-101",
+      "deviceId": "GVM202600149",
+      "sensorType": "Multi-Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A14-021",
+      "deviceId": "GVM202600150",
+      "sensorType": "Humidity Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A11-105",
+      "deviceId": "GVM202600151",
+      "sensorType": "Temperature Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A10-025",
+      "deviceId": "GVM202600152",
+      "sensorType": "Gas Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A5-012",
+      "deviceId": "GVM202600153",
+      "sensorType": "Smoke Detector",
+      "status": 2
+    },
+    {
+      "flatNo": "A10-071",
+      "deviceId": "GVM202600154",
+      "sensorType": "Gas Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A19-101",
+      "deviceId": "GVM202600155",
+      "sensorType": "Gas Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A6-071",
+      "deviceId": "GVM202600156",
+      "sensorType": "Temperature Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A18-031",
+      "deviceId": "GVM202600157",
+      "sensorType": "Temperature Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A6-053",
+      "deviceId": "GVM202600158",
+      "sensorType": "Smoke Detector",
+      "status": 2
+    },
+    {
+      "flatNo": "A19-094",
+      "deviceId": "GVM202600159",
+      "sensorType": "Humidity Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A1-103",
+      "deviceId": "GVM202600160",
+      "sensorType": "Gas Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A15-102",
+      "deviceId": "GVM202600161",
+      "sensorType": "Multi-Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A10-073",
+      "deviceId": "GVM202600162",
+      "sensorType": "Gas Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A12-065",
+      "deviceId": "GVM202600163",
+      "sensorType": "Multi-Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A1-082",
+      "deviceId": "GVM202600164",
+      "sensorType": "Humidity Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A13-032",
+      "deviceId": "GVM202600165",
+      "sensorType": "Multi-Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A15-065",
+      "deviceId": "GVM202600166",
+      "sensorType": "Gas Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A8-042",
+      "deviceId": "GVM202600167",
+      "sensorType": "Smoke Detector",
+      "status": 2
+    },
+    {
+      "flatNo": "A9-072",
+      "deviceId": "GVM202600168",
+      "sensorType": "Humidity Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A10-105",
+      "deviceId": "GVM202600169",
+      "sensorType": "Gas Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A17-033",
+      "deviceId": "GVM202600170",
+      "sensorType": "Smoke Detector",
+      "status": 2
+    },
+    {
+      "flatNo": "A2-053",
+      "deviceId": "GVM202600171",
+      "sensorType": "Humidity Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A6-033",
+      "deviceId": "GVM202600172",
+      "sensorType": "Multi-Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A10-033",
+      "deviceId": "GVM202600173",
+      "sensorType": "Humidity Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A11-065",
+      "deviceId": "GVM202600174",
+      "sensorType": "Multi-Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A2-054",
+      "deviceId": "GVM202600175",
+      "sensorType": "Smoke Detector",
+      "status": 2
+    },
+    {
+      "flatNo": "A4-041",
+      "deviceId": "GVM202600176",
+      "sensorType": "Smoke Detector",
+      "status": 2
+    },
+    {
+      "flatNo": "A17-021",
+      "deviceId": "GVM202600177",
+      "sensorType": "Smoke Detector",
+      "status": 2
+    },
+    {
+      "flatNo": "A18-053",
+      "deviceId": "GVM202600178",
+      "sensorType": "Smoke Detector",
+      "status": 2
+    },
+    {
+      "flatNo": "A1-102",
+      "deviceId": "GVM202600179",
+      "sensorType": "Humidity Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A16-101",
+      "deviceId": "GVM202600180",
+      "sensorType": "Temperature Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A16-034",
+      "deviceId": "GVM202600181",
+      "sensorType": "Temperature Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A19-011",
+      "deviceId": "GVM202600182",
+      "sensorType": "Gas Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A16-024",
+      "deviceId": "GVM202600183",
+      "sensorType": "Smoke Detector",
+      "status": 2
+    },
+    {
+      "flatNo": "A1-094",
+      "deviceId": "GVM202600184",
+      "sensorType": "Smoke Detector",
+      "status": 2
+    },
+    {
+      "flatNo": "A14-104",
+      "deviceId": "GVM202600185",
+      "sensorType": "Gas Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A8-054",
+      "deviceId": "GVM202600186",
+      "sensorType": "Humidity Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A16-084",
+      "deviceId": "GVM202600187",
+      "sensorType": "Multi-Sensor",
+      "status": 2
+    },
+    {
       "flatNo": "A7-025",
       "deviceId": "GVM202600188",
       "sensorType": "Temperature Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A15-082",
+      "deviceId": "GVM202600189",
+      "sensorType": "Gas Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A15-062",
+      "deviceId": "GVM202600190",
+      "sensorType": "Smoke Detector",
+      "status": 2
+    },
+    {
+      "flatNo": "A12-053",
+      "deviceId": "GVM202600191",
+      "sensorType": "Gas Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A10-073",
+      "deviceId": "GVM202600192",
+      "sensorType": "Smoke Detector",
+      "status": 2
+    },
+    {
+      "flatNo": "A2-014",
+      "deviceId": "GVM202600193",
+      "sensorType": "Gas Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A17-012",
+      "deviceId": "GVM202600194",
+      "sensorType": "Gas Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A6-022",
+      "deviceId": "GVM202600195",
+      "sensorType": "Multi-Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A17-063",
+      "deviceId": "GVM202600196",
+      "sensorType": "Smoke Detector",
+      "status": 2
+    },
+    {
+      "flatNo": "A4-075",
+      "deviceId": "GVM202600197",
+      "sensorType": "Temperature Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A16-045",
+      "deviceId": "GVM202600198",
+      "sensorType": "Temperature Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A2-012",
+      "deviceId": "GVM202600199",
+      "sensorType": "Temperature Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A14-064",
+      "deviceId": "GVM202600200",
+      "sensorType": "Smoke Detector",
+      "status": 2
+    },
+    {
+      "flatNo": "A5-102",
+      "deviceId": "GVM2026100001",
+      "sensorType": "Gas Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A5-102",
+      "deviceId": "GVM2026100002",
+      "sensorType": "Temperature Sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A1-005",
+      "deviceId": "MSS123456789",
+      "sensorType": "sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A1-006",
+      "deviceId": "MSS123456789",
+      "sensorType": "sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A1-007",
+      "deviceId": "MSS123456789",
+      "sensorType": "sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A1-008",
+      "deviceId": "MSS123456789",
+      "sensorType": "sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A1-009",
+      "deviceId": "MSS123456789",
+      "sensorType": "sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A1-010",
+      "deviceId": "MSS123456789",
+      "sensorType": "sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A1-011",
+      "deviceId": "MSS123456789",
+      "sensorType": "sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A1-016",
+      "deviceId": "MSS123456789",
+      "sensorType": "sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A1-017",
+      "deviceId": "MSS123456789",
+      "sensorType": "sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A1-001",
+      "deviceId": "GVM202601412",
+      "sensorType": "sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A1-002",
+      "deviceId": "GVM202601996512",
+      "sensorType": "sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A1-018",
+      "deviceId": "GVM202601996516",
+      "sensorType": "sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A1-003",
+      "deviceId": "GVM202601996517",
+      "sensorType": "sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A1-004",
+      "deviceId": "GVM202601996518",
+      "sensorType": "sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A1-019",
+      "deviceId": "MSS123456789",
+      "sensorType": "sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A1-020",
+      "deviceId": "MSS123456789",
+      "sensorType": "sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A1-021",
+      "deviceId": "MSS123456789",
+      "sensorType": "sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A1-023",
+      "deviceId": "GVM202601401",
+      "sensorType": "sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A1-026",
+      "deviceId": "GVM202601402",
+      "sensorType": "sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A1-027",
+      "deviceId": "GVM202601403",
+      "sensorType": "sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A1-028",
+      "deviceId": "GVM202601404",
+      "sensorType": "sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A1-029",
+      "deviceId": "GVM202601405",
+      "sensorType": "sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A1-030",
+      "deviceId": "GVM202601406",
+      "sensorType": "sensor",
+      "status": 2
+    },
+    {
+      "flatNo": "A1-031",
+      "deviceId": "GVM202601407",
+      "sensorType": "sensor",
       "status": 2
     }
   ]
