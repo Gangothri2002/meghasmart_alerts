@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Device Details</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body class="device-details-body">
+  <div class="device-details-container">
+    <h2 class="device-details-title">Device Details for <%= device.deviceId %></h2>
+    <table class="device-details-table">
+      <tr>
+        <th>MAC Address</th>
+        <th>Hardware Version</th>
+        <th>Firmware Version</th>
+        <th>Latitude</th>
+        <th>Longitude</th>
+        <th>Location</th>
+      </tr>
+      <tr>
+        <td><%= device.macAddress || 'N/A' %></td>
+        <td><%= device.hardwareVersion || 'N/A' %></td>
+        <td><%= device.firmwareVersion || 'N/A' %></td>
+        <td><%= device.lat || device.latitude || 'N/A' %></td>
+        <td><%= device.lng || device.longitude || 'N/A' %></td>
+        <td><%= device.location || 'N/A' %></td>
+      </tr>
+    </table>
+    <a class="back-link" href="<%= backUrl || '/retail-devices' %>">&larr; Back to Devices</a>
+  </div>
+</body>
+</html>

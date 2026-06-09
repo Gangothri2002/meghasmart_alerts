@@ -1,0 +1,1413 @@
+sno,communityId,flatNo,deviceId,sensorType,status
+1,1,"A2-082","GVM202600001","Smoke Detector",2
+2,1,"A11-092","GVM202600002","Smoke Detector",2
+3,1,"A7-041","GVM202600003","Multi-Sensor",2
+4,1,"A6-033","GVM202600004","Humidity Sensor",2
+5,1,"A16-032","GVM202600005","Temperature Sensor",2
+6,1,"A14-105","GVM202600006","Humidity Sensor",2
+7,1,"A4-031","GVM202600007","Temperature Sensor",2
+8,1,"A5-023","GVM202600008","Smoke Detector",2
+9,1,"A17-071","GVM202600009","Temperature Sensor",2
+10,1,"A19-015","GVM202600010","Gas Sensor",2
+11,1,"A10-071","GVM202600011","Humidity Sensor",2
+12,1,"A2-062","GVM202600012","Humidity Sensor",2
+13,1,"A6-051","GVM202600013","Gas Sensor",2
+14,1,"A1-051","GVM202600014","Multi-Sensor",2
+15,1,"A11-051","GVM202600015","Humidity Sensor",2
+16,1,"A15-103","GVM202600016","Smoke Detector",2
+17,1,"A7-071","GVM202600017","Smoke Detector",2
+18,1,"A11-041","GVM202600018","Humidity Sensor",2
+19,1,"A6-011","GVM202600019","Smoke Detector",2
+20,1,"A2-022","GVM202600020","Gas Sensor",2
+21,1,"A11-064","GVM202600021","Temperature Sensor",2
+22,1,"A17-083","GVM202600022","Smoke Detector",2
+23,1,"A17-082","GVM202600023","Smoke Detector",2
+24,1,"A12-053","GVM202600024","Gas Sensor",2
+25,1,"A13-081","GVM202600025","Temperature Sensor",2
+26,1,"A17-033","GVM202600026","Humidity Sensor",2
+27,1,"A8-045","GVM202600027","Smoke Detector",2
+28,1,"A8-021","GVM202600028","Smoke Detector",2
+29,1,"A9-084","GVM202600029","Gas Sensor",2
+30,1,"A20-065","GVM202600030","Multi-Sensor",2
+31,1,"A15-051","GVM202600031","Gas Sensor",2
+32,1,"A10-103","GVM202600032","Smoke Detector",2
+33,1,"A13-061","GVM202600033","Gas Sensor",2
+34,1,"A8-021","GVM202600034","Gas Sensor",2
+35,1,"A8-021","GVM202600035","Gas Sensor",2
+36,1,"A10-013","GVM202600036","Humidity Sensor",2
+37,1,"A15-012","GVM202600037","Humidity Sensor",2
+38,1,"A20-024","GVM202600038","Temperature Sensor",2
+39,1,"A13-064","GVM202600039","Gas Sensor",2
+40,1,"A1-014","GVM202600040","Temperature Sensor",2
+41,1,"A7-085","GVM202600041","Gas Sensor",2
+42,1,"A14-105","GVM202600042","Gas Sensor",2
+43,1,"A12-071","GVM202600043","Temperature Sensor",2
+44,1,"A3-082","GVM202600044","Temperature Sensor",2
+45,1,"A10-074","GVM202600045","Gas Sensor",2
+46,1,"A4-073","GVM202600046","Humidity Sensor",2
+47,1,"A4-061","GVM202600047","Humidity Sensor",2
+48,1,"A19-072","GVM202600048","Temperature Sensor",2
+49,1,"A3-051","GVM202600049","Humidity Sensor",2
+50,1,"A19-031","GVM202600050","Humidity Sensor",2
+51,1,"A13-054","GVM202600051","Gas Sensor",2
+52,1,"A3-075","GVM202600052","Multi-Sensor",2
+53,1,"A1-032","GVM202600053","Gas Sensor",2
+54,1,"A8-102","GVM202600054","Multi-Sensor",2
+55,1,"A15-074","GVM202600055","Temperature Sensor",2
+56,1,"A18-054","GVM202600056","Smoke Detector",2
+57,1,"A9-095","GVM202600057","Multi-Sensor",2
+58,1,"A9-052","GVM202600058","Multi-Sensor",2
+59,1,"A10-013","GVM202600059","Humidity Sensor",2
+60,1,"A17-013","GVM202600060","Temperature Sensor",2
+61,1,"A11-074","GVM202600061","Temperature Sensor",2
+62,1,"A18-013","GVM202600062","Humidity Sensor",2
+63,1,"A3-025","GVM202600063","Smoke Detector",2
+64,1,"A1-082","GVM202600064","Smoke Detector",2
+65,1,"A19-081","GVM202600065","Smoke Detector",2
+66,1,"A4-041","GVM202600066","Humidity Sensor",2
+67,1,"A17-033","GVM202600067","Humidity Sensor",2
+68,1,"A15-102","GVM202600068","Humidity Sensor",2
+69,1,"A12-013","GVM202600069","Multi-Sensor",2
+70,1,"A15-042","GVM202600070","Multi-Sensor",2
+71,1,"A8-011","GVM202600071","Temperature Sensor",2
+72,1,"A6-074","GVM202600072","Smoke Detector",2
+73,1,"A15-092","GVM202600073","Multi-Sensor",2
+74,1,"A8-061","GVM202600074","Multi-Sensor",2
+75,1,"A18-042","GVM202600075","Humidity Sensor",2
+76,1,"A1-083","GVM202600076","Humidity Sensor",2
+77,1,"A16-055","GVM202600077","Gas Sensor",2
+78,1,"A15-065","GVM202600078","Smoke Detector",2
+79,1,"A14-063","GVM202600079","Gas Sensor",2
+80,1,"A12-052","GVM202600080","Multi-Sensor",2
+81,1,"A10-044","GVM202600081","Humidity Sensor",2
+82,1,"A17-061","GVM202600082","Multi-Sensor",2
+83,1,"A18-063","GVM202600083","Gas Sensor",2
+84,1,"A12-062","GVM202600084","Humidity Sensor",2
+85,1,"A6-021","GVM202600085","Humidity Sensor",2
+86,1,"A6-092","GVM202600086","Humidity Sensor",2
+87,1,"A13-034","GVM202600087","Gas Sensor",2
+88,1,"A6-052","GVM202600088","Smoke Detector",2
+89,1,"A17-011","GVM202600089","Multi-Sensor",2
+90,1,"A12-052","GVM202600090","Humidity Sensor",2
+91,1,"A5-044","GVM202600091","Temperature Sensor",2
+92,1,"A15-045","GVM202600092","Multi-Sensor",2
+93,1,"A9-061","GVM202600093","Humidity Sensor",2
+94,1,"A3-024","GVM202600094","Smoke Detector",2
+95,1,"A13-031","GVM202600095","Smoke Detector",2
+96,1,"A15-105","GVM202600096","Temperature Sensor",2
+97,1,"A8-074","GVM202600097","Humidity Sensor",2
+98,1,"A20-033","GVM202600098","Smoke Detector",2
+99,1,"A9-055","GVM202600099","Temperature Sensor",2
+100,1,"A8-074","GVM202600100","Multi-Sensor",2
+101,1,"A5-094","GVM202600101","Temperature Sensor",2
+102,1,"A12-042","GVM202600102","Gas Sensor",2
+103,1,"A20-072","GVM202600103","Humidity Sensor",2
+104,1,"A13-092","GVM202600104","Temperature Sensor",2
+105,1,"A8-052","GVM202600105","Temperature Sensor",2
+106,1,"A12-055","GVM202600106","Gas Sensor",2
+107,1,"A6-045","GVM202600107","Smoke Detector",2
+108,1,"A2-071","GVM202600108","Humidity Sensor",2
+109,1,"A12-103","GVM202600109","Temperature Sensor",2
+110,1,"A4-082","GVM202600110","Gas Sensor",2
+111,1,"A5-091","GVM202600111","Temperature Sensor",2
+112,1,"A3-063","GVM202600112","Smoke Detector",2
+113,1,"A5-023","GVM202600113","Smoke Detector",2
+114,1,"A14-051","GVM202600114","Smoke Detector",2
+115,1,"A15-013","GVM202600115","Smoke Detector",2
+116,1,"A3-025","GVM202600116","Temperature Sensor",2
+117,1,"A1-032","GVM202600117","Temperature Sensor",2
+118,1,"A19-083","GVM202600118","Multi-Sensor",2
+119,1,"A10-093","GVM202600119","Humidity Sensor",2
+120,1,"A5-072","GVM202600120","Temperature Sensor",2
+121,1,"A13-055","GVM202600121","Smoke Detector",2
+122,1,"A13-045","GVM202600122","Multi-Sensor",2
+123,1,"A6-073","GVM202600123","Temperature Sensor",2
+124,1,"A16-083","GVM202600124","Smoke Detector",2
+125,1,"A16-043","GVM202600125","Gas Sensor",2
+126,1,"A1-071","GVM202600126","Smoke Detector",2
+127,1,"A14-031","GVM202600127","Smoke Detector",2
+128,1,"A19-034","GVM202600128","Temperature Sensor",2
+129,1,"A5-061","GVM202600129","Gas Sensor",2
+130,1,"A16-023","GVM202600130","Temperature Sensor",2
+131,1,"A2-014","GVM202600131","Smoke Detector",2
+132,1,"A20-045","GVM202600132","Humidity Sensor",2
+133,1,"A13-093","GVM202600133","Multi-Sensor",2
+134,1,"A13-073","GVM202600134","Temperature Sensor",2
+135,1,"A9-024","GVM202600135","Humidity Sensor",2
+136,1,"A12-041","GVM202600136","Gas Sensor",2
+137,1,"A13-071","GVM202600137","Gas Sensor",2
+138,1,"A8-103","GVM202600138","Smoke Detector",2
+139,1,"A10-015","GVM202600139","Temperature Sensor",2
+140,1,"A18-022","GVM202600140","Humidity Sensor",2
+141,1,"A4-021","GVM202600141","Temperature Sensor",2
+142,1,"A14-021","GVM202600142","Smoke Detector",2
+143,1,"A8-043","GVM202600143","Temperature Sensor",2
+144,1,"A9-053","GVM202600144","Humidity Sensor",2
+145,1,"A17-034","GVM202600145","Temperature Sensor",2
+146,1,"A16-062","GVM202600146","Gas Sensor",2
+147,1,"A9-082","GVM202600147","Multi-Sensor",2
+148,1,"A5-084","GVM202600148","Multi-Sensor",2
+149,1,"A20-101","GVM202600149","Multi-Sensor",2
+150,1,"A14-021","GVM202600150","Humidity Sensor",2
+151,1,"A11-105","GVM202600151","Temperature Sensor",2
+152,1,"A10-025","GVM202600152","Gas Sensor",2
+153,1,"A5-012","GVM202600153","Smoke Detector",2
+154,1,"A10-071","GVM202600154","Gas Sensor",2
+155,1,"A19-101","GVM202600155","Gas Sensor",2
+156,1,"A6-071","GVM202600156","Temperature Sensor",2
+157,1,"A18-031","GVM202600157","Temperature Sensor",2
+158,1,"A6-053","GVM202600158","Smoke Detector",2
+159,1,"A19-094","GVM202600159","Humidity Sensor",2
+160,1,"A1-103","GVM202600160","Gas Sensor",2
+161,1,"A15-102","GVM202600161","Multi-Sensor",2
+162,1,"A10-073","GVM202600162","Gas Sensor",2
+163,1,"A12-065","GVM202600163","Multi-Sensor",2
+164,1,"A1-082","GVM202600164","Humidity Sensor",2
+165,1,"A13-032","GVM202600165","Multi-Sensor",2
+166,1,"A15-065","GVM202600166","Gas Sensor",2
+167,1,"A8-042","GVM202600167","Smoke Detector",2
+168,1,"A9-072","GVM202600168","Humidity Sensor",2
+169,1,"A10-105","GVM202600169","Gas Sensor",2
+170,1,"A17-033","GVM202600170","Smoke Detector",2
+171,1,"A2-053","GVM202600171","Humidity Sensor",2
+172,1,"A6-033","GVM202600172","Multi-Sensor",2
+173,1,"A10-033","GVM202600173","Humidity Sensor",2
+174,1,"A11-065","GVM202600174","Multi-Sensor",2
+175,1,"A2-054","GVM202600175","Smoke Detector",2
+176,1,"A4-041","GVM202600176","Smoke Detector",2
+177,1,"A17-021","GVM202600177","Smoke Detector",2
+178,1,"A18-053","GVM202600178","Smoke Detector",2
+179,1,"A1-102","GVM202600179","Humidity Sensor",2
+180,1,"A16-101","GVM202600180","Temperature Sensor",2
+181,1,"A16-034","GVM202600181","Temperature Sensor",2
+182,1,"A19-011","GVM202600182","Gas Sensor",2
+183,1,"A16-024","GVM202600183","Smoke Detector",2
+184,1,"A1-094","GVM202600184","Smoke Detector",2
+185,1,"A14-104","GVM202600185","Gas Sensor",2
+186,1,"A8-054","GVM202600186","Humidity Sensor",2
+187,1,"A16-084","GVM202600187","Multi-Sensor",2
+188,1,"A7-025","GVM202600188","Temperature Sensor",2
+189,1,"A15-082","GVM202600189","Gas Sensor",2
+190,1,"A15-062","GVM202600190","Smoke Detector",2
+191,1,"A12-053","GVM202600191","Gas Sensor",2
+192,1,"A10-073","GVM202600192","Smoke Detector",2
+193,1,"A2-014","GVM202600193","Gas Sensor",2
+194,1,"A17-012","GVM202600194","Gas Sensor",2
+195,1,"A6-022","GVM202600195","Multi-Sensor",2
+196,1,"A17-063","GVM202600196","Smoke Detector",2
+197,1,"A4-075","GVM202600197","Temperature Sensor",2
+198,1,"A16-045","GVM202600198","Temperature Sensor",2
+199,1,"A2-012","GVM202600199","Temperature Sensor",2
+200,1,"A14-064","GVM202600200","Smoke Detector",2
+201,2,"A14-045","GVM202600201","Multi-Sensor",2
+202,2,"A10-041","GVM202600202","Humidity Sensor",2
+203,2,"A10-071","GVM202600203","Temperature Sensor",2
+204,2,"A10-011","GVM202600204","Multi-Sensor",2
+205,2,"A3-042","GVM202600205","Multi-Sensor",2
+206,2,"A17-063","GVM202600206","Temperature Sensor",2
+207,2,"A15-054","GVM202600207","Multi-Sensor",2
+208,2,"A10-074","GVM202600208","Humidity Sensor",2
+209,2,"A12-105","GVM202600209","Temperature Sensor",2
+210,2,"A20-032","GVM202600210","Temperature Sensor",2
+211,2,"A18-092","GVM202600211","Gas Sensor",2
+212,2,"A5-083","GVM202600212","Humidity Sensor",2
+213,2,"A9-074","GVM202600213","Smoke Detector",2
+214,2,"A4-071","GVM202600214","Gas Sensor",2
+215,2,"A12-034","GVM202600215","Smoke Detector",2
+216,2,"A1-074","GVM202600216","Humidity Sensor",2
+217,2,"A9-045","GVM202600217","Humidity Sensor",2
+218,2,"A6-062","GVM202600218","Smoke Detector",2
+219,2,"A2-105","GVM202600219","Gas Sensor",2
+220,2,"A19-011","GVM202600220","Gas Sensor",2
+221,2,"A17-024","GVM202600221","Multi-Sensor",2
+222,2,"A5-095","GVM202600222","Humidity Sensor",2
+223,2,"A12-102","GVM202600223","Gas Sensor",2
+224,2,"A17-023","GVM202600224","Multi-Sensor",2
+225,2,"A9-022","GVM202600225","Gas Sensor",2
+226,2,"A12-012","GVM202600226","Temperature Sensor",2
+227,2,"A11-022","GVM202600227","Multi-Sensor",2
+228,2,"A7-045","GVM202600228","Gas Sensor",2
+229,2,"A14-031","GVM202600229","Multi-Sensor",2
+230,2,"A16-021","GVM202600230","Multi-Sensor",2
+231,2,"A14-074","GVM202600231","Multi-Sensor",2
+232,2,"A14-014","GVM202600232","Temperature Sensor",2
+233,2,"A17-052","GVM202600233","Gas Sensor",2
+234,2,"A11-041","GVM202600234","Multi-Sensor",2
+235,2,"A18-031","GVM202600235","Smoke Detector",2
+236,2,"A16-061","GVM202600236","Temperature Sensor",2
+237,2,"A13-072","GVM202600237","Smoke Detector",2
+238,2,"A3-082","GVM202600238","Gas Sensor",2
+239,2,"A2-063","GVM202600239","Gas Sensor",2
+240,2,"A10-053","GVM202600240","Humidity Sensor",2
+241,2,"A3-092","GVM202600241","Temperature Sensor",2
+242,2,"A8-015","GVM202600242","Gas Sensor",2
+243,2,"A16-055","GVM202600243","Multi-Sensor",2
+244,2,"A15-071","GVM202600244","Gas Sensor",2
+245,2,"A13-102","GVM202600245","Multi-Sensor",2
+246,2,"A4-011","GVM202600246","Gas Sensor",2
+247,2,"A18-021","GVM202600247","Multi-Sensor",2
+248,2,"A4-012","GVM202600248","Humidity Sensor",2
+249,2,"A4-093","GVM202600249","Humidity Sensor",2
+250,2,"A19-011","GVM202600250","Gas Sensor",2
+251,2,"A12-072","GVM202600251","Humidity Sensor",2
+252,2,"A19-053","GVM202600252","Temperature Sensor",2
+253,2,"A6-081","GVM202600253","Smoke Detector",2
+254,2,"A11-101","GVM202600254","Humidity Sensor",2
+255,2,"A12-064","GVM202600255","Smoke Detector",2
+256,2,"A19-055","GVM202600256","Gas Sensor",2
+257,2,"A19-014","GVM202600257","Smoke Detector",2
+258,2,"A12-011","GVM202600258","Temperature Sensor",2
+259,2,"A18-055","GVM202600259","Humidity Sensor",2
+260,2,"A17-024","GVM202600260","Humidity Sensor",2
+261,2,"A5-062","GVM202600261","Smoke Detector",2
+262,2,"A17-054","GVM202600262","Humidity Sensor",2
+263,2,"A9-091","GVM202600263","Multi-Sensor",2
+264,2,"A17-081","GVM202600264","Smoke Detector",2
+265,2,"A2-085","GVM202600265","Smoke Detector",2
+266,2,"A8-053","GVM202600266","Humidity Sensor",2
+267,2,"A6-041","GVM202600267","Gas Sensor",2
+268,2,"A11-095","GVM202600268","Temperature Sensor",2
+269,2,"A5-101","GVM202600269","Humidity Sensor",2
+270,2,"A20-071","GVM202600270","Temperature Sensor",2
+271,2,"A13-075","GVM202600271","Temperature Sensor",2
+272,2,"A8-041","GVM202600272","Smoke Detector",2
+273,2,"A1-064","GVM202600273","Gas Sensor",2
+274,2,"A9-024","GVM202600274","Multi-Sensor",2
+275,2,"A14-021","GVM202600275","Temperature Sensor",2
+276,2,"A20-103","GVM202600276","Temperature Sensor",2
+277,2,"A17-021","GVM202600277","Humidity Sensor",2
+278,2,"A20-084","GVM202600278","Multi-Sensor",2
+279,2,"A2-021","GVM202600279","Temperature Sensor",2
+280,2,"A9-032","GVM202600280","Multi-Sensor",2
+281,2,"A1-095","GVM202600281","Temperature Sensor",2
+282,2,"A2-035","GVM202600282","Humidity Sensor",2
+283,2,"A7-081","GVM202600283","Gas Sensor",2
+284,2,"A11-063","GVM202600284","Smoke Detector",2
+285,2,"A20-102","GVM202600285","Temperature Sensor",2
+286,2,"A6-061","GVM202600286","Smoke Detector",2
+287,2,"A6-053","GVM202600287","Gas Sensor",2
+288,2,"A19-083","GVM202600288","Multi-Sensor",2
+289,2,"A5-043","GVM202600289","Smoke Detector",2
+290,2,"A11-023","GVM202600290","Smoke Detector",2
+291,2,"A3-011","GVM202600291","Humidity Sensor",2
+292,2,"A8-043","GVM202600292","Humidity Sensor",2
+293,2,"A3-031","GVM202600293","Humidity Sensor",2
+294,2,"A20-051","GVM202600294","Gas Sensor",2
+295,2,"A6-023","GVM202600295","Gas Sensor",2
+296,2,"A14-053","GVM202600296","Smoke Detector",2
+297,2,"A17-061","GVM202600297","Multi-Sensor",2
+298,2,"A15-094","GVM202600298","Humidity Sensor",2
+299,2,"A9-015","GVM202600299","Humidity Sensor",2
+300,2,"A8-011","GVM202600300","Temperature Sensor",2
+301,2,"A3-093","GVM202600301","Temperature Sensor",2
+302,2,"A13-095","GVM202600302","Humidity Sensor",2
+303,2,"A12-102","GVM202600303","Multi-Sensor",2
+304,2,"A15-062","GVM202600304","Smoke Detector",2
+305,2,"A19-041","GVM202600305","Gas Sensor",2
+306,2,"A9-065","GVM202600306","Gas Sensor",2
+307,2,"A19-063","GVM202600307","Temperature Sensor",2
+308,2,"A18-092","GVM202600308","Gas Sensor",2
+309,2,"A7-061","GVM202600309","Gas Sensor",2
+310,2,"A11-023","GVM202600310","Humidity Sensor",2
+311,2,"A11-065","GVM202600311","Gas Sensor",2
+312,2,"A2-074","GVM202600312","Temperature Sensor",2
+313,2,"A5-075","GVM202600313","Humidity Sensor",2
+314,2,"A15-105","GVM202600314","Temperature Sensor",2
+315,2,"A18-012","GVM202600315","Smoke Detector",2
+316,2,"A14-043","GVM202600316","Humidity Sensor",2
+317,2,"A13-044","GVM202600317","Smoke Detector",2
+318,2,"A17-045","GVM202600318","Multi-Sensor",2
+319,2,"A18-023","GVM202600319","Temperature Sensor",2
+320,2,"A19-074","GVM202600320","Multi-Sensor",2
+321,2,"A10-032","GVM202600321","Humidity Sensor",2
+322,2,"A10-034","GVM202600322","Temperature Sensor",2
+323,2,"A4-105","GVM202600323","Gas Sensor",2
+324,2,"A7-101","GVM202600324","Humidity Sensor",2
+325,2,"A16-075","GVM202600325","Multi-Sensor",2
+326,2,"A19-054","GVM202600326","Smoke Detector",2
+327,2,"A1-074","GVM202600327","Humidity Sensor",2
+328,2,"A6-052","GVM202600328","Temperature Sensor",2
+329,2,"A18-085","GVM202600329","Multi-Sensor",2
+330,2,"A1-081","GVM202600330","Multi-Sensor",2
+331,2,"A15-065","GVM202600331","Smoke Detector",2
+332,2,"A20-062","GVM202600332","Smoke Detector",2
+333,2,"A11-054","GVM202600333","Gas Sensor",2
+334,2,"A5-062","GVM202600334","Temperature Sensor",2
+335,2,"A20-043","GVM202600335","Smoke Detector",2
+336,2,"A19-011","GVM202600336","Smoke Detector",2
+337,2,"A15-052","GVM202600337","Humidity Sensor",2
+338,2,"A14-083","GVM202600338","Humidity Sensor",2
+339,2,"A12-023","GVM202600339","Smoke Detector",2
+340,2,"A2-025","GVM202600340","Smoke Detector",2
+341,2,"A2-023","GVM202600341","Smoke Detector",2
+342,2,"A13-063","GVM202600342","Temperature Sensor",2
+343,2,"A14-085","GVM202600343","Multi-Sensor",2
+344,2,"A19-025","GVM202600344","Gas Sensor",2
+345,2,"A10-082","GVM202600345","Multi-Sensor",2
+346,2,"A12-055","GVM202600346","Multi-Sensor",2
+347,2,"A2-091","GVM202600347","Multi-Sensor",2
+348,2,"A13-055","GVM202600348","Humidity Sensor",2
+349,2,"A18-071","GVM202600349","Humidity Sensor",2
+350,2,"A11-093","GVM202600350","Smoke Detector",2
+351,2,"A19-041","GVM202600351","Multi-Sensor",2
+352,2,"A20-072","GVM202600352","Humidity Sensor",2
+353,2,"A8-025","GVM202600353","Gas Sensor",2
+354,2,"A14-054","GVM202600354","Humidity Sensor",2
+355,2,"A10-094","GVM202600355","Temperature Sensor",2
+356,2,"A12-041","GVM202600356","Multi-Sensor",2
+357,2,"A13-013","GVM202600357","Humidity Sensor",2
+358,2,"A15-011","GVM202600358","Temperature Sensor",2
+359,2,"A15-053","GVM202600359","Multi-Sensor",2
+360,2,"A16-103","GVM202600360","Humidity Sensor",2
+361,2,"A14-061","GVM202600361","Multi-Sensor",2
+362,2,"A11-102","GVM202600362","Smoke Detector",2
+363,2,"A7-023","GVM202600363","Temperature Sensor",2
+364,2,"A9-071","GVM202600364","Gas Sensor",2
+365,2,"A6-074","GVM202600365","Multi-Sensor",2
+366,2,"A13-032","GVM202600366","Multi-Sensor",2
+367,2,"A14-034","GVM202600367","Humidity Sensor",2
+368,2,"A15-091","GVM202600368","Gas Sensor",2
+369,2,"A7-094","GVM202600369","Gas Sensor",2
+370,2,"A2-041","GVM202600370","Temperature Sensor",2
+371,2,"A15-014","GVM202600371","Gas Sensor",2
+372,2,"A11-012","GVM202600372","Gas Sensor",2
+373,2,"A15-022","GVM202600373","Temperature Sensor",2
+374,2,"A1-054","GVM202600374","Humidity Sensor",2
+375,2,"A18-055","GVM202600375","Multi-Sensor",2
+376,2,"A18-034","GVM202600376","Gas Sensor",2
+377,2,"A8-093","GVM202600377","Humidity Sensor",2
+378,2,"A6-051","GVM202600378","Humidity Sensor",2
+379,2,"A13-052","GVM202600379","Smoke Detector",2
+380,2,"A12-023","GVM202600380","Humidity Sensor",2
+381,2,"A19-044","GVM202600381","Humidity Sensor",2
+382,2,"A8-083","GVM202600382","Smoke Detector",2
+383,2,"A18-071","GVM202600383","Smoke Detector",2
+384,2,"A18-075","GVM202600384","Smoke Detector",2
+385,2,"A13-083","GVM202600385","Smoke Detector",2
+386,2,"A11-012","GVM202600386","Multi-Sensor",2
+387,2,"A13-102","GVM202600387","Temperature Sensor",2
+388,2,"A11-033","GVM202600388","Multi-Sensor",2
+389,2,"A19-103","GVM202600389","Humidity Sensor",2
+390,2,"A15-095","GVM202600390","Temperature Sensor",2
+391,2,"A12-084","GVM202600391","Temperature Sensor",2
+392,2,"A18-075","GVM202600392","Humidity Sensor",2
+393,2,"A18-074","GVM202600393","Humidity Sensor",2
+394,2,"A11-082","GVM202600394","Humidity Sensor",2
+395,2,"A6-041","GVM202600395","Humidity Sensor",2
+396,2,"A19-025","GVM202600396","Temperature Sensor",2
+397,2,"A6-075","GVM202600397","Temperature Sensor",2
+398,2,"A7-082","GVM202600398","Smoke Detector",2
+399,2,"A2-022","GVM202600399","Gas Sensor",2
+400,2,"A8-021","GVM202600400","Temperature Sensor",2
+401,3,"A18-063","GVM202600401","Temperature Sensor",2
+402,3,"A19-064","GVM202600402","Humidity Sensor",2
+403,3,"A9-012","GVM202600403","Multi-Sensor",2
+404,3,"A8-031","GVM202600404","Humidity Sensor",2
+405,3,"A17-054","GVM202600405","Multi-Sensor",2
+406,3,"A18-015","GVM202600406","Temperature Sensor",2
+407,3,"A12-044","GVM202600407","Humidity Sensor",2
+408,3,"A17-073","GVM202600408","Humidity Sensor",2
+409,3,"A3-042","GVM202600409","Gas Sensor",2
+410,3,"A9-035","GVM202600410","Smoke Detector",2
+411,3,"A19-101","GVM202600411","Smoke Detector",2
+412,3,"A14-044","GVM202600412","Humidity Sensor",2
+413,3,"A20-041","GVM202600413","Gas Sensor",2
+414,3,"A10-022","GVM202600414","Smoke Detector",2
+415,3,"A13-062","GVM202600415","Temperature Sensor",2
+416,3,"A15-082","GVM202600416","Smoke Detector",2
+417,3,"A7-031","GVM202600417","Gas Sensor",2
+418,3,"A11-102","GVM202600418","Multi-Sensor",2
+419,3,"A9-083","GVM202600419","Gas Sensor",2
+420,3,"A10-014","GVM202600420","Gas Sensor",2
+421,3,"A17-074","GVM202600421","Gas Sensor",2
+422,3,"A5-015","GVM202600422","Gas Sensor",2
+423,3,"A4-094","GVM202600423","Temperature Sensor",2
+424,3,"A19-074","GVM202600424","Multi-Sensor",2
+425,3,"A13-071","GVM202600425","Humidity Sensor",2
+426,3,"A13-031","GVM202600426","Temperature Sensor",2
+427,3,"A12-071","GVM202600427","Gas Sensor",2
+428,3,"A10-024","GVM202600428","Smoke Detector",2
+429,3,"A12-063","GVM202600429","Multi-Sensor",2
+430,3,"A17-052","GVM202600430","Smoke Detector",2
+431,3,"A7-042","GVM202600431","Humidity Sensor",2
+432,3,"A6-103","GVM202600432","Smoke Detector",2
+433,3,"A5-085","GVM202600433","Gas Sensor",2
+434,3,"A4-055","GVM202600434","Multi-Sensor",2
+435,3,"A16-021","GVM202600435","Gas Sensor",2
+436,3,"A12-063","GVM202600436","Smoke Detector",2
+437,3,"A2-073","GVM202600437","Humidity Sensor",2
+438,3,"A14-051","GVM202600438","Multi-Sensor",2
+439,3,"A17-061","GVM202600439","Temperature Sensor",2
+440,3,"A1-045","GVM202600440","Smoke Detector",2
+441,3,"A6-091","GVM202600441","Gas Sensor",2
+442,3,"A14-045","GVM202600442","Smoke Detector",2
+443,3,"A17-082","GVM202600443","Humidity Sensor",2
+444,3,"A4-015","GVM202600444","Smoke Detector",2
+445,3,"A4-073","GVM202600445","Temperature Sensor",2
+446,3,"A7-105","GVM202600446","Multi-Sensor",2
+447,3,"A7-071","GVM202600447","Multi-Sensor",2
+448,3,"A16-025","GVM202600448","Gas Sensor",2
+449,3,"A7-011","GVM202600449","Temperature Sensor",2
+450,3,"A6-064","GVM202600450","Multi-Sensor",2
+451,3,"A5-053","GVM202600451","Temperature Sensor",2
+452,3,"A5-044","GVM202600452","Multi-Sensor",2
+453,3,"A8-055","GVM202600453","Smoke Detector",2
+454,3,"A15-084","GVM202600454","Humidity Sensor",2
+455,3,"A8-084","GVM202600455","Gas Sensor",2
+456,3,"A8-074","GVM202600456","Humidity Sensor",2
+457,3,"A19-063","GVM202600457","Gas Sensor",2
+458,3,"A17-013","GVM202600458","Temperature Sensor",2
+459,3,"A16-024","GVM202600459","Temperature Sensor",2
+460,3,"A5-101","GVM202600460","Multi-Sensor",2
+461,3,"A4-063","GVM202600461","Smoke Detector",2
+462,3,"A15-054","GVM202600462","Smoke Detector",2
+463,3,"A8-105","GVM202600463","Smoke Detector",2
+464,3,"A12-072","GVM202600464","Smoke Detector",2
+465,3,"A13-084","GVM202600465","Multi-Sensor",2
+466,3,"A19-054","GVM202600466","Smoke Detector",2
+467,3,"A7-034","GVM202600467","Smoke Detector",2
+468,3,"A17-044","GVM202600468","Temperature Sensor",2
+469,3,"A3-101","GVM202600469","Smoke Detector",2
+470,3,"A4-093","GVM202600470","Smoke Detector",2
+471,3,"A14-013","GVM202600471","Smoke Detector",2
+472,3,"A6-015","GVM202600472","Humidity Sensor",2
+473,3,"A6-054","GVM202600473","Temperature Sensor",2
+474,3,"A15-013","GVM202600474","Smoke Detector",2
+475,3,"A14-102","GVM202600475","Gas Sensor",2
+476,3,"A9-034","GVM202600476","Humidity Sensor",2
+477,3,"A1-022","GVM202600477","Multi-Sensor",2
+478,3,"A4-013","GVM202600478","Temperature Sensor",2
+479,3,"A19-095","GVM202600479","Humidity Sensor",2
+480,3,"A15-101","GVM202600480","Smoke Detector",2
+481,3,"A9-065","GVM202600481","Temperature Sensor",2
+482,3,"A2-102","GVM202600482","Gas Sensor",2
+483,3,"A18-013","GVM202600483","Temperature Sensor",2
+484,3,"A17-081","GVM202600484","Gas Sensor",2
+485,3,"A10-094","GVM202600485","Temperature Sensor",2
+486,3,"A20-051","GVM202600486","Temperature Sensor",2
+487,3,"A16-075","GVM202600487","Gas Sensor",2
+488,3,"A4-093","GVM202600488","Smoke Detector",2
+489,3,"A18-023","GVM202600489","Smoke Detector",2
+490,3,"A18-053","GVM202600490","Gas Sensor",2
+491,3,"A16-073","GVM202600491","Gas Sensor",2
+492,3,"A14-071","GVM202600492","Smoke Detector",2
+493,3,"A7-034","GVM202600493","Gas Sensor",2
+494,3,"A17-052","GVM202600494","Gas Sensor",2
+495,3,"A10-024","GVM202600495","Humidity Sensor",2
+496,3,"A3-065","GVM202600496","Multi-Sensor",2
+497,3,"A12-044","GVM202600497","Multi-Sensor",2
+498,3,"A13-051","GVM202600498","Humidity Sensor",2
+499,3,"A2-091","GVM202600499","Gas Sensor",2
+500,3,"A15-032","GVM202600500","Multi-Sensor",2
+501,3,"A11-022","GVM202600501","Gas Sensor",2
+502,3,"A14-103","GVM202600502","Humidity Sensor",2
+503,3,"A2-071","GVM202600503","Smoke Detector",2
+504,3,"A13-091","GVM202600504","Humidity Sensor",2
+505,3,"A1-024","GVM202600505","Multi-Sensor",2
+506,3,"A10-064","GVM202600506","Humidity Sensor",2
+507,3,"A7-043","GVM202600507","Smoke Detector",2
+508,3,"A20-095","GVM202600508","Gas Sensor",2
+509,3,"A19-105","GVM202600509","Temperature Sensor",2
+510,3,"A2-072","GVM202600510","Humidity Sensor",2
+511,3,"A11-085","GVM202600511","Humidity Sensor",2
+512,3,"A9-084","GVM202600512","Smoke Detector",2
+513,3,"A15-065","GVM202600513","Smoke Detector",2
+514,3,"A12-082","GVM202600514","Smoke Detector",2
+515,3,"A4-024","GVM202600515","Temperature Sensor",2
+516,3,"A4-064","GVM202600516","Multi-Sensor",2
+517,3,"A17-032","GVM202600517","Humidity Sensor",2
+518,3,"A16-084","GVM202600518","Smoke Detector",2
+519,3,"A19-012","GVM202600519","Multi-Sensor",2
+520,3,"A16-091","GVM202600520","Temperature Sensor",2
+521,3,"A7-034","GVM202600521","Temperature Sensor",2
+522,3,"A4-022","GVM202600522","Temperature Sensor",2
+523,3,"A9-105","GVM202600523","Humidity Sensor",2
+524,3,"A5-073","GVM202600524","Multi-Sensor",2
+525,3,"A3-073","GVM202600525","Temperature Sensor",2
+526,3,"A11-093","GVM202600526","Gas Sensor",2
+527,3,"A16-042","GVM202600527","Humidity Sensor",2
+528,3,"A13-092","GVM202600528","Gas Sensor",2
+529,3,"A18-032","GVM202600529","Gas Sensor",2
+530,3,"A18-084","GVM202600530","Humidity Sensor",2
+531,3,"A3-071","GVM202600531","Multi-Sensor",2
+532,3,"A1-084","GVM202600532","Humidity Sensor",2
+533,3,"A1-084","GVM202600533","Temperature Sensor",2
+534,3,"A19-084","GVM202600534","Temperature Sensor",2
+535,3,"A9-071","GVM202600535","Humidity Sensor",2
+536,3,"A7-023","GVM202600536","Multi-Sensor",2
+537,3,"A7-011","GVM202600537","Temperature Sensor",2
+538,3,"A8-062","GVM202600538","Gas Sensor",2
+539,3,"A16-093","GVM202600539","Smoke Detector",2
+540,3,"A2-045","GVM202600540","Humidity Sensor",2
+541,3,"A12-063","GVM202600541","Gas Sensor",2
+542,3,"A11-021","GVM202600542","Temperature Sensor",2
+543,3,"A11-091","GVM202600543","Gas Sensor",2
+544,3,"A4-024","GVM202600544","Smoke Detector",2
+545,3,"A1-085","GVM202600545","Humidity Sensor",2
+546,3,"A11-081","GVM202600546","Temperature Sensor",2
+547,3,"A4-053","GVM202600547","Humidity Sensor",2
+548,3,"A13-103","GVM202600548","Humidity Sensor",2
+549,3,"A9-071","GVM202600549","Smoke Detector",2
+550,3,"A15-031","GVM202600550","Humidity Sensor",2
+551,3,"A4-071","GVM202600551","Temperature Sensor",2
+552,3,"A12-081","GVM202600552","Humidity Sensor",2
+553,3,"A14-071","GVM202600553","Multi-Sensor",2
+554,3,"A11-033","GVM202600554","Gas Sensor",2
+555,3,"A17-063","GVM202600555","Humidity Sensor",2
+556,3,"A6-042","GVM202600556","Multi-Sensor",2
+557,3,"A14-053","GVM202600557","Multi-Sensor",2
+558,3,"A16-023","GVM202600558","Gas Sensor",2
+559,3,"A8-083","GVM202600559","Gas Sensor",2
+560,3,"A12-052","GVM202600560","Multi-Sensor",2
+561,3,"A14-025","GVM202600561","Gas Sensor",2
+562,3,"A1-105","GVM202600562","Gas Sensor",2
+563,3,"A6-095","GVM202600563","Multi-Sensor",2
+564,3,"A10-044","GVM202600564","Gas Sensor",2
+565,3,"A3-033","GVM202600565","Multi-Sensor",2
+566,3,"A17-094","GVM202600566","Humidity Sensor",2
+567,3,"A18-062","GVM202600567","Multi-Sensor",2
+568,3,"A16-034","GVM202600568","Humidity Sensor",2
+569,3,"A14-045","GVM202600569","Multi-Sensor",2
+570,3,"A5-074","GVM202600570","Multi-Sensor",2
+571,3,"A12-013","GVM202600571","Smoke Detector",2
+572,3,"A9-052","GVM202600572","Humidity Sensor",2
+573,3,"A18-101","GVM202600573","Temperature Sensor",2
+574,3,"A14-022","GVM202600574","Gas Sensor",2
+575,3,"A7-092","GVM202600575","Smoke Detector",2
+576,3,"A9-025","GVM202600576","Gas Sensor",2
+577,3,"A14-035","GVM202600577","Multi-Sensor",2
+578,3,"A18-013","GVM202600578","Smoke Detector",2
+579,3,"A8-011","GVM202600579","Temperature Sensor",2
+580,3,"A13-012","GVM202600580","Smoke Detector",2
+581,3,"A12-104","GVM202600581","Humidity Sensor",2
+582,3,"A7-022","GVM202600582","Multi-Sensor",2
+583,3,"A5-045","GVM202600583","Temperature Sensor",2
+584,3,"A2-061","GVM202600584","Smoke Detector",2
+585,3,"A2-074","GVM202600585","Gas Sensor",2
+586,3,"A8-023","GVM202600586","Smoke Detector",2
+587,3,"A17-022","GVM202600587","Humidity Sensor",2
+588,3,"A8-042","GVM202600588","Temperature Sensor",2
+589,3,"A4-023","GVM202600589","Multi-Sensor",2
+590,3,"A6-061","GVM202600590","Multi-Sensor",2
+591,3,"A20-043","GVM202600591","Temperature Sensor",2
+592,3,"A4-032","GVM202600592","Gas Sensor",2
+593,3,"A13-025","GVM202600593","Temperature Sensor",2
+594,3,"A4-041","GVM202600594","Humidity Sensor",2
+595,3,"A5-102","GVM202600595","Smoke Detector",2
+596,3,"A18-015","GVM202600596","Multi-Sensor",2
+597,3,"A12-091","GVM202600597","Temperature Sensor",2
+598,3,"A12-035","GVM202600598","Multi-Sensor",2
+599,3,"A1-091","GVM202600599","Multi-Sensor",2
+600,3,"A9-071","GVM202600600","Multi-Sensor",2
+601,4,"A16-033","GVM202600601","Multi-Sensor",2
+602,4,"A16-035","GVM202600602","Humidity Sensor",2
+603,4,"A20-023","GVM202600603","Smoke Detector",2
+604,4,"A6-101","GVM202600604","Smoke Detector",2
+605,4,"A20-094","GVM202600605","Smoke Detector",2
+606,4,"A17-043","GVM202600606","Humidity Sensor",2
+607,4,"A17-073","GVM202600607","Multi-Sensor",2
+608,4,"A2-053","GVM202600608","Multi-Sensor",2
+609,4,"A18-035","GVM202600609","Smoke Detector",2
+610,4,"A15-085","GVM202600610","Temperature Sensor",2
+611,4,"A13-061","GVM202600611","Temperature Sensor",2
+612,4,"A2-083","GVM202600612","Smoke Detector",2
+613,4,"A13-021","GVM202600613","Multi-Sensor",2
+614,4,"A8-075","GVM202600614","Gas Sensor",2
+615,4,"A4-043","GVM202600615","Smoke Detector",2
+616,4,"A11-033","GVM202600616","Gas Sensor",2
+617,4,"A6-065","GVM202600617","Multi-Sensor",2
+618,4,"A4-103","GVM202600618","Gas Sensor",2
+619,4,"A6-092","GVM202600619","Gas Sensor",2
+620,4,"A6-022","GVM202600620","Temperature Sensor",2
+621,4,"A9-094","GVM202600621","Temperature Sensor",2
+622,4,"A14-065","GVM202600622","Multi-Sensor",2
+623,4,"A9-051","GVM202600623","Smoke Detector",2
+624,4,"A11-083","GVM202600624","Temperature Sensor",2
+625,4,"A7-054","GVM202600625","Smoke Detector",2
+626,4,"A8-071","GVM202600626","Smoke Detector",2
+627,4,"A20-044","GVM202600627","Temperature Sensor",2
+628,4,"A9-014","GVM202600628","Gas Sensor",2
+629,4,"A18-071","GVM202600629","Multi-Sensor",2
+630,4,"A7-075","GVM202600630","Humidity Sensor",2
+631,4,"A7-015","GVM202600631","Gas Sensor",2
+632,4,"A7-011","GVM202600632","Humidity Sensor",2
+633,4,"A9-033","GVM202600633","Smoke Detector",2
+634,4,"A14-032","GVM202600634","Smoke Detector",2
+635,4,"A8-022","GVM202600635","Temperature Sensor",2
+636,4,"A18-013","GVM202600636","Multi-Sensor",2
+637,4,"A17-054","GVM202600637","Multi-Sensor",2
+638,4,"A10-094","GVM202600638","Gas Sensor",2
+639,4,"A2-015","GVM202600639","Smoke Detector",2
+640,4,"A10-044","GVM202600640","Humidity Sensor",2
+641,4,"A20-074","GVM202600641","Temperature Sensor",2
+642,4,"A1-082","GVM202600642","Multi-Sensor",2
+643,4,"A17-013","GVM202600643","Multi-Sensor",2
+644,4,"A10-011","GVM202600644","Temperature Sensor",2
+645,4,"A1-012","GVM202600645","Temperature Sensor",2
+646,4,"A3-011","GVM202600646","Gas Sensor",2
+647,4,"A9-012","GVM202600647","Humidity Sensor",2
+648,4,"A12-091","GVM202600648","Gas Sensor",2
+649,4,"A19-024","GVM202600649","Multi-Sensor",2
+650,4,"A20-021","GVM202600650","Smoke Detector",2
+651,4,"A11-015","GVM202600651","Smoke Detector",2
+652,4,"A6-053","GVM202600652","Smoke Detector",2
+653,4,"A7-031","GVM202600653","Smoke Detector",2
+654,4,"A1-071","GVM202600654","Humidity Sensor",2
+655,4,"A16-042","GVM202600655","Temperature Sensor",2
+656,4,"A9-025","GVM202600656","Temperature Sensor",2
+657,4,"A20-065","GVM202600657","Temperature Sensor",2
+658,4,"A20-041","GVM202600658","Multi-Sensor",2
+659,4,"A15-045","GVM202600659","Smoke Detector",2
+660,4,"A16-063","GVM202600660","Smoke Detector",2
+661,4,"A16-064","GVM202600661","Humidity Sensor",2
+662,4,"A6-071","GVM202600662","Multi-Sensor",2
+663,4,"A15-012","GVM202600663","Smoke Detector",2
+664,4,"A9-051","GVM202600664","Smoke Detector",2
+665,4,"A14-011","GVM202600665","Gas Sensor",2
+666,4,"A3-043","GVM202600666","Smoke Detector",2
+667,4,"A7-094","GVM202600667","Smoke Detector",2
+668,4,"A13-045","GVM202600668","Gas Sensor",2
+669,4,"A10-055","GVM202600669","Gas Sensor",2
+670,4,"A11-105","GVM202600670","Temperature Sensor",2
+671,4,"A8-082","GVM202600671","Temperature Sensor",2
+672,4,"A9-063","GVM202600672","Smoke Detector",2
+673,4,"A18-075","GVM202600673","Humidity Sensor",2
+674,4,"A3-105","GVM202600674","Gas Sensor",2
+675,4,"A2-062","GVM202600675","Smoke Detector",2
+676,4,"A6-095","GVM202600676","Humidity Sensor",2
+677,4,"A17-072","GVM202600677","Humidity Sensor",2
+678,4,"A12-074","GVM202600678","Multi-Sensor",2
+679,4,"A17-075","GVM202600679","Multi-Sensor",2
+680,4,"A8-095","GVM202600680","Smoke Detector",2
+681,4,"A8-011","GVM202600681","Multi-Sensor",2
+682,4,"A5-011","GVM202600682","Smoke Detector",2
+683,4,"A10-101","GVM202600683","Multi-Sensor",2
+684,4,"A3-053","GVM202600684","Humidity Sensor",2
+685,4,"A11-072","GVM202600685","Smoke Detector",2
+686,4,"A11-034","GVM202600686","Temperature Sensor",2
+687,4,"A1-044","GVM202600687","Smoke Detector",2
+688,4,"A18-092","GVM202600688","Temperature Sensor",2
+689,4,"A13-055","GVM202600689","Humidity Sensor",2
+690,4,"A15-061","GVM202600690","Multi-Sensor",2
+691,4,"A9-074","GVM202600691","Multi-Sensor",2
+692,4,"A11-041","GVM202600692","Humidity Sensor",2
+693,4,"A12-083","GVM202600693","Multi-Sensor",2
+694,4,"A10-104","GVM202600694","Temperature Sensor",2
+695,4,"A14-102","GVM202600695","Temperature Sensor",2
+696,4,"A9-031","GVM202600696","Smoke Detector",2
+697,4,"A14-073","GVM202600697","Multi-Sensor",2
+698,4,"A8-031","GVM202600698","Smoke Detector",2
+699,4,"A12-024","GVM202600699","Humidity Sensor",2
+700,4,"A2-022","GVM202600700","Humidity Sensor",2
+701,4,"A8-014","GVM202600701","Multi-Sensor",2
+702,4,"A9-065","GVM202600702","Multi-Sensor",2
+703,4,"A13-041","GVM202600703","Smoke Detector",2
+704,4,"A5-062","GVM202600704","Multi-Sensor",2
+705,4,"A9-093","GVM202600705","Smoke Detector",2
+706,4,"A18-041","GVM202600706","Gas Sensor",2
+707,4,"A10-024","GVM202600707","Multi-Sensor",2
+708,4,"A1-061","GVM202600708","Temperature Sensor",2
+709,4,"A10-085","GVM202600709","Multi-Sensor",2
+710,4,"A2-041","GVM202600710","Humidity Sensor",2
+711,4,"A16-013","GVM202600711","Humidity Sensor",2
+712,4,"A11-065","GVM202600712","Gas Sensor",2
+713,4,"A13-092","GVM202600713","Smoke Detector",2
+714,4,"A20-054","GVM202600714","Gas Sensor",2
+715,4,"A5-104","GVM202600715","Smoke Detector",2
+716,4,"A17-103","GVM202600716","Humidity Sensor",2
+717,4,"A17-045","GVM202600717","Gas Sensor",2
+718,4,"A16-025","GVM202600718","Gas Sensor",2
+719,4,"A14-071","GVM202600719","Smoke Detector",2
+720,4,"A10-105","GVM202600720","Gas Sensor",2
+721,4,"A3-083","GVM202600721","Multi-Sensor",2
+722,4,"A19-102","GVM202600722","Smoke Detector",2
+723,4,"A1-072","GVM202600723","Temperature Sensor",2
+724,4,"A17-083","GVM202600724","Humidity Sensor",2
+725,4,"A11-094","GVM202600725","Temperature Sensor",2
+726,4,"A10-065","GVM202600726","Humidity Sensor",2
+727,4,"A8-065","GVM202600727","Humidity Sensor",2
+728,4,"A9-064","GVM202600728","Gas Sensor",2
+729,4,"A7-033","GVM202600729","Humidity Sensor",2
+730,4,"A10-024","GVM202600730","Humidity Sensor",2
+731,4,"A12-082","GVM202600731","Temperature Sensor",2
+732,4,"A18-104","GVM202600732","Temperature Sensor",2
+733,4,"A16-091","GVM202600733","Gas Sensor",2
+734,4,"A20-061","GVM202600734","Multi-Sensor",2
+735,4,"A15-021","GVM202600735","Gas Sensor",2
+736,4,"A13-032","GVM202600736","Multi-Sensor",2
+737,4,"A12-091","GVM202600737","Humidity Sensor",2
+738,4,"A2-083","GVM202600738","Smoke Detector",2
+739,4,"A2-051","GVM202600739","Humidity Sensor",2
+740,4,"A1-055","GVM202600740","Smoke Detector",2
+741,4,"A7-073","GVM202600741","Multi-Sensor",2
+742,4,"A1-051","GVM202600742","Gas Sensor",2
+743,4,"A4-101","GVM202600743","Smoke Detector",2
+744,4,"A6-063","GVM202600744","Multi-Sensor",2
+745,4,"A9-024","GVM202600745","Temperature Sensor",2
+746,4,"A16-051","GVM202600746","Temperature Sensor",2
+747,4,"A11-083","GVM202600747","Gas Sensor",2
+748,4,"A6-062","GVM202600748","Gas Sensor",2
+749,4,"A6-063","GVM202600749","Gas Sensor",2
+750,4,"A11-092","GVM202600750","Multi-Sensor",2
+751,4,"A16-085","GVM202600751","Multi-Sensor",2
+752,4,"A10-031","GVM202600752","Multi-Sensor",2
+753,4,"A19-052","GVM202600753","Temperature Sensor",2
+754,4,"A15-064","GVM202600754","Smoke Detector",2
+755,4,"A17-041","GVM202600755","Multi-Sensor",2
+756,4,"A4-021","GVM202600756","Humidity Sensor",2
+757,4,"A12-031","GVM202600757","Multi-Sensor",2
+758,4,"A18-015","GVM202600758","Humidity Sensor",2
+759,4,"A1-085","GVM202600759","Gas Sensor",2
+760,4,"A4-101","GVM202600760","Temperature Sensor",2
+761,4,"A13-023","GVM202600761","Humidity Sensor",2
+762,4,"A5-063","GVM202600762","Multi-Sensor",2
+763,4,"A14-074","GVM202600763","Smoke Detector",2
+764,4,"A13-051","GVM202600764","Humidity Sensor",2
+765,4,"A12-015","GVM202600765","Gas Sensor",2
+766,4,"A2-105","GVM202600766","Humidity Sensor",2
+767,4,"A13-083","GVM202600767","Temperature Sensor",2
+768,4,"A9-025","GVM202600768","Smoke Detector",2
+769,4,"A13-054","GVM202600769","Gas Sensor",2
+770,4,"A11-033","GVM202600770","Smoke Detector",2
+771,4,"A2-104","GVM202600771","Gas Sensor",2
+772,4,"A1-061","GVM202600772","Multi-Sensor",2
+773,4,"A13-041","GVM202600773","Humidity Sensor",2
+774,4,"A17-072","GVM202600774","Smoke Detector",2
+775,4,"A1-082","GVM202600775","Multi-Sensor",2
+776,4,"A15-074","GVM202600776","Smoke Detector",2
+777,4,"A15-102","GVM202600777","Smoke Detector",2
+778,4,"A20-041","GVM202600778","Multi-Sensor",2
+779,4,"A19-062","GVM202600779","Multi-Sensor",2
+780,4,"A12-091","GVM202600780","Multi-Sensor",2
+781,4,"A16-035","GVM202600781","Gas Sensor",2
+782,4,"A6-052","GVM202600782","Temperature Sensor",2
+783,4,"A8-053","GVM202600783","Multi-Sensor",2
+784,4,"A12-061","GVM202600784","Multi-Sensor",2
+785,4,"A5-091","GVM202600785","Gas Sensor",2
+786,4,"A4-104","GVM202600786","Temperature Sensor",2
+787,4,"A6-013","GVM202600787","Gas Sensor",2
+788,4,"A5-102","GVM202600788","Temperature Sensor",2
+789,4,"A20-061","GVM202600789","Temperature Sensor",2
+790,4,"A4-012","GVM202600790","Temperature Sensor",2
+791,4,"A15-052","GVM202600791","Smoke Detector",2
+792,4,"A6-084","GVM202600792","Gas Sensor",2
+793,4,"A9-084","GVM202600793","Humidity Sensor",2
+794,4,"A16-052","GVM202600794","Temperature Sensor",2
+795,4,"A12-105","GVM202600795","Smoke Detector",2
+796,4,"A15-063","GVM202600796","Gas Sensor",2
+797,4,"A14-092","GVM202600797","Temperature Sensor",2
+798,4,"A16-043","GVM202600798","Gas Sensor",2
+799,4,"A18-013","GVM202600799","Humidity Sensor",2
+800,4,"A4-073","GVM202600800","Gas Sensor",2
+801,5,"A19-071","GVM202600801","Temperature Sensor",2
+802,5,"A6-083","GVM202600802","Gas Sensor",2
+803,5,"A4-093","GVM202600803","Multi-Sensor",2
+804,5,"A13-052","GVM202600804","Humidity Sensor",2
+805,5,"A8-102","GVM202600805","Humidity Sensor",2
+806,5,"A2-025","GVM202600806","Humidity Sensor",2
+807,5,"A14-032","GVM202600807","Multi-Sensor",2
+808,5,"A6-083","GVM202600808","Temperature Sensor",2
+809,5,"A20-075","GVM202600809","Humidity Sensor",2
+810,5,"A16-022","GVM202600810","Multi-Sensor",2
+811,5,"A18-024","GVM202600811","Smoke Detector",2
+812,5,"A3-035","GVM202600812","Multi-Sensor",2
+813,5,"A12-055","GVM202600813","Gas Sensor",2
+814,5,"A10-104","GVM202600814","Temperature Sensor",2
+815,5,"A5-011","GVM202600815","Smoke Detector",2
+816,5,"A19-045","GVM202600816","Gas Sensor",2
+817,5,"A18-025","GVM202600817","Smoke Detector",2
+818,5,"A12-061","GVM202600818","Multi-Sensor",2
+819,5,"A2-063","GVM202600819","Gas Sensor",2
+820,5,"A1-052","GVM202600820","Humidity Sensor",2
+821,5,"A13-034","GVM202600821","Humidity Sensor",2
+822,5,"A7-083","GVM202600822","Humidity Sensor",2
+823,5,"A16-064","GVM202600823","Humidity Sensor",2
+824,5,"A20-074","GVM202600824","Gas Sensor",2
+825,5,"A10-082","GVM202600825","Humidity Sensor",2
+826,5,"A6-033","GVM202600826","Multi-Sensor",2
+827,5,"A16-093","GVM202600827","Humidity Sensor",2
+828,5,"A14-062","GVM202600828","Multi-Sensor",2
+829,5,"A12-062","GVM202600829","Humidity Sensor",2
+830,5,"A15-043","GVM202600830","Multi-Sensor",2
+831,5,"A13-052","GVM202600831","Smoke Detector",2
+832,5,"A5-054","GVM202600832","Temperature Sensor",2
+833,5,"A4-085","GVM202600833","Smoke Detector",2
+834,5,"A2-092","GVM202600834","Temperature Sensor",2
+835,5,"A1-102","GVM202600835","Temperature Sensor",2
+836,5,"A20-055","GVM202600836","Temperature Sensor",2
+837,5,"A14-073","GVM202600837","Temperature Sensor",2
+838,5,"A5-041","GVM202600838","Humidity Sensor",2
+839,5,"A15-012","GVM202600839","Multi-Sensor",2
+840,5,"A16-014","GVM202600840","Humidity Sensor",2
+841,5,"A2-052","GVM202600841","Temperature Sensor",2
+842,5,"A18-103","GVM202600842","Smoke Detector",2
+843,5,"A17-035","GVM202600843","Humidity Sensor",2
+844,5,"A1-033","GVM202600844","Smoke Detector",2
+845,5,"A5-014","GVM202600845","Multi-Sensor",2
+846,5,"A3-105","GVM202600846","Gas Sensor",2
+847,5,"A3-055","GVM202600847","Smoke Detector",2
+848,5,"A8-011","GVM202600848","Multi-Sensor",2
+849,5,"A14-092","GVM202600849","Multi-Sensor",2
+850,5,"A5-101","GVM202600850","Gas Sensor",2
+851,5,"A20-051","GVM202600851","Humidity Sensor",2
+852,5,"A13-014","GVM202600852","Temperature Sensor",2
+853,5,"A9-044","GVM202600853","Temperature Sensor",2
+854,5,"A18-104","GVM202600854","Temperature Sensor",2
+855,5,"A12-044","GVM202600855","Smoke Detector",2
+856,5,"A17-052","GVM202600856","Gas Sensor",2
+857,5,"A11-044","GVM202600857","Gas Sensor",2
+858,5,"A18-021","GVM202600858","Gas Sensor",2
+859,5,"A19-071","GVM202600859","Temperature Sensor",2
+860,5,"A7-055","GVM202600860","Multi-Sensor",2
+861,5,"A5-032","GVM202600861","Temperature Sensor",2
+862,5,"A18-043","GVM202600862","Temperature Sensor",2
+863,5,"A16-074","GVM202600863","Humidity Sensor",2
+864,5,"A17-015","GVM202600864","Smoke Detector",2
+865,5,"A18-085","GVM202600865","Temperature Sensor",2
+866,5,"A6-085","GVM202600866","Humidity Sensor",2
+867,5,"A11-052","GVM202600867","Smoke Detector",2
+868,5,"A9-095","GVM202600868","Multi-Sensor",2
+869,5,"A13-014","GVM202600869","Gas Sensor",2
+870,5,"A20-014","GVM202600870","Temperature Sensor",2
+871,5,"A1-035","GVM202600871","Gas Sensor",2
+872,5,"A6-084","GVM202600872","Smoke Detector",2
+873,5,"A16-031","GVM202600873","Temperature Sensor",2
+874,5,"A12-074","GVM202600874","Temperature Sensor",2
+875,5,"A10-014","GVM202600875","Temperature Sensor",2
+876,5,"A20-081","GVM202600876","Smoke Detector",2
+877,5,"A15-061","GVM202600877","Smoke Detector",2
+878,5,"A2-045","GVM202600878","Smoke Detector",2
+879,5,"A2-064","GVM202600879","Humidity Sensor",2
+880,5,"A8-061","GVM202600880","Gas Sensor",2
+881,5,"A6-081","GVM202600881","Multi-Sensor",2
+882,5,"A15-105","GVM202600882","Gas Sensor",2
+883,5,"A20-084","GVM202600883","Smoke Detector",2
+884,5,"A3-074","GVM202600884","Multi-Sensor",2
+885,5,"A10-061","GVM202600885","Temperature Sensor",2
+886,5,"A19-045","GVM202600886","Gas Sensor",2
+887,5,"A1-042","GVM202600887","Humidity Sensor",2
+888,5,"A18-045","GVM202600888","Temperature Sensor",2
+889,5,"A12-063","GVM202600889","Gas Sensor",2
+890,5,"A20-073","GVM202600890","Multi-Sensor",2
+891,5,"A5-074","GVM202600891","Gas Sensor",2
+892,5,"A2-084","GVM202600892","Gas Sensor",2
+893,5,"A19-032","GVM202600893","Smoke Detector",2
+894,5,"A14-024","GVM202600894","Multi-Sensor",2
+895,5,"A4-092","GVM202600895","Smoke Detector",2
+896,5,"A20-064","GVM202600896","Temperature Sensor",2
+897,5,"A5-061","GVM202600897","Humidity Sensor",2
+898,5,"A16-035","GVM202600898","Gas Sensor",2
+899,5,"A14-054","GVM202600899","Smoke Detector",2
+900,5,"A18-105","GVM202600900","Multi-Sensor",2
+901,5,"A15-011","GVM202600901","Multi-Sensor",2
+902,5,"A18-083","GVM202600902","Gas Sensor",2
+903,5,"A5-045","GVM202600903","Multi-Sensor",2
+904,5,"A4-015","GVM202600904","Humidity Sensor",2
+905,5,"A16-053","GVM202600905","Humidity Sensor",2
+906,5,"A7-101","GVM202600906","Smoke Detector",2
+907,5,"A18-104","GVM202600907","Humidity Sensor",2
+908,5,"A14-083","GVM202600908","Multi-Sensor",2
+909,5,"A16-045","GVM202600909","Temperature Sensor",2
+910,5,"A9-045","GVM202600910","Smoke Detector",2
+911,5,"A17-054","GVM202600911","Gas Sensor",2
+912,5,"A5-051","GVM202600912","Temperature Sensor",2
+913,5,"A14-064","GVM202600913","Humidity Sensor",2
+914,5,"A19-093","GVM202600914","Humidity Sensor",2
+915,5,"A8-084","GVM202600915","Humidity Sensor",2
+916,5,"A3-061","GVM202600916","Humidity Sensor",2
+917,5,"A3-083","GVM202600917","Humidity Sensor",2
+918,5,"A8-071","GVM202600918","Multi-Sensor",2
+919,5,"A20-082","GVM202600919","Gas Sensor",2
+920,5,"A6-041","GVM202600920","Smoke Detector",2
+921,5,"A12-074","GVM202600921","Smoke Detector",2
+922,5,"A12-062","GVM202600922","Multi-Sensor",2
+923,5,"A9-044","GVM202600923","Gas Sensor",2
+924,5,"A4-075","GVM202600924","Humidity Sensor",2
+925,5,"A13-083","GVM202600925","Gas Sensor",2
+926,5,"A4-042","GVM202600926","Temperature Sensor",2
+927,5,"A14-074","GVM202600927","Smoke Detector",2
+928,5,"A5-105","GVM202600928","Gas Sensor",2
+929,5,"A3-075","GVM202600929","Gas Sensor",2
+930,5,"A12-075","GVM202600930","Temperature Sensor",2
+931,5,"A17-033","GVM202600931","Gas Sensor",2
+932,5,"A17-071","GVM202600932","Smoke Detector",2
+933,5,"A9-073","GVM202600933","Temperature Sensor",2
+934,5,"A12-061","GVM202600934","Multi-Sensor",2
+935,5,"A20-055","GVM202600935","Humidity Sensor",2
+936,5,"A20-104","GVM202600936","Humidity Sensor",2
+937,5,"A10-093","GVM202600937","Smoke Detector",2
+938,5,"A18-032","GVM202600938","Gas Sensor",2
+939,5,"A6-071","GVM202600939","Smoke Detector",2
+940,5,"A15-072","GVM202600940","Temperature Sensor",2
+941,5,"A5-105","GVM202600941","Humidity Sensor",2
+942,5,"A9-073","GVM202600942","Gas Sensor",2
+943,5,"A3-091","GVM202600943","Gas Sensor",2
+944,5,"A18-012","GVM202600944","Humidity Sensor",2
+945,5,"A2-012","GVM202600945","Smoke Detector",2
+946,5,"A20-105","GVM202600946","Temperature Sensor",2
+947,5,"A5-044","GVM202600947","Multi-Sensor",2
+948,5,"A17-011","GVM202600948","Smoke Detector",2
+949,5,"A12-044","GVM202600949","Humidity Sensor",2
+950,5,"A4-021","GVM202600950","Temperature Sensor",2
+951,5,"A14-021","GVM202600951","Humidity Sensor",2
+952,5,"A13-092","GVM202600952","Humidity Sensor",2
+953,5,"A4-074","GVM202600953","Multi-Sensor",2
+954,5,"A12-074","GVM202600954","Gas Sensor",2
+955,5,"A1-093","GVM202600955","Temperature Sensor",2
+956,5,"A15-083","GVM202600956","Humidity Sensor",2
+957,5,"A15-033","GVM202600957","Temperature Sensor",2
+958,5,"A1-101","GVM202600958","Humidity Sensor",2
+959,5,"A4-023","GVM202600959","Temperature Sensor",2
+960,5,"A1-084","GVM202600960","Gas Sensor",2
+961,5,"A13-011","GVM202600961","Temperature Sensor",2
+962,5,"A9-084","GVM202600962","Multi-Sensor",2
+963,5,"A11-072","GVM202600963","Gas Sensor",2
+964,5,"A19-013","GVM202600964","Gas Sensor",2
+965,5,"A8-074","GVM202600965","Temperature Sensor",2
+966,5,"A16-014","GVM202600966","Multi-Sensor",2
+967,5,"A4-102","GVM202600967","Smoke Detector",2
+968,5,"A8-013","GVM202600968","Temperature Sensor",2
+969,5,"A3-015","GVM202600969","Gas Sensor",2
+970,5,"A6-054","GVM202600970","Multi-Sensor",2
+971,5,"A19-072","GVM202600971","Gas Sensor",2
+972,5,"A1-032","GVM202600972","Multi-Sensor",2
+973,5,"A16-074","GVM202600973","Temperature Sensor",2
+974,5,"A17-032","GVM202600974","Multi-Sensor",2
+975,5,"A1-041","GVM202600975","Humidity Sensor",2
+976,5,"A1-025","GVM202600976","Gas Sensor",2
+977,5,"A5-105","GVM202600977","Multi-Sensor",2
+978,5,"A6-105","GVM202600978","Multi-Sensor",2
+979,5,"A5-091","GVM202600979","Gas Sensor",2
+980,5,"A5-072","GVM202600980","Temperature Sensor",2
+981,5,"A9-023","GVM202600981","Temperature Sensor",2
+982,5,"A13-042","GVM202600982","Gas Sensor",2
+983,5,"A6-015","GVM202600983","Smoke Detector",2
+984,5,"A10-081","GVM202600984","Gas Sensor",2
+985,5,"A10-054","GVM202600985","Multi-Sensor",2
+986,5,"A14-044","GVM202600986","Multi-Sensor",2
+987,5,"A18-054","GVM202600987","Multi-Sensor",2
+988,5,"A15-021","GVM202600988","Smoke Detector",2
+989,5,"A13-032","GVM202600989","Gas Sensor",2
+990,5,"A10-044","GVM202600990","Humidity Sensor",2
+991,5,"A5-045","GVM202600991","Humidity Sensor",2
+992,5,"A11-033","GVM202600992","Smoke Detector",2
+993,5,"A16-022","GVM202600993","Gas Sensor",2
+994,5,"A8-024","GVM202600994","Humidity Sensor",2
+995,5,"A10-023","GVM202600995","Humidity Sensor",2
+996,5,"A14-084","GVM202600996","Temperature Sensor",2
+997,5,"A2-025","GVM202600997","Smoke Detector",2
+998,5,"A14-054","GVM202600998","Humidity Sensor",2
+999,5,"A7-095","GVM202600999","Multi-Sensor",2
+1000,5,"A4-082","GVM202601000","Smoke Detector",2
+1001,6,"A9-024","GVM202601001","Gas Sensor",2
+1002,6,"A3-095","GVM202601002","Gas Sensor",2
+1003,6,"A13-034","GVM202601003","Temperature Sensor",2
+1004,6,"A1-014","GVM202601004","Temperature Sensor",2
+1005,6,"A20-023","GVM202601005","Multi-Sensor",2
+1006,6,"A8-051","GVM202601006","Multi-Sensor",2
+1007,6,"A2-053","GVM202601007","Humidity Sensor",2
+1008,6,"A7-085","GVM202601008","Gas Sensor",2
+1009,6,"A13-073","GVM202601009","Multi-Sensor",2
+1010,6,"A2-103","GVM202601010","Gas Sensor",2
+1011,6,"A4-082","GVM202601011","Multi-Sensor",2
+1012,6,"A1-013","GVM202601012","Gas Sensor",2
+1013,6,"A15-051","GVM202601013","Humidity Sensor",2
+1014,6,"A18-061","GVM202601014","Temperature Sensor",2
+1015,6,"A12-021","GVM202601015","Gas Sensor",2
+1016,6,"A4-084","GVM202601016","Smoke Detector",2
+1017,6,"A9-063","GVM202601017","Gas Sensor",2
+1018,6,"A11-041","GVM202601018","Humidity Sensor",2
+1019,6,"A18-083","GVM202601019","Multi-Sensor",2
+1020,6,"A2-062","GVM202601020","Gas Sensor",2
+1021,6,"A6-023","GVM202601021","Smoke Detector",2
+1022,6,"A20-102","GVM202601022","Gas Sensor",2
+1023,6,"A20-104","GVM202601023","Gas Sensor",2
+1024,6,"A18-055","GVM202601024","Multi-Sensor",2
+1025,6,"A8-081","GVM202601025","Temperature Sensor",2
+1026,6,"A15-054","GVM202601026","Humidity Sensor",2
+1027,6,"A9-023","GVM202601027","Humidity Sensor",2
+1028,6,"A18-101","GVM202601028","Humidity Sensor",2
+1029,6,"A9-062","GVM202601029","Gas Sensor",2
+1030,6,"A15-101","GVM202601030","Gas Sensor",2
+1031,6,"A19-081","GVM202601031","Multi-Sensor",2
+1032,6,"A20-061","GVM202601032","Humidity Sensor",2
+1033,6,"A20-052","GVM202601033","Multi-Sensor",2
+1034,6,"A9-085","GVM202601034","Gas Sensor",2
+1035,6,"A13-052","GVM202601035","Humidity Sensor",2
+1036,6,"A3-031","GVM202601036","Multi-Sensor",2
+1037,6,"A9-064","GVM202601037","Multi-Sensor",2
+1038,6,"A1-105","GVM202601038","Gas Sensor",2
+1039,6,"A15-101","GVM202601039","Gas Sensor",2
+1040,6,"A19-084","GVM202601040","Temperature Sensor",2
+1041,6,"A3-073","GVM202601041","Gas Sensor",2
+1042,6,"A10-053","GVM202601042","Smoke Detector",2
+1043,6,"A20-022","GVM202601043","Gas Sensor",2
+1044,6,"A3-084","GVM202601044","Temperature Sensor",2
+1045,6,"A5-064","GVM202601045","Humidity Sensor",2
+1046,6,"A10-054","GVM202601046","Humidity Sensor",2
+1047,6,"A12-014","GVM202601047","Smoke Detector",2
+1048,6,"A15-064","GVM202601048","Multi-Sensor",2
+1049,6,"A18-074","GVM202601049","Gas Sensor",2
+1050,6,"A18-041","GVM202601050","Temperature Sensor",2
+1051,6,"A1-073","GVM202601051","Smoke Detector",2
+1052,6,"A8-033","GVM202601052","Humidity Sensor",2
+1053,6,"A5-081","GVM202601053","Multi-Sensor",2
+1054,6,"A14-071","GVM202601054","Humidity Sensor",2
+1055,6,"A18-095","GVM202601055","Smoke Detector",2
+1056,6,"A16-073","GVM202601056","Smoke Detector",2
+1057,6,"A15-092","GVM202601057","Temperature Sensor",2
+1058,6,"A19-052","GVM202601058","Temperature Sensor",2
+1059,6,"A6-063","GVM202601059","Temperature Sensor",2
+1060,6,"A20-101","GVM202601060","Smoke Detector",2
+1061,6,"A14-073","GVM202601061","Smoke Detector",2
+1062,6,"A12-095","GVM202601062","Gas Sensor",2
+1063,6,"A9-064","GVM202601063","Humidity Sensor",2
+1064,6,"A2-063","GVM202601064","Temperature Sensor",2
+1065,6,"A9-042","GVM202601065","Multi-Sensor",2
+1066,6,"A15-044","GVM202601066","Gas Sensor",2
+1067,6,"A19-034","GVM202601067","Gas Sensor",2
+1068,6,"A3-011","GVM202601068","Temperature Sensor",2
+1069,6,"A8-052","GVM202601069","Multi-Sensor",2
+1070,6,"A4-024","GVM202601070","Gas Sensor",2
+1071,6,"A5-023","GVM202601071","Smoke Detector",2
+1072,6,"A11-084","GVM202601072","Multi-Sensor",2
+1073,6,"A12-083","GVM202601073","Gas Sensor",2
+1074,6,"A11-043","GVM202601074","Multi-Sensor",2
+1075,6,"A8-011","GVM202601075","Multi-Sensor",2
+1076,6,"A16-101","GVM202601076","Multi-Sensor",2
+1077,6,"A10-024","GVM202601077","Humidity Sensor",2
+1078,6,"A19-084","GVM202601078","Humidity Sensor",2
+1079,6,"A10-013","GVM202601079","Humidity Sensor",2
+1080,6,"A8-093","GVM202601080","Humidity Sensor",2
+1081,6,"A5-011","GVM202601081","Humidity Sensor",2
+1082,6,"A15-093","GVM202601082","Smoke Detector",2
+1083,6,"A1-101","GVM202601083","Gas Sensor",2
+1084,6,"A9-032","GVM202601084","Gas Sensor",2
+1085,6,"A16-013","GVM202601085","Smoke Detector",2
+1086,6,"A13-083","GVM202601086","Gas Sensor",2
+1087,6,"A2-082","GVM202601087","Gas Sensor",2
+1088,6,"A11-074","GVM202601088","Temperature Sensor",2
+1089,6,"A10-023","GVM202601089","Gas Sensor",2
+1090,6,"A8-072","GVM202601090","Multi-Sensor",2
+1091,6,"A18-095","GVM202601091","Humidity Sensor",2
+1092,6,"A3-084","GVM202601092","Temperature Sensor",2
+1093,6,"A5-024","GVM202601093","Gas Sensor",2
+1094,6,"A3-091","GVM202601094","Gas Sensor",2
+1095,6,"A13-023","GVM202601095","Smoke Detector",2
+1096,6,"A6-092","GVM202601096","Gas Sensor",2
+1097,6,"A19-013","GVM202601097","Smoke Detector",2
+1098,6,"A3-053","GVM202601098","Temperature Sensor",2
+1099,6,"A12-084","GVM202601099","Gas Sensor",2
+1100,6,"A8-102","GVM202601100","Humidity Sensor",2
+1101,6,"A18-055","GVM202601101","Temperature Sensor",2
+1102,6,"A20-083","GVM202601102","Gas Sensor",2
+1103,6,"A1-075","GVM202601103","Gas Sensor",2
+1104,6,"A6-053","GVM202601104","Multi-Sensor",2
+1105,6,"A5-071","GVM202601105","Gas Sensor",2
+1106,6,"A8-021","GVM202601106","Multi-Sensor",2
+1107,6,"A6-051","GVM202601107","Humidity Sensor",2
+1108,6,"A18-025","GVM202601108","Multi-Sensor",2
+1109,6,"A12-071","GVM202601109","Multi-Sensor",2
+1110,6,"A14-054","GVM202601110","Multi-Sensor",2
+1111,6,"A2-033","GVM202601111","Humidity Sensor",2
+1112,6,"A16-084","GVM202601112","Multi-Sensor",2
+1113,6,"A3-104","GVM202601113","Temperature Sensor",2
+1114,6,"A7-011","GVM202601114","Smoke Detector",2
+1115,6,"A2-063","GVM202601115","Humidity Sensor",2
+1116,6,"A2-094","GVM202601116","Humidity Sensor",2
+1117,6,"A3-031","GVM202601117","Temperature Sensor",2
+1118,6,"A18-013","GVM202601118","Gas Sensor",2
+1119,6,"A4-083","GVM202601119","Gas Sensor",2
+1120,6,"A5-053","GVM202601120","Gas Sensor",2
+1121,6,"A5-024","GVM202601121","Multi-Sensor",2
+1122,6,"A14-064","GVM202601122","Smoke Detector",2
+1123,6,"A6-043","GVM202601123","Temperature Sensor",2
+1124,6,"A5-104","GVM202601124","Humidity Sensor",2
+1125,6,"A12-041","GVM202601125","Smoke Detector",2
+1126,6,"A7-093","GVM202601126","Humidity Sensor",2
+1127,6,"A1-073","GVM202601127","Temperature Sensor",2
+1128,6,"A4-074","GVM202601128","Gas Sensor",2
+1129,6,"A11-075","GVM202601129","Gas Sensor",2
+1130,6,"A13-015","GVM202601130","Temperature Sensor",2
+1131,6,"A6-104","GVM202601131","Gas Sensor",2
+1132,6,"A20-054","GVM202601132","Humidity Sensor",2
+1133,6,"A6-091","GVM202601133","Humidity Sensor",2
+1134,6,"A3-033","GVM202601134","Humidity Sensor",2
+1135,6,"A3-092","GVM202601135","Smoke Detector",2
+1136,6,"A6-075","GVM202601136","Multi-Sensor",2
+1137,6,"A6-011","GVM202601137","Temperature Sensor",2
+1138,6,"A18-105","GVM202601138","Humidity Sensor",2
+1139,6,"A13-061","GVM202601139","Humidity Sensor",2
+1140,6,"A18-045","GVM202601140","Multi-Sensor",2
+1141,6,"A15-091","GVM202601141","Humidity Sensor",2
+1142,6,"A20-025","GVM202601142","Multi-Sensor",2
+1143,6,"A3-044","GVM202601143","Gas Sensor",2
+1144,6,"A17-023","GVM202601144","Multi-Sensor",2
+1145,6,"A7-052","GVM202601145","Gas Sensor",2
+1146,6,"A4-052","GVM202601146","Humidity Sensor",2
+1147,6,"A13-011","GVM202601147","Humidity Sensor",2
+1148,6,"A15-015","GVM202601148","Smoke Detector",2
+1149,6,"A11-073","GVM202601149","Gas Sensor",2
+1150,6,"A15-103","GVM202601150","Multi-Sensor",2
+1151,6,"A11-023","GVM202601151","Humidity Sensor",2
+1152,6,"A18-054","GVM202601152","Smoke Detector",2
+1153,6,"A13-092","GVM202601153","Gas Sensor",2
+1154,6,"A2-085","GVM202601154","Gas Sensor",2
+1155,6,"A10-065","GVM202601155","Multi-Sensor",2
+1156,6,"A3-074","GVM202601156","Temperature Sensor",2
+1157,6,"A3-074","GVM202601157","Smoke Detector",2
+1158,6,"A19-054","GVM202601158","Temperature Sensor",2
+1159,6,"A11-095","GVM202601159","Smoke Detector",2
+1160,6,"A7-064","GVM202601160","Humidity Sensor",2
+1161,6,"A5-081","GVM202601161","Smoke Detector",2
+1162,6,"A19-033","GVM202601162","Temperature Sensor",2
+1163,6,"A15-022","GVM202601163","Temperature Sensor",2
+1164,6,"A3-042","GVM202601164","Smoke Detector",2
+1165,6,"A10-051","GVM202601165","Smoke Detector",2
+1166,6,"A3-045","GVM202601166","Temperature Sensor",2
+1167,6,"A10-092","GVM202601167","Multi-Sensor",2
+1168,6,"A19-041","GVM202601168","Gas Sensor",2
+1169,6,"A17-043","GVM202601169","Humidity Sensor",2
+1170,6,"A11-031","GVM202601170","Gas Sensor",2
+1171,6,"A5-055","GVM202601171","Gas Sensor",2
+1172,6,"A9-044","GVM202601172","Gas Sensor",2
+1173,6,"A16-095","GVM202601173","Temperature Sensor",2
+1174,6,"A18-044","GVM202601174","Gas Sensor",2
+1175,6,"A8-021","GVM202601175","Smoke Detector",2
+1176,6,"A2-031","GVM202601176","Temperature Sensor",2
+1177,6,"A10-045","GVM202601177","Humidity Sensor",2
+1178,6,"A2-072","GVM202601178","Humidity Sensor",2
+1179,6,"A16-105","GVM202601179","Gas Sensor",2
+1180,6,"A18-093","GVM202601180","Humidity Sensor",2
+1181,6,"A1-104","GVM202601181","Humidity Sensor",2
+1182,6,"A16-025","GVM202601182","Gas Sensor",2
+1183,6,"A12-022","GVM202601183","Temperature Sensor",2
+1184,6,"A11-092","GVM202601184","Gas Sensor",2
+1185,6,"A7-054","GVM202601185","Gas Sensor",2
+1186,6,"A9-021","GVM202601186","Gas Sensor",2
+1187,6,"A18-031","GVM202601187","Gas Sensor",2
+1188,6,"A18-104","GVM202601188","Temperature Sensor",2
+1189,6,"A14-015","GVM202601189","Multi-Sensor",2
+1190,6,"A10-084","GVM202601190","Gas Sensor",2
+1191,6,"A13-091","GVM202601191","Temperature Sensor",2
+1192,6,"A11-074","GVM202601192","Gas Sensor",2
+1193,6,"A4-063","GVM202601193","Temperature Sensor",2
+1194,6,"A1-035","GVM202601194","Gas Sensor",2
+1195,6,"A16-013","GVM202601195","Multi-Sensor",2
+1196,6,"A1-014","GVM202601196","Smoke Detector",2
+1197,6,"A1-092","GVM202601197","Temperature Sensor",2
+1198,6,"A3-052","GVM202601198","Temperature Sensor",2
+1199,6,"A1-105","GVM202601199","Temperature Sensor",2
+1200,6,"A13-024","GVM202601200","Gas Sensor",2
+1201,7,"A18-071","GVM202601201","Gas Sensor",2
+1202,7,"A19-105","GVM202601202","Smoke Detector",2
+1203,7,"A9-101","GVM202601203","Gas Sensor",2
+1204,7,"A5-073","GVM202601204","Multi-Sensor",2
+1205,7,"A14-053","GVM202601205","Humidity Sensor",2
+1206,7,"A5-013","GVM202601206","Temperature Sensor",2
+1207,7,"A10-074","GVM202601207","Smoke Detector",2
+1208,7,"A3-034","GVM202601208","Multi-Sensor",2
+1209,7,"A4-024","GVM202601209","Multi-Sensor",2
+1210,7,"A5-104","GVM202601210","Multi-Sensor",2
+1211,7,"A5-064","GVM202601211","Humidity Sensor",2
+1212,7,"A4-103","GVM202601212","Temperature Sensor",2
+1213,7,"A2-102","GVM202601213","Smoke Detector",2
+1214,7,"A17-061","GVM202601214","Smoke Detector",2
+1215,7,"A7-021","GVM202601215","Temperature Sensor",2
+1216,7,"A15-103","GVM202601216","Gas Sensor",2
+1217,7,"A19-104","GVM202601217","Smoke Detector",2
+1218,7,"A6-031","GVM202601218","Humidity Sensor",2
+1219,7,"A6-071","GVM202601219","Temperature Sensor",2
+1220,7,"A17-042","GVM202601220","Multi-Sensor",2
+1221,7,"A2-103","GVM202601221","Smoke Detector",2
+1222,7,"A15-041","GVM202601222","Temperature Sensor",2
+1223,7,"A1-063","GVM202601223","Humidity Sensor",2
+1224,7,"A18-014","GVM202601224","Humidity Sensor",2
+1225,7,"A18-051","GVM202601225","Temperature Sensor",2
+1226,7,"A16-052","GVM202601226","Smoke Detector",2
+1227,7,"A7-022","GVM202601227","Temperature Sensor",2
+1228,7,"A13-095","GVM202601228","Smoke Detector",2
+1229,7,"A5-072","GVM202601229","Humidity Sensor",2
+1230,7,"A2-105","GVM202601230","Multi-Sensor",2
+1231,7,"A11-044","GVM202601231","Smoke Detector",2
+1232,7,"A5-085","GVM202601232","Smoke Detector",2
+1233,7,"A15-015","GVM202601233","Humidity Sensor",2
+1234,7,"A3-064","GVM202601234","Temperature Sensor",2
+1235,7,"A13-042","GVM202601235","Temperature Sensor",2
+1236,7,"A12-074","GVM202601236","Temperature Sensor",2
+1237,7,"A2-015","GVM202601237","Humidity Sensor",2
+1238,7,"A18-034","GVM202601238","Temperature Sensor",2
+1239,7,"A13-061","GVM202601239","Temperature Sensor",2
+1240,7,"A12-034","GVM202601240","Humidity Sensor",2
+1241,7,"A18-085","GVM202601241","Temperature Sensor",2
+1242,7,"A17-085","GVM202601242","Smoke Detector",2
+1243,7,"A15-035","GVM202601243","Temperature Sensor",2
+1244,7,"A6-065","GVM202601244","Smoke Detector",2
+1245,7,"A9-022","GVM202601245","Temperature Sensor",2
+1246,7,"A3-063","GVM202601246","Multi-Sensor",2
+1247,7,"A2-035","GVM202601247","Temperature Sensor",2
+1248,7,"A12-023","GVM202601248","Temperature Sensor",2
+1249,7,"A16-055","GVM202601249","Temperature Sensor",2
+1250,7,"A8-055","GVM202601250","Gas Sensor",2
+1251,7,"A7-025","GVM202601251","Gas Sensor",2
+1252,7,"A16-082","GVM202601252","Humidity Sensor",2
+1253,7,"A4-054","GVM202601253","Gas Sensor",2
+1254,7,"A11-014","GVM202601254","Multi-Sensor",2
+1255,7,"A12-022","GVM202601255","Multi-Sensor",2
+1256,7,"A12-085","GVM202601256","Multi-Sensor",2
+1257,7,"A9-093","GVM202601257","Temperature Sensor",2
+1258,7,"A18-084","GVM202601258","Smoke Detector",2
+1259,7,"A9-085","GVM202601259","Humidity Sensor",2
+1260,7,"A10-085","GVM202601260","Multi-Sensor",2
+1261,7,"A19-093","GVM202601261","Gas Sensor",2
+1262,7,"A7-064","GVM202601262","Humidity Sensor",2
+1263,7,"A13-092","GVM202601263","Temperature Sensor",2
+1264,7,"A13-052","GVM202601264","Temperature Sensor",2
+1265,7,"A14-042","GVM202601265","Temperature Sensor",2
+1266,7,"A9-053","GVM202601266","Temperature Sensor",2
+1267,7,"A20-092","GVM202601267","Smoke Detector",2
+1268,7,"A20-104","GVM202601268","Multi-Sensor",2
+1269,7,"A16-101","GVM202601269","Gas Sensor",2
+1270,7,"A15-034","GVM202601270","Temperature Sensor",2
+1271,7,"A16-082","GVM202601271","Temperature Sensor",2
+1272,7,"A11-083","GVM202601272","Smoke Detector",2
+1273,7,"A13-025","GVM202601273","Multi-Sensor",2
+1274,7,"A7-101","GVM202601274","Smoke Detector",2
+1275,7,"A8-061","GVM202601275","Temperature Sensor",2
+1276,7,"A18-092","GVM202601276","Gas Sensor",2
+1277,7,"A3-055","GVM202601277","Smoke Detector",2
+1278,7,"A16-045","GVM202601278","Humidity Sensor",2
+1279,7,"A11-055","GVM202601279","Temperature Sensor",2
+1280,7,"A14-044","GVM202601280","Gas Sensor",2
+1281,7,"A15-023","GVM202601281","Multi-Sensor",2
+1282,7,"A11-075","GVM202601282","Gas Sensor",2
+1283,7,"A18-032","GVM202601283","Gas Sensor",2
+1284,7,"A3-035","GVM202601284","Humidity Sensor",2
+1285,7,"A8-071","GVM202601285","Smoke Detector",2
+1286,7,"A10-085","GVM202601286","Multi-Sensor",2
+1287,7,"A4-035","GVM202601287","Gas Sensor",2
+1288,7,"A1-073","GVM202601288","Smoke Detector",2
+1289,7,"A19-091","GVM202601289","Multi-Sensor",2
+1290,7,"A6-032","GVM202601290","Temperature Sensor",2
+1291,7,"A2-064","GVM202601291","Multi-Sensor",2
+1292,7,"A2-055","GVM202601292","Smoke Detector",2
+1293,7,"A9-071","GVM202601293","Temperature Sensor",2
+1294,7,"A17-015","GVM202601294","Temperature Sensor",2
+1295,7,"A15-083","GVM202601295","Smoke Detector",2
+1296,7,"A15-062","GVM202601296","Gas Sensor",2
+1297,7,"A6-024","GVM202601297","Gas Sensor",2
+1298,7,"A20-061","GVM202601298","Smoke Detector",2
+1299,7,"A13-013","GVM202601299","Temperature Sensor",2
+1300,7,"A17-042","GVM202601300","Temperature Sensor",2
+1301,7,"A20-102","GVM202601301","Gas Sensor",2
+1302,7,"A1-025","GVM202601302","Humidity Sensor",2
+1303,7,"A3-011","GVM202601303","Humidity Sensor",2
+1304,7,"A19-075","GVM202601304","Multi-Sensor",2
+1305,7,"A17-104","GVM202601305","Gas Sensor",2
+1306,7,"A15-083","GVM202601306","Humidity Sensor",2
+1307,7,"A4-011","GVM202601307","Humidity Sensor",2
+1308,7,"A11-062","GVM202601308","Temperature Sensor",2
+1309,7,"A4-025","GVM202601309","Smoke Detector",2
+1310,7,"A16-023","GVM202601310","Gas Sensor",2
+1311,7,"A1-095","GVM202601311","Smoke Detector",2
+1312,7,"A11-051","GVM202601312","Humidity Sensor",2
+1313,7,"A16-094","GVM202601313","Temperature Sensor",2
+1314,7,"A20-065","GVM202601314","Smoke Detector",2
+1315,7,"A2-063","GVM202601315","Gas Sensor",2
+1316,7,"A5-082","GVM202601316","Humidity Sensor",2
+1317,7,"A14-055","GVM202601317","Smoke Detector",2
+1318,7,"A20-102","GVM202601318","Temperature Sensor",2
+1319,7,"A12-022","GVM202601319","Humidity Sensor",2
+1320,7,"A2-072","GVM202601320","Humidity Sensor",2
+1321,7,"A8-021","GVM202601321","Gas Sensor",2
+1322,7,"A20-065","GVM202601322","Multi-Sensor",2
+1323,7,"A1-074","GVM202601323","Humidity Sensor",2
+1324,7,"A4-014","GVM202601324","Humidity Sensor",2
+1325,7,"A11-022","GVM202601325","Humidity Sensor",2
+1326,7,"A9-054","GVM202601326","Multi-Sensor",2
+1327,7,"A6-033","GVM202601327","Smoke Detector",2
+1328,7,"A17-035","GVM202601328","Temperature Sensor",2
+1329,7,"A6-045","GVM202601329","Multi-Sensor",2
+1330,7,"A16-052","GVM202601330","Multi-Sensor",2
+1331,7,"A1-025","GVM202601331","Multi-Sensor",2
+1332,7,"A2-092","GVM202601332","Multi-Sensor",2
+1333,7,"A6-062","GVM202601333","Gas Sensor",2
+1334,7,"A5-045","GVM202601334","Humidity Sensor",2
+1335,7,"A5-051","GVM202601335","Temperature Sensor",2
+1336,7,"A14-104","GVM202601336","Humidity Sensor",2
+1337,7,"A2-024","GVM202601337","Gas Sensor",2
+1338,7,"A2-092","GVM202601338","Multi-Sensor",2
+1339,7,"A4-105","GVM202601339","Smoke Detector",2
+1340,7,"A10-065","GVM202601340","Smoke Detector",2
+1341,7,"A18-055","GVM202601341","Humidity Sensor",2
+1342,7,"A13-043","GVM202601342","Multi-Sensor",2
+1343,7,"A14-044","GVM202601343","Gas Sensor",2
+1344,7,"A1-015","GVM202601344","Temperature Sensor",2
+1345,7,"A6-102","GVM202601345","Humidity Sensor",2
+1346,7,"A8-032","GVM202601346","Temperature Sensor",2
+1347,7,"A15-054","GVM202601347","Gas Sensor",2
+1348,7,"A2-023","GVM202601348","Smoke Detector",2
+1349,7,"A9-095","GVM202601349","Smoke Detector",2
+1350,7,"A12-011","GVM202601350","Temperature Sensor",2
+1351,7,"A6-022","GVM202601351","Smoke Detector",2
+1352,7,"A17-031","GVM202601352","Humidity Sensor",2
+1353,7,"A19-083","GVM202601353","Gas Sensor",2
+1354,7,"A17-103","GVM202601354","Smoke Detector",2
+1355,7,"A3-081","GVM202601355","Humidity Sensor",2
+1356,7,"A13-101","GVM202601356","Temperature Sensor",2
+1357,7,"A5-064","GVM202601357","Gas Sensor",2
+1358,7,"A14-025","GVM202601358","Humidity Sensor",2
+1359,7,"A6-023","GVM202601359","Multi-Sensor",2
+1360,7,"A8-014","GVM202601360","Smoke Detector",2
+1361,7,"A20-081","GVM202601361","Smoke Detector",2
+1362,7,"A4-103","GVM202601362","Smoke Detector",2
+1363,7,"A7-015","GVM202601363","Humidity Sensor",2
+1364,7,"A2-091","GVM202601364","Temperature Sensor",2
+1365,7,"A16-051","GVM202601365","Humidity Sensor",2
+1366,7,"A6-024","GVM202601366","Temperature Sensor",2
+1367,7,"A4-045","GVM202601367","Multi-Sensor",2
+1368,7,"A4-012","GVM202601368","Gas Sensor",2
+1369,7,"A20-083","GVM202601369","Gas Sensor",2
+1370,7,"A20-053","GVM202601370","Multi-Sensor",2
+1371,7,"A12-013","GVM202601371","Smoke Detector",2
+1372,7,"A18-043","GVM202601372","Gas Sensor",2
+1373,7,"A11-073","GVM202601373","Temperature Sensor",2
+1374,7,"A11-065","GVM202601374","Humidity Sensor",2
+1375,7,"A7-061","GVM202601375","Humidity Sensor",2
+1376,7,"A19-071","GVM202601376","Multi-Sensor",2
+1377,7,"A7-043","GVM202601377","Gas Sensor",2
+1378,7,"A11-061","GVM202601378","Multi-Sensor",2
+1379,7,"A4-054","GVM202601379","Gas Sensor",2
+1380,7,"A5-033","GVM202601380","Smoke Detector",2
+1381,7,"A18-021","GVM202601381","Temperature Sensor",2
+1382,7,"A10-072","GVM202601382","Temperature Sensor",2
+1383,7,"A6-015","GVM202601383","Gas Sensor",2
+1384,7,"A13-103","GVM202601384","Temperature Sensor",2
+1385,7,"A20-074","GVM202601385","Humidity Sensor",2
+1386,7,"A4-054","GVM202601386","Humidity Sensor",2
+1387,7,"A3-103","GVM202601387","Gas Sensor",2
+1388,7,"A10-085","GVM202601388","Smoke Detector",2
+1389,7,"A4-031","GVM202601389","Temperature Sensor",2
+1390,7,"A13-085","GVM202601390","Gas Sensor",2
+1391,7,"A20-023","GVM202601391","Temperature Sensor",2
+1392,7,"A16-062","GVM202601392","Humidity Sensor",2
+1393,7,"A14-093","GVM202601393","Multi-Sensor",2
+1394,7,"A2-033","GVM202601394","Multi-Sensor",2
+1395,7,"A2-052","GVM202601395","Temperature Sensor",2
+1396,7,"A9-043","GVM202601396","Gas Sensor",2
+1397,7,"A1-014","GVM202601397","Gas Sensor",2
+1398,7,"A15-091","GVM202601398","Smoke Detector",2
+1399,7,"A14-035","GVM202601399","Smoke Detector",2
+1400,7,"A10-033","GVM202601400","Humidity Sensor",2
+
+
+1411,1,"A1-019","MSS123456789","sensor",2
+1412,1,"A1-020","MSS123456789","sensor",2
+1413,1,"A1-021","MSS123456789","sensor",2
+1414,1,"A1-023","GVM202601401","sensor",2
+1415,1,"A1-026","GVM202601402","sensor",2
+1416,1,"A1-027","GVM202601403","sensor",2
+1417,1,"A1-028","GVM202601404","sensor",2
+1418,1,"A1-029","GVM202601405","sensor",2
+1420,1,"A1-030","GVM202601406","sensor",2
+1421,1,"A1-031","GVM202601407","sensor",2

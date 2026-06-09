@@ -1,0 +1,51 @@
+Alert ID,Date,Time,Device ID,Flat No,Alert Type,Severity,Status,Description,Detected Value,Unit,Priority,Acknowledged By,Resolved At
+1,2026-05-12,09:55:55,GVM202601487,A20-901,Low Battery,Medium,Resolved,Low Battery detected in flat A20-901,17.30,°C,Low,,
+2,2026-04-22,19:03:19,GVM202601487,A18-903,Smoke Detected,High,Active,Smoke Detected detected in flat A18-903,1.65,%,Low,Admin User 3,
+3,2026-05-07,11:40:30,GVM202601487,A14-201,Smoke Detected,High,Active,Smoke Detected detected in flat A14-201,47.81,°C,Low,Admin User 3,
+4,2026-05-22,11:56:35,GVM202601487,A15-704,Gas Leak,High,Resolved,Gas Leak detected in flat A15-704,72.07,ppm,Low,,
+5,2026-04-25,00:37:09,GVM202601487,A7-404,Humidity Alert,Low,Resolved,Humidity Alert detected in flat A7-404,49.60,V,Low,Admin User 3,
+6,2026-05-19,02:24:06,GVM202601487,A11-205,Humidity Alert,Low,Resolved,Humidity Alert detected in flat A11-205,71.52,dB,Critical,Admin User 3,
+7,2026-05-14,08:10:07,GVM202601487,A19-103,Gas Leak,High,Resolved,Gas Leak detected in flat A19-103,45.58,ppm,Low,Admin User 2,
+8,2026-05-21,03:52:59,GVM202601487,A5-401,Low Battery,Medium,Active,Low Battery detected in flat A5-401,51.28,%,Critical,Admin User 5,
+9,2026-05-11,14:45:05,GVM202601487,A5-1001,Gas Leak,High,Active,Gas Leak detected in flat A5-1001,23.73,°C,Medium,,
+10,2026-04-28,00:46:06,GVM202601487,A9-1003,Smoke Detected,High,Active,Smoke Detected detected in flat A9-1003,25.74,%,Low,Admin User 1,
+11,2026-05-18,16:24:24,GVM202601487,A8-803,Low Battery,Medium,Active,Low Battery detected in flat A8-803,22.68,°C,High,Admin User 5,
+12,2026-05-14,19:15:09,GVM202601487,A6-104,Humidity Alert,Low,Active,Humidity Alert detected in flat A6-104,62.76,%,High,,
+13,2026-05-19,22:40:09,GVM202601487,A7-201,Device Offline,Medium,Active,Device Offline detected in flat A7-201,3.66,°C,High,Admin User 2,
+14,2026-05-10,03:30:06,GVM202601487,A15-203,Humidity Alert,Low,Active,Humidity Alert detected in flat A15-203,48.74,dB,Critical,Admin User 1,
+15,2026-04-28,14:10:40,GVM202601487,A5-1004,Maintenance Required,Low,Active,Maintenance Required detected in flat A5-1004,19.75,V,Medium,Admin User 5,
+16,2026-05-07,07:55:42,GVM202601487,A17-805,Low Battery,Medium,Resolved,Low Battery detected in flat A17-805,77.62,ppm,High,Admin User 2,Sun May 17 2026 23:35:57 GMT+0530 (India Standard Time)
+17,2026-05-20,19:40:39,GVM202601487,A20-404,Humidity Alert,Low,Active,Humidity Alert detected in flat A20-404,30.01,ppm,Critical,Admin User 1,
+18,2026-04-22,17:19:22,GVM202601487,A14-105,Maintenance Required,Low,Active,Maintenance Required detected in flat A14-105,87.99,%,Medium,Admin User 2,
+19,2026-05-06,11:05:09,GVM202601487,A10-101,High Temperature,High,Active,High Temperature detected in flat A10-101,48.14,°C,Medium,,
+20,2026-05-18,06:40:55,GVM202601487,A13-201,Humidity Alert,Low,Active,Humidity Alert detected in flat A13-201,93.67,V,Critical,,
+21,2026-04-25,21:49:22,GVM202601487,A15-1005,Humidity Alert,Low,Active,Humidity Alert detected in flat A15-1005,87.11,V,Low,Admin User 4,
+22,2026-05-19,11:04:27,GVM202601487,A9-805,High Temperature,High,Active,High Temperature detected in flat A9-805,56.50,V,High,Admin User 4,
+23,2026-05-17,02:11:58,GVM202601487,A4-402,Device Offline,Medium,Resolved,Device Offline detected in flat A4-402,58.52,°C,Critical,Admin User 2,
+24,2026-05-17,08:49:26,GVM202601487,A11-703,Low Battery,Medium,Active,Low Battery detected in flat A11-703,73.70,ppm,Critical,,Wed May 20 2026 19:22:40 GMT+0530 (India Standard Time)
+25,2026-05-06,06:09:29,GVM202601487,A18-1001,Smoke Detected,High,Resolved,Smoke Detected detected in flat A18-1001,52.65,V,Low,Admin User 3,
+26,2026-05-02,19:20:35,GVM202601487,A12-802,Smoke Detected,High,Resolved,Smoke Detected detected in flat A12-802,24.94,ppm,Critical,Admin User 1,
+27,2026-05-14,14:29:54,GVM202601487,A12-803,High Temperature,High,Resolved,High Temperature detected in flat A12-803,81.35,V,Medium,,Tue May 19 2026 16:53:36 GMT+0530 (India Standard Time)
+28,2026-04-26,13:37:53,GVM202601487,A17-504,Low Battery,Medium,Resolved,Low Battery detected in flat A17-504,63.78,°C,High,,
+29,2026-05-03,06:30:09,GVM202601487,A2-904,Device Offline,Medium,Active,Device Offline detected in flat A2-904,83.58,ppm,Low,Admin User 2,
+30,2026-04-28,00:52:38,GVM202601487,A3-702,Maintenance Required,Low,Active,Maintenance Required detected in flat A3-702,98.91,ppm,High,Admin User 5,Mon May 18 2026 02:53:46 GMT+0530 (India Standard Time)
+31,2026-05-14,03:16:51,GVM202601487,A1-304,Smoke Detected,High,Active,Smoke Detected detected in flat A1-304,54.86,V,High,Admin User 5,Mon May 18 2026 23:55:00 GMT+0530 (India Standard Time)
+32,2026-05-15,23:26:14,GVM202601487,A15-501,Gas Leak,High,Resolved,Gas Leak detected in flat A15-501,42.06,°C,Critical,Admin User 5,
+33,2026-04-22,13:40:11,GVM202601487,A8-803,Smoke Detected,High,Resolved,Smoke Detected detected in flat A8-803,3.39,dB,High,,Thu May 21 2026 09:48:22 GMT+0530 (India Standard Time)
+34,2026-05-09,21:52:36,GVM202601487,A17-205,High Temperature,High,Resolved,High Temperature detected in flat A17-205,18.62,%,Medium,Admin User 5,Tue May 19 2026 04:37:54 GMT+0530 (India Standard Time)
+35,2026-05-02,05:40:10,GVM202601487,A17-805,Smoke Detected,High,Resolved,Smoke Detected detected in flat A17-805,91.46,ppm,High,Admin User 3,
+36,2026-05-03,03:49:10,GVM202601487,A3-205,Device Offline,Medium,Resolved,Device Offline detected in flat A3-205,11.17,%,High,,
+37,2026-05-05,06:51:16,GVM202601487,A18-901,Low Battery,Medium,Resolved,Low Battery detected in flat A18-901,10.72,dB,Medium,Admin User 4,Thu May 21 2026 15:59:25 GMT+0530 (India Standard Time)
+38,2026-04-22,20:57:53,GVM202601487,A3-404,Smoke Detected,High,Resolved,Smoke Detected detected in flat A3-404,52.40,ppm,Critical,,Sun May 17 2026 14:20:11 GMT+0530 (India Standard Time)
+39,2026-04-24,00:41:35,GVM202601487,A7-902,Connection Lost,Medium,Resolved,Connection Lost detected in flat A7-902,8.74,ppm,Medium,,
+40,2026-05-16,20:21:18,GVM202601487,A2-805,Device Offline,Medium,Active,Device Offline detected in flat A2-805,96.75,ppm,Low,,
+41,2026-05-03,10:05:49,GVM202601487,A2-1001,Maintenance Required,Low,Resolved,Maintenance Required detected in flat A2-1001,48.60,V,Low,,
+42,2026-05-12,23:22:43,GVM202601487,A14-503,Device Offline,Medium,Active,Device Offline detected in flat A14-503,57.84,dB,Low,,
+43,2026-05-20,18:29:12,GVM202601487,A5-702,Connection Lost,Medium,Resolved,Connection Lost detected in flat A5-702,78.81,ppm,High,Admin User 3,
+44,2026-05-22,11:04:08,GVM202601487,A2-104,Low Battery,Medium,Resolved,Low Battery detected in flat A2-104,40.45,dB,Critical,,
+45,2026-04-28,08:01:31,GVM202601487,A11-802,Humidity Alert,Low,Active,Humidity Alert detected in flat A11-802,44.57,V,Critical,,
+46,2026-05-13,18:27:10,GVM202601487,A7-201,Smoke Detected,High,Active,Smoke Detected detected in flat A7-201,23.99,ppm,Medium,Admin User 4,
+47,2026-05-04,00:30:55,GVM202601487,A15-301,Gas Leak,High,Active,Gas Leak detected in flat A15-301,36.99,dB,Low,Admin User 3,
+48,2026-05-18,06:29:21,GVM202601487,A16-301,Gas Leak,High,Resolved,Gas Leak detected in flat A16-301,9.00,°C,Medium,,Wed May 20 2026 23:09:42 GMT+0530 (India Standard Time)
+49,2026-05-03,22:07:01,GVM202601487,A9-501,Connection Lost,Medium,Active,Connection Lost detected in flat A9-501,1.69,V,High,Admin User 3,
+50,2026-05-21,21:18:47,GVM202601487,A16-601,High Temperature,High,Active,High Temperature detected in flat A16-601,16.23,°C,Medium,,

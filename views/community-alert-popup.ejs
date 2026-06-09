@@ -1,0 +1,181 @@
+<% if (typeof community !== 'undefined' && community && (community.email === 'customer8@meghasmart.com' || community.email === 'customer9@meghasmart.com')) { %>
+<div id="communityAlertPopup" class="community-alert-popup" style="display: none;">
+    <audio id="communityAlertAudio" src="/buzzer.mp3" preload="auto"></audio>
+    <div class="community-alert-inner" onclick="communityAlertPopupClicked()">
+        <div class="community-alert-icon">🚨</div>
+        <div class="community-alert-copy">
+            <div class="community-alert-title">Community alert detected</div>
+            <div class="community-alert-message" id="communityAlertMessage">New alert active</div>
+        </div>
+        <div class="community-alert-action">View tickets</div>
+    </div>
+</div>
+<style>
+    .community-alert-popup {
+        position: fixed;
+        right: 24px;
+        bottom: 24px;
+        z-index: 9999;
+        min-width: 320px;
+        max-width: 380px;
+        border-radius: 20px;
+        overflow: hidden;
+        background: rgba(255, 255, 255, 0.98);
+        border: 1px solid rgba(148, 163, 184, 0.24);
+        box-shadow: 0 30px 80px rgba(15, 23, 42, 0.18);
+        display: none;
+        color: #0f172a;
+        cursor: pointer;
+        animation: communityAlertPopupIn 0.32s ease-out;
+    }
+    .community-alert-inner {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        padding: 18px 20px;
+    }
+    .community-alert-icon {
+        width: 46px;
+        height: 46px;
+        border-radius: 16px;
+        display: grid;
+        place-items: center;
+        background: linear-gradient(135deg, #fef3c7, #fca5a5);
+        font-size: 22px;
+    }
+    .community-alert-copy {
+        flex: 1;
+        min-width: 0;
+    }
+    .community-alert-title {
+        font-size: 15px;
+        font-weight: 700;
+        color: #111827;
+        margin-bottom: 6px;
+    }
+    .community-alert-message {
+        font-size: 13px;
+        color: #475569;
+        line-height: 1.5;
+        word-break: break-word;
+    }
+    .community-alert-action {
+        font-size: 13px;
+        font-weight: 700;
+        color: #1d4ed8;
+        background: rgba(59, 130, 246, 0.1);
+        border-radius: 999px;
+        padding: 10px 14px;
+        white-space: nowrap;
+    }
+    @keyframes communityAlertPopupIn {
+        from {
+            opacity: 0;
+            transform: translateY(18px) scale(0.98);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
+    }
+</style>
+<script>
+(function() {
+    if (window.__communityAlertPopupInitialized) return;
+    window.__communityAlertPopupInitialized = true;
+
+    const popup = document.getElementById('communityAlertPopup');
+    const alertMessage = document.getElementById('communityAlertMessage');
+    const alertAudio = document.getElementById('communityAlertAudio');
+    let previousAlertCount = 0;
+    let soundTimeout = null;
+    let hideTimeout = null;
+
+    function stopCommunityAlertSound() {
+        if (soundTimeout) {
+            clearTimeout(soundTimeout);
+            soundTimeout = null;
+        }
+        if (alertAudio && !alertAudio.paused) {
+            alertAudio.pause();
+            alertAudio.currentTime = 0;
+        }
+    }
+
+    function playCommunityAlertSound() {
+        if (!alertAudio) return;
+        alertAudio.currentTime = 0;
+        alertAudio.play().catch(() => {});
+        if (soundTimeout) {
+            clearTimeout(soundTimeout);
+        }
+        soundTimeout = setTimeout(stopCommunityAlertSound, 7000);
+    }
+
+    function showCommunityAlertPopup(message) {
+        if (!popup) return;
+        if (message && alertMessage) {
+            alertMessage.textContent = message;
+        }
+        popup.style.display = 'flex';
+        playCommunityAlertSound();
+        if (hideTimeout) {
+            clearTimeout(hideTimeout);
+        }
+        hideTimeout = setTimeout(hideCommunityAlertPopup, 12000);
+    }
+
+    function hideCommunityAlertPopup() {
+        if (!popup) return;
+        popup.style.display = 'none';
+        stopCommunityAlertSound();
+        if (hideTimeout) {
+            clearTimeout(hideTimeout);
+            hideTimeout = null;
+        }
+    }
+
+    window.communityAlertPopupClicked = function() {
+        window.location.href = '/community/tickets';
+    };
+
+    function refreshCommunityAlertStatus() {
+        fetch('/api/community/dashboard/stats', {
+            credentials: 'same-origin'
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (!data || !data.devices) return;
+            const alertDevices = data.devices.filter(device => device.status === 3 || device.status === 5);
+            const alertCount = alertDevices.length;
+
+            if (alertCount > 0) {
+                const firstAlert = alertDevices[0];
+                const statusLabel = firstAlert.status === 5 ? 'Panic alert' : 'Alert';
+                const message = `${statusLabel} detected in flat ${firstAlert.flatNo || firstAlert.deviceId}`;
+
+                if (alertCount > previousAlertCount) {
+                    showCommunityAlertPopup(message);
+                } else if (popup && popup.style.display === 'none') {
+                    showCommunityAlertPopup(message);
+                }
+            } else {
+                hideCommunityAlertPopup();
+            }
+
+            previousAlertCount = alertCount;
+        })
+        .catch(() => {
+            // Silent fail if API isn't available on some pages or session expired
+        });
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+        refreshCommunityAlertStatus();
+        setInterval(refreshCommunityAlertStatus, 5000);
+    });
+
+    window.addEventListener('beforeunload', stopCommunityAlertSound);
+})();
+</script>
+<% } %>

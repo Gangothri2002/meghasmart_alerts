@@ -1,0 +1,42 @@
+[
+  {
+    "deviceId": "GVM202601485",
+    "hardwareVersion": "1.3",
+    "firmwareVersion": "2,2",
+    "latitude": "17.23",
+    "longitude": "24.234",
+    "location": "HYDERABAD",
+    "lastDataPush": 1780979085636,
+    "status": 4
+  },
+  {
+    "deviceId": "GVM202601483",
+    "hardwareVersion": "1.3",
+    "firmwareVersion": "2,2",
+    "latitude": "17.23",
+    "longitude": "24.234",
+    "location": "HYDERABAD",
+    "lastDataPush": 1780979085716,
+    "status": 4
+  },
+  {
+    "deviceId": "GVM202601484",
+    "hardwareVersion": "1.3",
+    "firmwareVersion": "2,2",
+    "latitude": "17.23",
+    "longitude": "24.234",
+    "location": "HYDERABAD",
+    "lastDataPush": 1780979085689,
+    "status": 4
+  },
+  {
+    "deviceId": "GVM202601486",
+    "hardwareVersion": "1.3",
+    "firmwareVersion": "2,2",
+    "latitude": "17.23",
+    "longitude": "24.234",
+    "location": "HYDERABAD",
+    "lastDataPush": 1780979085713,
+    "status": 4
+  }
+]

@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= community.customerName %> - Profile</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/community.css">
+    <style>
+        /* ===== CLEAN & MODERN PROFILE PAGE ===== */
+        .profile-page-wrapper {
+            display: flex;
+            min-height: 100vh;
+            background: #f5f7fa;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        }
+
+        .profile-main-content {
+            flex: 1;
+            margin-left: 280px;
+            padding: 48px 40px;
+            overflow-y: auto;
+            max-height: 100vh;
+        }
+
+        /* PAGE HEADER */
+        .profile-page-header {
+            margin-bottom: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .profile-page-header-content h1 {
+            font-size: 32px;
+            font-weight: 700;
+            margin: 0 0 8px 0;
+            color: #1a202c;
+            letter-spacing: -0.5px;
+        }
+
+        .profile-page-header-content p {
+            color: #718096;
+            font-size: 15px;
+            margin: 0;
+            font-weight: 500;
+        }
+
+        .profile-page-header-actions {
+            display: flex;
+            gap: 12px;
+        }
+
+        /* ===== CLEAN CARD DESIGN ===== */
+        .profile-card-wrapper {
+            background: white;
+            border-radius: 12px;
+            padding: 32px;
+            margin-bottom: 24px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+            border: 1px solid #e2e8f0;
+            transition: all 0.3s ease;
+        }
+
+        .profile-card-wrapper:hover {
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+            border-color: #cbd5e1;
+        }
+
+        /* ===== PROFILE HERO SECTION ===== */
+        .profile-hero-card {
+            background: linear-gradient(135deg, #ffffff 0%, #f7fafc 100%);
+            display: grid;
+            grid-template-columns: auto 1fr auto;
+            gap: 32px;
+            align-items: center;
+        }
+
+        .profile-avatar {
+            width: 90px;
+            height: 90px;
+            border-radius: 16px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 32px;
+            font-weight: 700;
+            flex-shrink: 0;
+            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.2);
+        }
+
+        .profile-header-info {
+            flex: 1;
+        }
+
+        .profile-header-info h2 {
+            font-size: 28px;
+            font-weight: 700;
+            color: #1a202c;
+            margin: 0 0 4px 0;
+            letter-spacing: -0.5px;
+        }
+
+        .profile-header-info p {
+            color: #718096;
+            font-size: 14px;
+            margin: 0 0 12px 0;
+            font-weight: 500;
+        }
+
+        .profile-status {
+            display: inline-block;
+            background: rgba(16, 185, 129, 0.1);
+            color: #047857;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 0.3px;
+        }
+
+        .profile-header-stats {
+            display: flex;
+            gap: 24px;
+            padding-left: 32px;
+            border-left: 2px solid #e2e8f0;
+        }
+
+        .profile-stat {
+            text-align: center;
+        }
+
+        .profile-stat-value {
+            font-size: 28px;
+            font-weight: 700;
+            color: #667eea;
+            margin-bottom: 4px;
+        }
+
+        .profile-stat-label {
+            font-size: 12px;
+            color: #718096;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* ===== SECTION HEADER ===== */
+        .section-header {
+            font-size: 18px;
+            font-weight: 700;
+            color: #1a202c;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            letter-spacing: -0.3px;
+        }
+
+        .section-header-icon {
+            font-size: 20px;
+            opacity: 0.85;
+        }
+
+        /* ===== INFO GRID ===== */
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 16px;
+        }
+
+        .info-item {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 10px;
+            padding: 18px;
+            transition: all 0.3s ease;
+        }
+
+        .info-item:hover {
+            background: #ffffff;
+            border-color: #cbd5e1;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+        }
+
+        .info-item-label {
+            font-size: 12px;
+            color: #718096;
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .info-item-value {
+            font-size: 16px;
+            font-weight: 700;
+            color: #1a202c;
+            word-break: break-word;
+        }
+
+        /* ===== DEVICE STATS ===== */
+        .device-stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 16px;
+            margin-bottom: 8px;
+            align-items: stretch;
+            justify-items: stretch;
+            grid-auto-rows: 1fr;
+        }
+
+        .stat-card {
+            background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            min-height: 160px;
+        }
+
+        .stat-card::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: var(--stat-color, #667eea);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+            transform-origin: left;
+        }
+
+        .stat-card:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            transform: translateY(-2px);
+        }
+
+        .stat-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .stat-card.total { --stat-color: #667eea; }
+        .stat-card.initialize { --stat-color: #3b82f6; }
+        .stat-card.no-communication { --stat-color: #f59e0b; }
+        .stat-card.alert { --stat-color: #ef4444; }
+        .stat-card.good { --stat-color: #10b981; }
+
+        .stat-icon {
+            font-size: 28px;
+            margin-bottom: 12px;
+            display: block;
+        }
+
+        .stat-number {
+            font-size: 26px;
+            font-weight: 700;
+            color: #1a202c;
+            margin-bottom: 6px;
+            line-height: 1;
+        }
+
+        .stat-name {
+            font-size: 12px;
+            color: #718096;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.4px;
+        }
+
+        /* ===== ACTION BUTTONS ===== */
+        .action-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            margin-top: 40px;
+            padding-top: 32px;
+            border-top: 1px solid #e2e8f0;
+            flex-wrap: wrap;
+        }
+
+        .btn-action {
+            padding: 12px 28px;
+            border-radius: 10px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            text-decoration: none;
+            border: none;
+            letter-spacing: 0.3px;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.2);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.3);
+        }
+
+        .btn-secondary {
+            background: #f8fafc;
+            color: #667eea;
+            border: 1.5px solid #667eea;
+        }
+
+        .btn-secondary:hover {
+            background: #f0f4ff;
+            transform: translateY(-2px);
+        }
+
+        /* ===== RESPONSIVE DESIGN ===== */
+        @media (max-width: 1024px) {
+            .profile-header-stats {
+                gap: 16px;
+                padding-left: 24px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .profile-main-content {
+                margin-left: 0;
+                padding: 32px 24px;
+            }
+
+            .profile-page-header {
+                flex-direction: column;
+                align-items: flex-start;
+                margin-bottom: 32px;
+            }
+
+            .profile-page-header-actions {
+                width: 100%;
+                margin-top: 16px;
+            }
+
+            .profile-hero-card {
+                grid-template-columns: auto 1fr;
+                gap: 20px;
+            }
+
+            .profile-header-stats {
+                grid-column: 1 / -1;
+                border-left: none;
+                border-top: 2px solid #e2e8f0;
+                padding-left: 0;
+                padding-top: 20px;
+                margin-top: 20px;
+                gap: 16px;
+            }
+
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .device-stats-grid {
+                grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            }
+
+            .action-buttons {
+                flex-direction: column;
+            }
+
+            .btn-action {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .profile-page-header-content h1 {
+                font-size: 28px;
+            }
+
+            .profile-card-wrapper {
+                padding: 24px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .profile-main-content {
+                padding: 20px 16px;
+            }
+
+            .profile-page-header-content h1 {
+                font-size: 24px;
+            }
+
+            .profile-header-info h2 {
+                font-size: 22px;
+            }
+
+            .profile-avatar {
+                width: 80px;
+                height: 80px;
+                font-size: 28px;
+            }
+
+            .device-stats-grid {
+                grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+                gap: 12px;
+            }
+
+            .stat-card {
+                padding: 16px;
+            }
+
+            .stat-icon {
+                font-size: 24px;
+            }
+
+            .stat-number {
+                font-size: 22px;
+            }
+
+            .profile-card-wrapper {
+                padding: 20px;
+            }
+
+            .info-grid {
+                gap: 12px;
+            }
+
+            .info-item {
+                padding: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- SIDEBAR -->
+    <aside class="community-sidebar">
+        <a href="#" class="community-sidebar-header">
+            <span style="font-size: 24px;">🏘️</span>
+            <h2>Megha Smart</h2>
+        </a>
+
+        <nav class="community-menu">
+            <a href="/community/dashboard" class="community-menu-item">
+                <span class="icon">📊</span>
+                <span>Dashboard</span>
+            </a>
+            <a href="/community/devices" class="community-menu-item">
+                <span class="icon">📡</span>
+                <span>Devices</span>
+            </a>
+            <% if (community.email === 'customer8@meghasmart.com' || community.email === 'customer9@meghasmart.com') { %>
+            <a href="/community/tickets" class="community-menu-item">
+                <span class="icon">🎫</span>
+                <span>Support Tickets</span>
+            </a>
+            <% } %>
+            <a href="/community/profile" class="community-menu-item active">
+                <span class="icon">👤</span>
+                <span>Profile</span>
+            </a>
+            <% if (community.email === 'customer8@meghasmart.com' || community.email === 'customer9@meghasmart.com') { %>
+                <a href="/community/reports" class="community-menu-item">
+                    <span class="icon">📈</span>
+                    <span>Reports</span>
+                </a>
+            <% } %>
+        </nav>
+
+        <div class="community-sidebar-footer">
+            <a href="/community/logout" class="community-logout-btn">
+                <span>🔓</span>
+                <span>Sign out</span>
+            </a>
+        </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <div class="profile-page-wrapper">
+        <div class="profile-main-content">
+
+            <!-- PAGE HEADER -->
+            <div class="profile-page-header">
+                <div class="profile-page-header-content">
+                    <h1>Community Profile</h1>
+                    <p>Your account information & device overview</p>
+                </div>
+                <div class="profile-page-header-actions">
+                    <a href="/community/devices" class="btn-secondary" style="font-size: 13px; padding: 10px 20px;">
+                        📱 My Devices
+                    </a>
+                </div>
+            </div>
+
+            <!-- PROFILE HERO SECTION -->
+            <div class="profile-card-wrapper">
+                <div class="profile-hero-card">
+                    <div class="profile-avatar">
+                        <%
+                            const initials = community.customerName
+                                .split(' ')
+                                .map(n => n[0].toUpperCase())
+                                .join('');
+                        %>
+                        <%= initials %>
+                    </div>
+
+                    <div class="profile-header-info">
+                        <h2><%= community.customerName %></h2>
+                        <p>Community Resident Account</p>
+                        <span class="profile-status">✓ Active Account</span>
+                    </div>
+
+                    <div class="profile-header-stats">
+                        <div class="profile-stat">
+                            <div class="profile-stat-value"><%= devices ? devices.length : 0 %></div>
+                            <div class="profile-stat-label">Devices</div>
+                        </div>
+                        <div class="profile-stat">
+                            <div class="profile-stat-value"><%= devices ? devices.filter(d => d.status === statusMapping.STATUS.GOOD).length : 0 %></div>
+                            <div class="profile-stat-label">Active</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PERSONAL INFORMATION SECTION -->
+            <div class="profile-card-wrapper">
+                <h3 class="section-header">
+                    <span class="section-header-icon">👤</span> Account Information
+                </h3>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <span class="info-item-label">Full Name</span>
+                        <div class="info-item-value"><%= community.customerName %></div>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-item-label">Email Address</span>
+                        <div class="info-item-value"><%= community.email %></div>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-item-label">Unit/Flat Number</span>
+                        <div class="info-item-value"><%= community.flatNo %></div>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-item-label">Account Status</span>
+                        <div class="info-item-value" style="color: #047857;">✓ Active</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Device Statistics removed for Community 8 profile -->
+
+            <!-- ACTION BUTTONS -->
+            <div class="action-buttons">
+                <a href="/community/dashboard" class="btn-action btn-secondary">
+                    ← Back to Dashboard
+                </a>
+                <a href="/community/logout" class="btn-action btn-primary">
+                    🔓 Sign Out
+                </a>
+            </div>
+
+        </div>
+    </div>
+    <%- include('community-alert-popup') %>
+</body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "customerName": "Community 9",
+  "flatNo": "A9-900",
+  "email": "customer9@meghasmart.com",
+  "devices": [
+    {
+      "flatNo": "A9-001",
+      "deviceId": "GVM202601484",
+      "sensorType": "External Device",
+      "status": 2
+    },
+    {
+      "flatNo": "A9-002",
+      "deviceId": "GVM202601486",
+      "sensorType": "External Device",
+      "status": 2
+    }
+  ]
+}

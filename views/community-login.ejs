@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Login - Megha Smart</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        .login-body.community-login-body {
+            background: linear-gradient(135deg, #06b6d4 0%, #0891b2 100%);
+        }
+        .community-login-body .toggle-demo {
+            color: #0891b2;
+        }
+        .community-login-body .btn-primary {
+            background: linear-gradient(135deg, #06b6d4 0%, #0891b2 100%);
+            box-shadow: 0 8px 20px rgba(6, 182, 212, 0.3);
+        }
+        .community-login-body .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 30px rgba(6, 182, 212, 0.4);
+        }
+    </style>
+</head>
+<body class="login-body community-login-body">
+    <div class="login-wrapper">
+        <a href="/" class="back-home">← Back to Home</a>
+        <div class="login-card">
+            <div class="login-brand">
+                <div class="logo-large">
+                    <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="80" height="80" rx="12" fill="white" opacity="0.1"/>
+                        <path d="M40 20L60 35V65H20V35L40 20Z" fill="white" stroke="white" stroke-width="2"/>
+                        <circle cx="40" cy="42" r="5" fill="white"/>
+                        <circle cx="32" cy="50" r="3" fill="white" opacity="0.7"/>
+                        <circle cx="48" cy="50" r="3" fill="white" opacity="0.7"/>
+                    </svg>
+                </div>
+                <h1 class="brand-title">Community Portal</h1>
+                <p class="brand-subtitle">View Your IoT Devices & Data</p>
+                <div class="brand-features">
+                    <div class="feature-item">
+                        <span class="icon">🏘️</span>
+                        <span>Community Management</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="icon">📱</span>
+                        <span>Device Overview</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="icon">📊</span>
+                        <span>Data Insights</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="login-form-container">
+                <div class="login-header-form">
+                    <h2>Community Access</h2>
+                    <p>Sign in to view your device data</p>
+                </div>
+
+                <% if (error) { %>
+                    <div class="alert alert-error">
+                        <span class="alert-icon">⚠️</span>
+                        <%= error %>
+                    </div>
+                <% } %>
+
+                <form method="POST" action="/community-login" class="login-form">
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <div class="input-wrapper">
+                            <span class="input-icon">✉️</span>
+                            <input type="email" id="email" name="email" placeholder="customer1@meghasmart.com" required autofocus>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <div class="input-wrapper">
+                            <span class="input-icon">🔐</span>
+                            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block btn-lg">
+                        Sign In
+                    </button>
+                </form>
+
+                <div class="login-footer-form">
+                    <a href="#" id="toggleDemo" class="toggle-demo">📋 View community credentials</a>
+                    <div class="demo-box" id="demoBox" style="display: none;">
+                        <p class="demo-title">Community Credentials</p>
+                        <table class="demo-table">
+                            <thead>
+                                <tr><th>Community</th><th>Email</th><th>Password</th></tr>
+                            </thead>
+                            <tbody>
+                                <% if (credentials && credentials.length) { %>
+                                    <% credentials.forEach((c, idx) => { %>
+                                        <tr><td><%= c.name || ('#' + (idx+1)) %></td><td><%= c.email %></td><td><%= c.password %></td></tr>
+                                    <% }); %>
+                                <% } %>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('toggleDemo').addEventListener('click', function(e) {
+            e.preventDefault();
+            var box = document.getElementById('demoBox');
+            if (box.style.display === 'none' || box.style.display === '') {
+                box.style.display = 'block';
+                this.textContent = '📋 Hide community credentials';
+            } else {
+                box.style.display = 'none';
+                this.textContent = '📋 View community credentials';
+            }
+        });
+    </script>
+</body>
+</html>

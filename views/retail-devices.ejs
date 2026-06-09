@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retail Devices - Megha Smart</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/community.css">
+</head>
+<body>
+    <div class="container">
+        <% if (typeof newDeviceId !== 'undefined' && newDeviceId) { %>
+        <div class="alert alert-success" style="margin: 20px 0; background: #e6ffe6; color: #155724; border: 1px solid #b2f2b2; padding: 12px; border-radius: 6px;">
+            ✅ New Device Added! Device ID: <strong><%= newDeviceId %></strong>
+        </div>
+        <% } %>
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <a href="/dashboard" class="sidebar-header">
+                <svg width="40" height="40" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M40 20L60 35V65H20V35L40 20Z" fill="white" stroke="white" stroke-width="2"/>
+                    <circle cx="40" cy="42" r="5" fill="white"/>
+                    <circle cx="32" cy="50" r="3" fill="white" opacity="0.7"/>
+                    <circle cx="48" cy="50" r="3" fill="white" opacity="0.7"/>
+                </svg>
+                <h2>Megha Smart</h2>
+            </a>
+
+            <nav class="sidebar-menu">
+                <a href="/dashboard" class="menu-item">
+                    <span class="icon">📊</span>
+                    <span>Dashboard</span>
+                </a>
+                <a href="/clients" class="menu-item">
+                    <span class="icon">👥</span>
+                    <span>Clients</span>
+                </a>
+                <a href="/community-devices" class="menu-item">
+                    <span class="icon">🏘️</span>
+                    <span>Community Device Mapping</span>
+                </a>
+                <a href="/retail-devices" class="menu-item active">
+                    <span class="icon">🏪</span>
+                    <span>Retail Devices</span>
+                </a>
+                <a href="/alerts" class="menu-item">
+                    <span class="icon">🚨</span>
+                    <span>Alert</span>
+                </a>
+            </nav>
+
+            <div class="sidebar-footer">
+                <a href="/logout" class="logout-btn">
+                    <span class="icon">🔓</span>
+                    <span>Logout</span>
+                </a>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="header">
+                <div>
+                    <h1>Retail Devices Management</h1>
+                    <p class="info-text">Real-time monitoring and management of retail devices</p>
+                </div>
+            </div>
+
+            <!-- Device Statistics -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">📱</div>
+                    <div class="stat-content">
+                        <p class="stat-label">Total Devices</p>
+                        <p class="stat-value"><%= totalRetailDevices %></p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">✅</div>
+                    <div class="stat-content">
+                        <p class="stat-label">Online Devices</p>
+                        <p class="stat-value"><%= onlineDevices %></p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">🔋</div>
+                    <div class="stat-content">
+                        <p class="stat-label">Avg Battery</p>
+                        <p class="stat-value"><%= avgBattery %>%</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">📡</div>
+                    <div class="stat-content">
+                        <p class="stat-label">Total Clients</p>
+                        <p class="stat-value"><%= totalClients %></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Devices Table Card -->
+            <div class="card">
+                <div class="card-header">
+                    <div>
+                        <h2>📱 Mapped Devices Inventory</h2>
+                        <p class="info-text">Showing all <%= totalRetailDevices %> mapped devices (167 per community)</p>
+                    </div>
+                    <div class="filter-container">
+                        <div class="search-box">
+                            <input type="text" id="searchInput" placeholder="🔍 Search by Device ID or Flat No..." />
+                        </div>
+                        <select class="filter-select" id="clientFilter">
+                            <option value="">All Clients</option>
+                            <% const distinctClients = [...new Set(devices.map(d => d.clientName || 'N/A').sort())]; %>
+                            <% distinctClients.forEach(client => { %>
+                                <option value="<%= client.toLowerCase() %>"><%= client %></option>
+                            <% }); %>
+                        </select>
+                        <select class="filter-select" id="typeFilter">
+                            <option value="">All Types</option>
+                            <% if (sensorTypes && sensorTypes.length > 0) { %>
+                                <% sensorTypes.forEach(type => { %>
+                                    <option value="<%= type.toLowerCase().replace(' ', '_') %>"><%= type %></option>
+                                <% }); %>
+                            <% } %>
+                        </select>
+                        <select class="filter-select" id="statusFilter">
+                            <option value="">All Statuses</option>
+                            <option value="1">🔵 Initialize</option>
+                            <option value="2">🟡 No Communication</option>
+                            <option value="3">🔴 Alert</option>
+                            <option value="4">🟢 Good</option>
+                            <option value="5">🚨 Panic Alert</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Devices Table -->
+                <% if (devices && devices.length > 0) { %>
+                    <div class="table-container">
+                        <table class="devices-table">
+                            <thead>
+                                <tr>
+                                    <th>Flat No</th>
+                                    <th>Device ID</th>
+                                    <th>Sensor Type</th>
+                                    <th>Client Name</th>
+                                    <th>Status</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="devicesTableBody">
+                                    <!-- DEMO ROWS: Show all status colors at startup -->
+                                    <tr class="device-row" data-device-id="DEMO-INIT" data-type="demo" data-status="1">
+                                        <td class="flat-no"><strong>101</strong></td>
+                                        <td class="device-id-cell"><code style="background: #f3f4f6; padding: 4px 8px; border-radius: 4px; font-size: 12px;">DEMO-INIT</code></td>
+                                        <td><span class="type-badge">Demo Sensor</span></td>
+                                        <td class="client-name">Demo Client</td>
+                                        <td><span class="status-badge status-initialize">🔵 Initialize</span></td>
+                                        <td><div class="action-buttons"><button class="action-btn view-btn" title="View Details">View</button></div></td>
+                                    </tr>
+                                    <tr class="device-row" data-device-id="DEMO-NOCOM" data-type="demo" data-status="2">
+                                        <td class="flat-no"><strong>102</strong></td>
+                                        <td class="device-id-cell"><code style="background: #f3f4f6; padding: 4px 8px; border-radius: 4px; font-size: 12px;">DEMO-NOCOM</code></td>
+                                        <td><span class="type-badge">Demo Sensor</span></td>
+                                        <td class="client-name">Demo Client</td>
+                                        <td><span class="status-badge status-no-communication">🟡 No Communication</span></td>
+                                        <td><div class="action-buttons"><button class="action-btn view-btn" title="View Details">View</button></div></td>
+                                    </tr>
+                                    <tr class="device-row" data-device-id="DEMO-ALERT" data-type="demo" data-status="3">
+                                        <td class="flat-no"><strong>103</strong></td>
+                                        <td class="device-id-cell"><code style="background: #f3f4f6; padding: 4px 8px; border-radius: 4px; font-size: 12px;">DEMO-ALERT</code></td>
+                                        <td><span class="type-badge">Demo Sensor</span></td>
+                                        <td class="client-name">Demo Client</td>
+                                        <td><span class="status-badge status-alert">🔴 Alert</span></td>
+                                        <td><div class="action-buttons"><button class="action-btn view-btn" title="View Details">View</button></div></td>
+                                    </tr>
+                                    <tr class="device-row" data-device-id="DEMO-PANIC" data-type="demo" data-status="5">
+                                        <td class="flat-no"><strong>105</strong></td>
+                                        <td class="device-id-cell"><code style="background: #f3f4f6; padding: 4px 8px; border-radius: 4px; font-size: 12px;">DEMO-PANIC</code></td>
+                                        <td><span class="type-badge">Demo Sensor</span></td>
+                                        <td class="client-name">Demo Client</td>
+                                        <td><span class="status-badge status-panic">🚨 Panic Alert</span></td>
+                                        <td><div class="action-buttons"><button class="action-btn view-btn" title="View Details">View</button></div></td>
+                                    </tr>
+                                    <tr class="device-row" data-device-id="DEMO-GOOD" data-type="demo" data-status="4">
+                                        <td class="flat-no"><strong>104</strong></td>
+                                        <td class="device-id-cell"><code style="background: #f3f4f6; padding: 4px 8px; border-radius: 4px; font-size: 12px;">DEMO-GOOD</code></td>
+                                        <td><span class="type-badge">Demo Sensor</span></td>
+                                        <td class="client-name">Demo Client</td>
+                                        <td><span class="status-badge status-good">🟢 Good</span></td>
+                                        <td><div class="action-buttons"><button class="action-btn view-btn" title="View Details">View</button></div></td>
+                                    </tr>
+                                    <!-- END DEMO ROWS -->
+                                    <% devices.forEach((device) => { %>
+                                        <tr class="device-row" data-device-id="<%= device.deviceId %>" data-type="<%= (device.sensorType || '').toLowerCase().replace(/\s+/g, '_') %>" data-status="<%= device.status %>"<% if (typeof newDeviceId !== 'undefined' && newDeviceId && device.deviceId === newDeviceId) { %> style="background: #e6ffe6; font-weight: bold;"<% } %>>
+                                            <td class="flat-no"><strong><%= device.flatNo || '-' %></strong></td>
+                                            <td class="device-id-cell"><code style="background: #f3f4f6; padding: 4px 8px; border-radius: 4px; font-size: 12px;"><%= device.deviceId %></code></td>
+                                            <td>
+                                                <span class="type-badge"><%= device.sensorType || '-' %></span>
+                                            </td>
+                                            <td class="client-name"><%= device.clientName || '-' %></td>
+                                            <td>
+                                                <span class="status-badge <%= device.statusClass %>"><%= device.statusIcon %> <%= device.statusLabel %></span>
+                                            </td>
+                                            <td>
+                                                <div class="action-buttons">
+                                                    <button class="action-btn view-btn" title="View Details">View</button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    <% }); %>
+                            </tbody>
+                        </table>
+                    </div>
+
+                <% } else { %>
+                    <div class="no-data">
+                        <p>📭 No mapped devices found</p>
+                    </div>
+                <% } %>
+            </div>
+        </main>
+
+        <script>
+            // --- BUZZER SOUND DEMO ---
+            window.addEventListener('DOMContentLoaded', function() {
+                var buzzer = document.getElementById('buzzer-audio');
+                var alertRows = document.querySelectorAll('.device-row[data-status="3"], .device-row[data-status="5"]');
+                if (buzzer && alertRows.length > 0) {
+                    buzzer.currentTime = 0;
+                    buzzer.play().then(function() {
+                        setTimeout(function() {
+                            if (buzzer && !buzzer.paused) {
+                                buzzer.pause();
+                                buzzer.currentTime = 0;
+                            }
+                        }, 6000);
+                    }).catch(function(e) { /* ignore autoplay errors */ });
+                }
+            });
+
+            // Search functionality
+            document.getElementById('searchInput').addEventListener('keyup', function(e) {
+                const searchTerm = e.target.value.toLowerCase();
+                filterTable();
+            });
+
+            // Type filter
+            document.getElementById('typeFilter').addEventListener('change', function() {
+                filterTable();
+            });
+
+            // Status filter
+            document.getElementById('statusFilter').addEventListener('change', function() {
+                filterTable();
+            });
+
+            function filterTable() {
+                const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+                const clientFilter = document.getElementById('clientFilter').value;
+                const typeFilter = document.getElementById('typeFilter').value;
+                const statusFilter = document.getElementById('statusFilter').value;
+                const rows = document.querySelectorAll('.device-row');
+                let visibleCount = 0;
+
+                rows.forEach(row => {
+                    let showRow = true;
+
+                    // Search filter - search in Flat No, Device ID, and Client Name
+                    const flatNo = row.cells[0].textContent.toLowerCase();
+                    const deviceId = row.cells[1].textContent.toLowerCase();
+                    const client = row.cells[3].textContent.toLowerCase();
+
+                    if (searchTerm && !flatNo.includes(searchTerm) && !deviceId.includes(searchTerm) && !client.includes(searchTerm)) {
+                        showRow = false;
+                    }
+
+                    // Client filter
+                    if (clientFilter && !client.includes(clientFilter)) {
+                        showRow = false;
+                    }
+
+                    // Type filter - check if sensor type matches
+                    if (typeFilter) {
+                        const deviceType = row.getAttribute('data-type');
+                        if (!deviceType || !deviceType.includes(typeFilter)) {
+                            showRow = false;
+                        }
+                    }
+
+                    // Status filter - check device status
+                    if (statusFilter) {
+                        const statusAttr = row.getAttribute('data-status');
+                        if (statusFilter !== statusAttr) {
+                            showRow = false;
+                        }
+                    }
+
+                    row.style.display = showRow ? '' : 'none';
+                    if (showRow) visibleCount++;
+                });
+            }
+
+            // Action buttons
+            document.querySelectorAll('.view-btn').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const row = this.closest('.device-row');
+                    const deviceId = row.cells[1].textContent.trim();
+                    if (deviceId) {
+                        window.location.href = '/device-details/' + encodeURIComponent(deviceId);
+                    }
+                });
+            });
+
+            // Auto-refresh retail devices table every 3 seconds
+            function updateRetailDevices() {
+                fetch('/api/retail-devices/stats', {
+                    method: 'GET',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    credentials: 'same-origin' // Include session cookies
+                })
+                .then(response => response.json())
+                .then(data => {
+                    // Update statistics cards
+                    const totalDevicesEl = document.querySelector('.stat-card:nth-child(1) .stat-value');
+                    const onlineDevicesEl = document.querySelector('.stat-card:nth-child(2) .stat-value');
+                    const avgBatteryEl = document.querySelector('.stat-card:nth-child(3) .stat-value');
+                    const totalClientsEl = document.querySelector('.stat-card:nth-child(4) .stat-value');
+
+                    if (totalDevicesEl) totalDevicesEl.textContent = data.stats.totalRetailDevices;
+                    if (onlineDevicesEl) onlineDevicesEl.textContent = data.stats.onlineDevices;
+                    if (avgBatteryEl) avgBatteryEl.textContent = data.stats.avgBattery + '%';
+                    if (totalClientsEl) totalClientsEl.textContent = data.stats.totalClients;
+
+                    // Update device rows with new status
+                    data.devices.forEach(device => {
+                        const deviceRow = document.querySelector(`.device-row[data-device-id="${device.deviceId}"]`);
+                        if (deviceRow) {
+                            // Update status attribute
+                            deviceRow.setAttribute('data-status', device.status);
+
+                            // Update status cell
+                            const statusCell = deviceRow.cells[4];
+                            if (statusCell) {
+                                statusCell.innerHTML = `<span class="status-badge ${device.statusClass}">${device.statusIcon} ${device.statusLabel}</span>`;
+                            }
+
+                            // Update battery level (randomized)
+                            device.batteryLevel = 85 + Math.floor(Math.random() * 15);
+                        }
+                    });
+
+                    console.log('Retail devices updated:', data.stats);
+                })
+                .catch(error => {
+                    console.error('Error updating retail devices:', error);
+                });
+            }
+
+            // Start auto-refresh every 3 seconds
+            setInterval(updateRetailDevices, 3000);
+
+            // Initial update after page load
+            setTimeout(updateRetailDevices, 1000);
+        </script>
+        <!-- Buzzer audio element (hidden) -->
+        <audio id="buzzer-audio" src="https://cdn.pixabay.com/audio/2022/03/15/audio_115b9bfae7.mp3" preload="auto"></audio>
+    </div>
+</body>
+</html>

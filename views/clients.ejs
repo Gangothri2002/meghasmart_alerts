@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clients - Megha Smart</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <a href="/dashboard" class="sidebar-header" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 12px; margin-bottom: 32px; padding-bottom: 20px; border-bottom: 1px solid rgba(255, 255, 255, 0.12); cursor: pointer; transition: all 0.3s ease;">
+                <svg width="40" height="40" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M40 20L60 35V65H20V35L40 20Z" fill="white" stroke="white" stroke-width="2"/>
+                    <circle cx="40" cy="42" r="5" fill="white"/>
+                    <circle cx="32" cy="50" r="3" fill="white" opacity="0.7"/>
+                    <circle cx="48" cy="50" r="3" fill="white" opacity="0.7"/>
+                </svg>
+                <h2 style="font-size: 18px; font-weight: 800; letter-spacing: -0.5px; margin: 0;">Megha Smart</h2>
+            </a>
+
+            <nav class="sidebar-menu">
+                <a href="/dashboard" class="menu-item">
+                    <span class="icon">📊</span>
+                    <span>Dashboard</span>
+                </a>
+                <a href="/clients" class="menu-item active">
+                    <span class="icon">👥</span>
+                    <span>Clients</span>
+                </a>
+                <a href="/community-devices" class="menu-item">
+                    <span class="icon">🏘️</span>
+                    <span>Community Device Mapping</span>
+                </a>
+                <a href="/retail-devices" class="menu-item">
+                    <span class="icon">🏪</span>
+                    <span>Retail Devices</span>
+                </a>
+                <a href="/alerts" class="menu-item">
+                    <span class="icon">🚨</span>
+                    <span>Alert</span>
+                </a>
+            </nav>
+
+            <div class="sidebar-footer">
+                <a href="/logout" class="logout-btn">
+                    <span class="icon">🔓</span>
+                    <span>Logout</span>
+                </a>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="header" style="display:flex; justify-content:space-between; align-items:center; margin-bottom:20px;">
+                <div>
+                    <h1>All Clients</h1>
+                    <p style="color: #6b7280; margin-top: 4px;">Manage client organizations</p>
+                </div>
+                <div style="display:flex; align-items:center; gap:10px;">
+                    <input type="text" id="searchInput" placeholder="Search clients..." style="padding:8px 12px; border:1px solid #e5e7eb; border-radius:6px; width:180px;">
+                    <select style="padding:6px 8px; border:1px solid #e5e7eb; border-radius:6px;">
+                        <option>10</option>
+                        <option>25</option>
+                        <option>50</option>
+                    </select>
+                    <a href="#" id="openAddClientBtn" style="background:#2563eb; color:white; padding:8px 12px; border-radius:6px; text-decoration:none; font-weight:700;">+ Add Client</a>
+                </div>
+            </div>
+
+            <!-- Clients Table -->
+            <div class="card">
+                <div class="table-responsive">
+                    <table class="data-table" style="width: 100%; border-collapse:collapse;">
+                        <thead>
+                            <tr style="background:#f8f9fa; border-bottom:2px solid #e5e7eb;">
+                                <th style="text-align:left; padding:12px; font-weight:700; color:#6b7280;">Client</th>
+                                <th style="text-align:left; padding:12px; font-weight:700; color:#6b7280;">Contact</th>
+                                <th style="text-align:left; padding:12px; font-weight:700; color:#6b7280;">Phone</th>
+                                <th style="text-align:left; padding:12px; font-weight:700; color:#6b7280;">Type</th>
+                                <th style="text-align:left; padding:12px; font-weight:700; color:#6b7280;">Status</th>
+                                <th style="text-align:center; padding:12px; font-weight:700; color:#6b7280;">Devices</th>
+                                <th style="text-align:center; padding:12px; font-weight:700; color:#6b7280;">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <% if (selectedClients && selectedClients.length > 0) { %>
+                                <% const devicesEach = Math.floor(totalDevices / selectedClients.length); %>
+                                <% selectedClients.forEach((client, idx) => { %>
+                                    <% const initials = client.customerName.split(' ').map(n => n[0]).join('').substring(0,2); %>
+                                    <tr class="client-row" data-plan="<%= client.subscriptionPlan %>" style="border-bottom:1px solid #e5e7eb;">
+                                        <td style="padding:12px; display:flex; align-items:center; gap:10px;">
+                                            <div style="width:36px; height:36px; border-radius:50%; background:#4f46e5; color:white; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:13px;"><%= initials %></div>
+                                            <div>
+                                                <div style="font-weight:700; color:#1f2937;"><%= client.customerName %></div>
+                                                <div style="color:#6b7280; font-size:12px;"><%= client.email %></div>
+                                            </div>
+                                        </td>
+                                        <td style="padding:12px; color:#374151;"><%= client.email %></td>
+                                        <td style="padding:12px; color:#374151;"><%= client.phone %></td>
+                                        <td style="padding:12px; color:#374151; text-transform:lowercase;"><%= client.subscriptionPlan %></td>
+                                        <td style="padding:12px;">
+                                            <span style="display:inline-block; padding:4px 8px; border-radius:999px; font-size:12px; font-weight:700; color:<%= client.status === 'Active' ? '#065f46' : '#991b1b' %>; background:<%= client.status === 'Active' ? '#d1fae5' : '#fee2e2' %>;"><%= client.status.toLowerCase() %></span>
+                                        </td>
+                                        <td style="padding:12px; text-align:center; color:#374151; font-weight:700;"><%= devicesEach %></td>
+                                        <td style="padding:12px; text-align:center;">
+                                            <a href="/api/clients/<%= idx %>/download-excel" title="Download Excel" style="margin-right:6px; color:#059669; text-decoration:none; font-size:16px; font-weight:bold;">📥</a>
+                                       
+                                            
+                                            <a href="#" title="Manage" class="manage-client" data-idx="<%= idx %>" style="margin-right:6px; color:#8b5cf6; text-decoration:none; font-size:16px;">👥</a>
+                                            <a href="#" title="Delete" class="delete-client" data-idx="<%= idx %>" style="color:#ef4444; text-decoration:none; font-size:16px;">🗑️</a>
+                                        </td>
+                                    </tr>
+                                <% }) %>
+                            <% } else { %>
+                                <tr><td colspan="7" style="padding:18px; text-align:center; color:#6b7280;">No clients found.</td></tr>
+                            <% } %>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Add Client Modal -->
+            <div id="addClientModal" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.5); display:none; align-items:center; justify-content:center; z-index:2000;">
+                <div style="position:relative; width:700px; max-width:95%; background:white; border-radius:8px; padding:24px; box-shadow:0 10px 40px rgba(0,0,0,0.2);">
+                    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:16px;">
+                        <h2 style="margin:0; font-size:18px;">Add New Client</h2>
+                        <button id="closeAddClient" style="background:none; border:none; font-size:20px; cursor:pointer; color:#6b7280;">✖</button>
+                    </div>
+                    
+                    <form id="addClientForm" style="display:grid; gap:14px;">
+                        <div style="display:grid; grid-template-columns: 1fr 1fr; gap:12px;">
+                            <div>
+                                <label style="display:block; font-size:12px; font-weight:700; margin-bottom:4px; color:#374151;">Short Name</label>
+                                <input name="shortName" placeholder="Short Name" style="width:100%; padding:8px; border:1px solid #e5e7eb; border-radius:6px; font-size:13px;">
+                            </div>
+                            <div>
+                                <label style="display:block; font-size:12px; font-weight:700; margin-bottom:4px; color:#374151;">Client Name*</label>
+                                <input name="clientName" placeholder="Client Name" required style="width:100%; padding:8px; border:1px solid #e5e7eb; border-radius:6px; font-size:13px;">
+                            </div>
+                        </div>
+
+                        <div style="display:grid; grid-template-columns: 1fr 1fr; gap:12px;">
+                            <div>
+                                <label style="display:block; font-size:12px; font-weight:700; margin-bottom:4px; color:#374151;">Email*</label>
+                                <input name="email" type="email" placeholder="email@company.com" required style="width:100%; padding:8px; border:1px solid #e5e7eb; border-radius:6px; font-size:13px;">
+                            </div>
+                            <div>
+                                <label style="display:block; font-size:12px; font-weight:700; margin-bottom:4px; color:#374151;">Contact Person</label>
+                                <input name="contactPerson" placeholder="Contact Person" style="width:100%; padding:8px; border:1px solid #e5e7eb; border-radius:6px; font-size:13px;">
+                            </div>
+                        </div>
+
+                        <div style="display:grid; grid-template-columns: 1fr 1fr; gap:12px;">
+                            <div>
+                                <label style="display:block; font-size:12px; font-weight:700; margin-bottom:4px; color:#374151;">Phone</label>
+                                <input name="phone" placeholder="Phone" style="width:100%; padding:8px; border:1px solid #e5e7eb; border-radius:6px; font-size:13px;">
+                            </div>
+                            <div>
+                                <label style="display:block; font-size:12px; font-weight:700; margin-bottom:4px; color:#374151;">Street Address</label>
+                                <input name="street" placeholder="Street Address" style="width:100%; padding:8px; border:1px solid #e5e7eb; border-radius:6px; font-size:13px;">
+                            </div>
+                        </div>
+
+                        <div style="display:grid; grid-template-columns: 1fr 1fr 1fr; gap:12px;">
+                            <div>
+                                <label style="display:block; font-size:12px; font-weight:700; margin-bottom:4px; color:#374151;">City</label>
+                                <input name="city" placeholder="City" style="width:100%; padding:8px; border:1px solid #e5e7eb; border-radius:6px; font-size:13px;">
+                            </div>
+                            <div>
+                                <label style="display:block; font-size:12px; font-weight:700; margin-bottom:4px; color:#374151;">State</label>
+                                <input name="state" placeholder="State" style="width:100%; padding:8px; border:1px solid #e5e7eb; border-radius:6px; font-size:13px;">
+                            </div>
+                            <div>
+                                <label style="display:block; font-size:12px; font-weight:700; margin-bottom:4px; color:#374151;">Country</label>
+                                <input name="country" placeholder="Country" style="width:100%; padding:8px; border:1px solid #e5e7eb; border-radius:6px; font-size:13px;">
+                            </div>
+                        </div>
+
+                        <div style="display:grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap:12px;">
+                            <div>
+                                <label style="display:block; font-size:12px; font-weight:700; margin-bottom:4px; color:#374151;">Subscription Plan</label>
+                                <select name="subscriptionPlan" style="width:100%; padding:8px; border:1px solid #e5e7eb; border-radius:6px; font-size:13px;">
+                                    <option>Basic</option>
+                                    <option>Pro</option>
+                                    <option>Premium</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label style="display:block; font-size:12px; font-weight:700; margin-bottom:4px; color:#374151;">Max Devices</label>
+                                <input name="maxDevices" type="number" placeholder="10" value="10" style="width:100%; padding:8px; border:1px solid #e5e7eb; border-radius:6px; font-size:13px;">
+                            </div>
+                            <div>
+                                <label style="display:block; font-size:12px; font-weight:700; margin-bottom:4px; color:#374151;">Max Users</label>
+                                <input name="maxUsers" type="number" placeholder="5" value="5" style="width:100%; padding:8px; border:1px solid #e5e7eb; border-radius:6px; font-size:13px;">
+                            </div>
+                            <div>
+                                <label style="display:block; font-size:12px; font-weight:700; margin-bottom:4px; color:#374151;">Alert Retention Days</label>
+                                <input name="alertRetention" type="number" placeholder="30" value="30" style="width:100%; padding:8px; border:1px solid #e5e7eb; border-radius:6px; font-size:13px;">
+                            </div>
+                        </div>
+
+                        <div style="display:flex; gap:12px; align-items:center; padding-top:8px; border-top:1px solid #f1f5f9;">
+                            <label style="display:block; font-size:12px; font-weight:700; color:#374151;">Notification Settings</label>
+                            <label style="display:flex; gap:6px; align-items:center; font-size:12px;"><input type="checkbox" name="notifyEmail" checked> Email</label>
+                            <label style="display:flex; gap:6px; align-items:center; font-size:12px;"><input type="checkbox" name="notifySMS"> SMS</label>
+                            <label style="display:flex; gap:6px; align-items:center; font-size:12px;"><input type="checkbox" name="notifyPush"> Push</label>
+                            <label style="display:flex; gap:6px; align-items:center; font-size:12px;"><input type="checkbox" name="notifyWebhook"> Webhook</label>
+                        </div>
+
+                        <div style="display:flex; justify-content:flex-end; gap:8px; margin-top:12px;">
+                            <button type="button" id="cancelAddClient" style="padding:8px 16px; border:1px solid #e5e7eb; background:#fff; border-radius:6px; cursor:pointer; font-weight:600; color:#374151;">Cancel</button>
+                            <button type="submit" style="padding:8px 16px; border:none; background:#2563eb; color:white; border-radius:6px; cursor:pointer; font-weight:600;">Create Client</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </main>
+
+        <script>
+            (function() {
+                // Search functionality
+                const searchInput = document.getElementById('searchInput');
+                if (searchInput) {
+                    searchInput.addEventListener('keyup', function(e) {
+                        const searchTerm = e.target.value.toLowerCase();
+                        const rows = document.querySelectorAll('.client-row');
+                        rows.forEach(row => {
+                            const text = row.textContent.toLowerCase();
+                            row.style.display = text.includes(searchTerm) ? '' : 'none';
+                        });
+                    });
+                }
+
+                // Modal open/close
+                const openBtn = document.getElementById('openAddClientBtn');
+                const modal = document.getElementById('addClientModal');
+                const closeBtn = document.getElementById('closeAddClient');
+                const cancelBtn = document.getElementById('cancelAddClient');
+
+                if (openBtn && modal) {
+                    openBtn.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        modal.style.display = 'flex';
+                        document.body.style.overflow = 'hidden';
+                    });
+                }
+                if (closeBtn) closeBtn.addEventListener('click', function() {
+                    modal.style.display = 'none';
+                    document.body.style.overflow = '';
+                });
+                if (cancelBtn) cancelBtn.addEventListener('click', function() {
+                    modal.style.display = 'none';
+                    document.body.style.overflow = '';
+                });
+
+                // Delete client via API
+                document.querySelectorAll('.delete-client').forEach(btn => {
+                    btn.addEventListener('click', async function(e) {
+                        e.preventDefault();
+                        const idx = this.getAttribute('data-idx');
+                        if (confirm('Delete this client? This action cannot be undone.')) {
+                            try {
+                                const resp = await fetch(`/clients/${idx}`, { method: 'DELETE' });
+                                const data = await resp.json();
+                                if (data.success) {
+                                    alert('Client deleted');
+                                    location.reload();
+                                } else {
+                                    alert('Error: ' + (data.message || 'Unknown'));
+                                }
+                            } catch (err) {
+                                console.error(err);
+                                alert('Network error');
+                            }
+                        }
+                    });
+                });
+
+                // Manage client (show details in alert)
+                document.querySelectorAll('.manage-client').forEach(btn => {
+                    btn.addEventListener('click', async function(e) {
+                        e.preventDefault();
+                        const idx = this.getAttribute('data-idx');
+                        try {
+                            const resp = await fetch(`/clients/${idx}`);
+                            const data = await resp.json();
+                            if (data.success) {
+                                const c = data.client;
+                                alert(`Name: ${c.customerName}\nEmail: ${c.email}\nPhone: ${c.phone}\nFlat: ${c.flatNo}\nPlan: ${c.subscriptionPlan}`);
+                            } else {
+                                alert('Client not found');
+                            }
+                        } catch (err) {
+                            console.error(err);
+                            alert('Network error');
+                        }
+                    });
+                });
+
+                // Submit form
+                const form = document.getElementById('addClientForm');
+                if (form) {
+                    form.addEventListener('submit', async function(e) {
+                        e.preventDefault();
+                        const fd = new FormData(form);
+                        const payload = {};
+                        fd.forEach((v, k) => { payload[k] = v; });
+                        
+                        // Add checkboxes
+                        ['notifyEmail', 'notifySMS', 'notifyPush', 'notifyWebhook'].forEach(k => {
+                            payload[k] = !!form.querySelector('[name="' + k + '"]')?.checked;
+                        });
+
+                        try {
+                            const resp = await fetch('/clients/add', {
+                                method: 'POST',
+                                headers: { 'Content-Type': 'application/json' },
+                                body: JSON.stringify(payload)
+                            });
+                            const data = await resp.json();
+                            if (data && data.success) {
+                                alert('Client created successfully!');
+                                location.reload();
+                            } else {
+                                alert('Error: ' + (data.message || 'Unknown error'));
+                            }
+                        } catch (err) {
+                            console.error(err);
+                            alert('Network error');
+                        }
+                    });
+                }
+            })();
+        </script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= community.customerName %> - Devices</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/community.css">
+    <style>
+        /* Ensure scrolling functionality */
+        html {
+            height: 100%;
+            overflow: hidden;
+        }
+        
+        body.community-container {
+            height: 100vh;
+            overflow: hidden;
+        }
+        
+        .community-sidebar {
+            height: 100vh;
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+        
+        .community-main {
+            height: 100vh;
+            overflow-y: auto;
+            overflow-x: hidden;
+            -webkit-overflow-scrolling: touch;
+        }
+        
+        /* Device Inventory Table Scrolling */
+        .table-responsive {
+            max-height: 500px;
+            overflow-y: auto;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            border-radius: 8px;
+        }
+        
+        .community-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        .community-table thead {
+            position: sticky;
+            top: 0;
+            background-color: #f3f4f6;
+            z-index: 10;
+        }
+        
+        .community-table tbody tr {
+            transition: background-color 0.2s ease;
+        }
+    </style>
+</head>
+<body class="community-container">
+    <!-- SIDEBAR -->
+    <aside class="community-sidebar">
+        <a href="/community/dashboard" class="community-sidebar-header">
+            <svg width="40" height="40" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M40 20L60 35V65H20V35L40 20Z" fill="white" stroke="white" stroke-width="2"/>
+                <circle cx="40" cy="42" r="5" fill="white"/>
+                <circle cx="32" cy="50" r="3" fill="white" opacity="0.7"/>
+                <circle cx="48" cy="50" r="3" fill="white" opacity="0.7"/>
+            </svg>
+            <h2>Megha Smart</h2>
+        </a>
+
+        <nav class="community-menu">
+            <a href="/community/dashboard" class="community-menu-item">
+                <span class="icon">📊</span>
+                <span>Dashboard</span>
+            </a>
+            <a href="/community/devices" class="community-menu-item active">
+                <span class="icon">📡</span>
+                <span>Devices</span>
+            </a>
+            <% if (community.email === 'customer8@meghasmart.com' || community.email === 'customer9@meghasmart.com') { %>
+            <a href="/community/tickets" class="community-menu-item">
+                <span class="icon">🎫</span>
+                <span>Support Tickets</span>
+            </a>
+            <% } %>
+            <a href="/community/profile" class="community-menu-item">
+                <span class="icon">👤</span>
+                <span>Profile</span>
+            </a>
+            <% if (community.email === 'customer8@meghasmart.com' || community.email === 'customer9@meghasmart.com') { %>
+                <a href="/community/reports" class="community-menu-item">
+                    <span class="icon">📈</span>
+                    <span>Reports</span>
+                </a>
+            <% } %>
+        </nav>
+
+        <div class="community-sidebar-footer">
+            <a href="/community/logout" class="community-logout-btn">
+                <span class="icon">🔓</span>
+                <span>Sign Out</span>
+            </a>
+        </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="community-main">
+        <div class="community-header">
+            <div>
+                <h1>📡 My Devices - <%= community.customerName %></h1>
+                <p style="color: #6b7280; margin-top: 4px;">Manage and monitor all your assigned smart devices</p>
+            </div>
+            </div>
+        </div>
+
+        <!-- QUICK STATISTICS -->
+        <div class="profile-info" style="margin-bottom: 24px;">
+            <div class="profile-item">
+                <div class="profile-label">Total Devices</div>
+                <div class="profile-value"><%= devices ? devices.length : 0 %></div>
+            </div>
+            <div class="profile-item">
+                <div class="profile-label">1️⃣ Initialize</div>
+                <div class="profile-value" style="color: #1e40af;">
+                    <%= devices ? devices.filter(d => d.status === statusMapping.STATUS.INITIALIZE).length : 0 %>
+                </div>
+            </div>
+            <div class="profile-item">
+                <div class="profile-label">2️⃣ No Communication</div>
+                <div class="profile-value" style="color: #92400e;">
+                    <%= devices ? devices.filter(d => d.status === statusMapping.STATUS.NO_COMMUNICATION).length : 0 %>
+                </div>
+            </div>
+            <div class="profile-item">
+                <div class="profile-label">3️⃣ Alert</div>
+                <div class="profile-value" style="color: #dc2626;">
+                    <%= devices ? devices.filter(d => d.status === statusMapping.STATUS.ALERT).length : 0 %>
+                </div>
+            </div>
+            <div class="profile-item">
+                <div class="profile-label">4️⃣ Good</div>
+                <div class="profile-value" style="color: #059669;">
+                    <%= devices ? devices.filter(d => d.status === statusMapping.STATUS.GOOD).length : 0 %>
+                </div>
+            </div>
+        </div>
+
+        <!-- DEVICES TABLE CARD -->
+        <div class="community-card">
+            <div class="community-card-header">
+                <div>
+                    <h2>Device Inventory</h2>
+                    <p class="info-text">All smart devices assigned to your unit - <%= community.flatNo %></p>
+                </div>
+            </div>
+            <div style="padding: 0;">
+                <% if (devices && devices.length > 0) { %>
+                    <div class="table-responsive">
+                        <table class="community-table">
+                            <thead>
+                                <tr>
+                                    <th>Flat No</th>
+                                    <th>Device ID</th>
+                                    <th>Sensor Type</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <% devices.forEach(device => { %>
+                                    <tr class="device-row" data-status="<%= device.status %>">
+                                        <td><strong><%= device.flatNo %></strong></td>
+                                        <td>
+                                            <a href="/community/device/<%= device.deviceId %>" style="text-decoration:none;">
+                                                <code style="background: #f3f4f6; padding: 4px 8px; border-radius: 4px; font-size: 12px; color: #2563eb; cursor: pointer;">
+                                                    <%= device.deviceId %>
+                                                </code>
+                                            </a>
+                                        </td>
+                                        <td><span style="background: #e0f2fe; color: #0369a1; padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: 600;"><%= device.sensorType %></span></td>
+                                        <td>
+                                            <span class="community-table status-badge <%= statusMapping.getStatusClass(device.status) %>">
+                                                <%= statusMapping.getStatusLabel(device.status) %>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                <% }); %>
+                            </tbody>
+                        </table>
+                    </div>
+                <% } else { %>
+                    <div style="padding: 60px 20px; text-align: center;">
+                        <div style="font-size: 48px; margin-bottom: 20px;">📭</div>
+                        <h3 style="color: #6b7280; margin-bottom: 8px;">No Devices Yet</h3>
+                        <p style="color: #9ca3af;">You don't have any devices assigned. Please contact your administrator.</p>
+                    </div>
+                <% } %>
+            </div>
+        </div>
+
+        <!-- EXPORT BUTTON -->
+        <% if (devices && devices.length > 0) { %>
+            <div style="margin-top: 24px; display: flex; gap: 12px; flex-wrap: wrap;">
+                <a href="/community/export" style="padding: 12px 24px; border-radius: 12px; font-size: 14px; font-weight: 700; cursor: pointer; transition: all 0.3s ease; display: inline-flex; align-items: center; justify-content: center; gap: 10px; letter-spacing: 0.3px; text-decoration: none; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border: none; box-shadow: 0 8px 20px rgba(102,126,234,0.3);" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 12px 30px rgba(102,126,234,0.4)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 8px 20px rgba(102,126,234,0.3)';">
+                    <span>📥</span>
+                    <span>Export Devices to Excel</span>
+                </a>
+                <a href="/community/dashboard" style="padding: 12px 24px; border-radius: 12px; font-size: 14px; font-weight: 700; cursor: pointer; transition: all 0.3s ease; display: inline-flex; align-items: center; justify-content: center; gap: 10px; letter-spacing: 0.3px; text-decoration: none; background: white; color: #2563eb; border: 2px solid #2563eb;" onmouseover="this.style.background='#f8fafc'; this.style.transform='translateY(-2px)';" onmouseout="this.style.background='white'; this.style.transform='translateY(0)';">
+                    <span>📊</span>
+                    <span>Back to Dashboard</span>
+                </a>
+            </div>
+        <% } %>
+    </main>
+
+    <script>
+        // Smooth transition and interactivity for device rows
+        document.querySelectorAll('.device-row').forEach(row => {
+            row.addEventListener('mouseenter', function() {
+                this.style.backgroundColor = '#f0f9ff';
+            });
+            row.addEventListener('mouseleave', function() {
+                this.style.backgroundColor = '';
+            });
+        });
+
+        // Auto-refresh device status counts and table every 3 seconds
+        const statusMapping = {
+            INITIALIZE: 1,
+            NO_COMMUNICATION: 2,
+            ALERT: 3,
+            GOOD: 4
+        };
+
+        const statusLabels = {
+            1: 'Initialize',
+            2: 'No Communication',
+            3: 'Alert',
+            4: 'Good'
+        };
+
+        const statusClasses = {
+            1: 'status-initialize',
+            2: 'status-nocommunication',
+            3: 'status-alert',
+            4: 'status-good'
+        };
+
+        let previousCounts = {
+            [statusMapping.INITIALIZE]: parseInt(document.querySelector('.profile-item:nth-child(2) .profile-value')?.textContent || '0'),
+            [statusMapping.NO_COMMUNICATION]: parseInt(document.querySelector('.profile-item:nth-child(3) .profile-value')?.textContent || '0'),
+            [statusMapping.ALERT]: parseInt(document.querySelector('.profile-item:nth-child(4) .profile-value')?.textContent || '0'),
+            [statusMapping.GOOD]: parseInt(document.querySelector('.profile-item:nth-child(5) .profile-value')?.textContent || '0')
+        };
+
+        function updateStatusCounters() {
+            fetch('/api/community/device-status-counts')
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success && data.statusCounts) {
+                        // Update INITIALIZE counter
+                        const initCount = data.statusCounts[statusMapping.INITIALIZE] || 0;
+                        const initElement = document.querySelector('.profile-item:nth-child(2) .profile-value');
+                        if (initElement && parseInt(initElement.textContent) !== initCount) {
+                            animateCountUpdate(initElement, initCount);
+                            previousCounts[statusMapping.INITIALIZE] = initCount;
+                        }
+
+                        // Update NO COMMUNICATION counter
+                        const noCommCount = data.statusCounts[statusMapping.NO_COMMUNICATION] || 0;
+                        const noCommElement = document.querySelector('.profile-item:nth-child(3) .profile-value');
+                        if (noCommElement && parseInt(noCommElement.textContent) !== noCommCount) {
+                            animateCountUpdate(noCommElement, noCommCount);
+                            previousCounts[statusMapping.NO_COMMUNICATION] = noCommCount;
+                        }
+
+                        // Update ALERT counter
+                        const alertCount = data.statusCounts[statusMapping.ALERT] || 0;
+                        const alertElement = document.querySelector('.profile-item:nth-child(4) .profile-value');
+                        if (alertElement && parseInt(alertElement.textContent) !== alertCount) {
+                            animateCountUpdate(alertElement, alertCount);
+                            previousCounts[statusMapping.ALERT] = alertCount;
+                        }
+
+                        // Update GOOD counter
+                        const goodCount = data.statusCounts[statusMapping.GOOD] || 0;
+                        const goodElement = document.querySelector('.profile-item:nth-child(5) .profile-value');
+                        if (goodElement && parseInt(goodElement.textContent) !== goodCount) {
+                            animateCountUpdate(goodElement, goodCount);
+                            previousCounts[statusMapping.GOOD] = goodCount;
+                        }
+                    }
+                })
+                .catch(error => console.error('Error fetching device counts:', error));
+        }
+
+        function updateDeviceTable() {
+            fetch('/api/community/devices-list')
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success && data.devices) {
+                        // Update each device row in the table
+                        data.devices.forEach(device => {
+                            const row = document.querySelector(`tr[data-device-id="${device.deviceId}"]`);
+                            if (row) {
+                                const statusCell = row.querySelector('td:last-child');
+                                if (statusCell) {
+                                    const currentStatus = row.getAttribute('data-status');
+                                    if (currentStatus != device.status) {
+                                        // Update row status attribute
+                                        row.setAttribute('data-status', device.status);
+                                        
+                                        // Update status badge with animation
+                                        const statusBadge = statusCell.querySelector('.status-badge');
+                                        if (statusBadge) {
+                                            statusBadge.style.transition = 'all 0.3s ease';
+                                            statusBadge.style.opacity = '0.7';
+                                            
+                                            setTimeout(() => {
+                                                statusBadge.textContent = statusLabels[device.status];
+                                                statusBadge.className = `community-table status-badge ${statusClasses[device.status]}`;
+                                                statusBadge.style.opacity = '1';
+                                            }, 150);
+                                        }
+                                    }
+                                }
+                            }
+                        });
+                    }
+                })
+                .catch(error => console.error('Error fetching device list:', error));
+        }
+
+        function animateCountUpdate(element, newCount) {
+            const oldCount = parseInt(element.textContent);
+            if (oldCount === newCount) return;
+
+            // Add pulse animation
+            element.style.transition = 'all 0.3s ease';
+            element.style.transform = 'scale(1.15)';
+            element.style.color = element.style.color || '#059669';
+            
+            setTimeout(() => {
+                element.textContent = newCount;
+                element.style.transform = 'scale(1)';
+            }, 150);
+        }
+
+        // Start auto-refresh on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add device-id to each row
+            document.querySelectorAll('.device-row').forEach(row => {
+                const deviceIdCell = row.querySelector('td:nth-child(2)');
+                if (deviceIdCell) {
+                    const deviceId = deviceIdCell.textContent.trim();
+                    row.setAttribute('data-device-id', deviceId);
+                }
+            });
+
+            updateStatusCounters();
+            updateDeviceTable();
+            
+            // Refresh every 3 seconds
+            setInterval(() => {
+                updateStatusCounters();
+                updateDeviceTable();
+            }, 3000);
+        });
+    </script>
+    <%- include('community-alert-popup') %>
+</body>
+</html>

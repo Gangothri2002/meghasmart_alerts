@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Access Denied - Megha Smart</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/community.css">
+</head>
+<body>
+    <div class="access-denied-container">
+        <div class="access-denied-card">
+            <div class="access-denied-icon">🔐</div>
+            <h1>Access Denied</h1>
+            <p><%= message %></p>
+            
+            <div class="access-denied-buttons">
+                <a href="/dashboard" class="btn btn-primary">Go to Dashboard</a>
+                <a href="/logout" class="btn btn-secondary">Logout</a>
+            </div>
+
+            <div class="role-info">
+                <h3>📋 Available Access Levels:</h3>
+                <ul>
+                    <li><strong>Admin:</strong> Full access to all features and dashboard</li>
+                    <li><strong>Super Admin:</strong> Full access to all features and dashboard</li>
+                    <li><strong>User:</strong> Limited access - Dashboard view only</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

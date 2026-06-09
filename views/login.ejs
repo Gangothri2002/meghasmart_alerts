@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Megha Smart - Advanced IoT Monitoring</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="login-body">
+    <!-- profile dropdown on login page -->
+    <div style="position: fixed; top: 16px; right: 16px; z-index:1000;">
+        <button id="profileMenuBtn" style="background:none;border:none;font-size:24px;cursor:pointer;color:#64748b;">
+            👤 ⋮
+        </button>
+        <div id="profileDropdown" style="display:none;position:absolute;top:100%;right:0;background:white;border:1px solid #e2e8f0;border-radius:8px;box-shadow:0 4px 12px rgba(0,0,0,0.15);min-width:220px;margin-top:8px;overflow:hidden;">
+            <div style="padding:16px;border-bottom:1px solid #f1f5f9;background:#f8fafc;">
+                <div id="dropdownEmail" style="font-weight:600;color:#0f172a;margin-bottom:4px;word-break:break-word;">Not signed in</div>
+                <div style="font-size:12px;color:#64748b;">Role: Guest</div>
+            </div>
+            <a href="#" id="dummyEdit" style="display:flex;align-items:center;gap:12px;padding:12px 16px;text-decoration:none;color:#0f172a;font-weight:500;transition:background-color 0.2s;border:none;background:none;cursor:pointer;">
+                <span style="font-size:16px;">👤</span>Edit profile
+            </a>
+            <a href="#" id="dummySettings" style="display:flex;align-items:center;gap:12px;padding:12px 16px;text-decoration:none;color:#0f172a;font-weight:500;transition:background-color 0.2s;border:none;background:none;cursor:pointer;">
+                <span style="font-size:16px;">⚙️</span>Account settings
+            </a>
+            <a href="#" id="dummySupport" style="display:flex;align-items:center;gap:12px;padding:12px 16px;text-decoration:none;color:#0f172a;font-weight:500;transition:background-color 0.2s;border:none;background:none;cursor:pointer;">
+                <span style="font-size:16px;">❓</span>Support
+            </a>
+            <div style="height:1px;background:#f1f5f9;margin:4px 0;"></div>
+            <a href="/logout" style="display:flex;align-items:center;gap:12px;padding:12px 16px;text-decoration:none;color:#dc2626;font-weight:500;transition:background-color 0.2s;border:none;background:none;cursor:pointer;">
+                <span style="font-size:16px;">🔓</span>Sign out
+            </a>
+        </div>
+    </div>
+    <div class="login-wrapper">
+        <a href="/" class="back-home">← Back to Home</a>
+        <div class="login-card">
+            <div class="login-brand">
+                <div class="login-brand-accent"></div>
+                <div class="logo-large">
+                    <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="80" height="80" rx="12" fill="white" opacity="0.1"/>
+                        <path d="M40 20L60 35V65H20V35L40 20Z" fill="white" stroke="white" stroke-width="2"/>
+                        <circle cx="40" cy="42" r="5" fill="white"/>
+                        <circle cx="32" cy="50" r="3" fill="white" opacity="0.7"/>
+                        <circle cx="48" cy="50" r="3" fill="white" opacity="0.7"/>
+                    </svg>
+                </div>
+                <h1 class="brand-title">Megha Smart</h1>
+                <p class="brand-subtitle">Advanced IoT Device Monitoring Platform</p>
+                <div class="brand-features">
+                    <div class="feature-item">
+                        <span class="icon">🔒</span>
+                        <span>Enterprise Security</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="icon">⚡</span>
+                        <span>Real-time Monitoring</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="icon">📊</span>
+                        <span>Advanced Analytics</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="login-form-container">
+                <div class="login-header-form">
+                    <h2>Welcome Back</h2>
+                    <p>Sign in to your account to continue</p>
+                </div>
+
+                <% if (error) { %>
+                    <div class="alert alert-error">
+                        <span class="alert-icon">⚠️</span>
+                        <%= error %>
+                    </div>
+                <% } %>
+
+                <form method="POST" action="/login" class="login-form">
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <div class="input-wrapper">
+                            <span class="input-icon">✉️</span>
+                            <input type="email" id="email" name="email" placeholder="admin@gmail.com" required autofocus>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <div class="input-wrapper">
+                            <span class="input-icon">🔐</span>
+                            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block btn-lg">
+                        Sign In
+                    </button>
+                </form>
+
+                <div class="login-footer-form">
+                    <a href="#" id="toggleDemo" class="toggle-demo">📋 View demo credentials</a>
+                    <div class="demo-box" id="demoBox" style="display: none;">
+                        <p class="demo-title">Available Login Credentials</p>
+                        <table class="demo-table">
+                            <thead>
+                                <tr><th>Role</th><th>Email</th><th>Password</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>Admin</td><td>admin@gmail.com</td><td>P@ssword1</td></tr>
+                                <tr><td>Super Admin</td><td>superadmin@gmail.com</td><td>P@ssword2</td></tr>
+                                <tr><td>User</td><td>user@gmail.com</td><td>P@ssword3</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById('toggleDemo').addEventListener('click', function(e) {
+            e.preventDefault();
+            var box = document.getElementById('demoBox');
+            if (box.style.display === 'none' || box.style.display === '') {
+                box.style.display = 'block';
+                this.textContent = '📋 Hide demo credentials';
+            } else {
+                box.style.display = 'none';
+                this.textContent = '📋 View demo credentials';
+            }
+        });
+
+        // profile dropdown logic for login page
+        const profileMenuBtn = document.getElementById('profileMenuBtn');
+        const profileDropdown = document.getElementById('profileDropdown');
+        const emailInput = document.getElementById('email');
+        const dropdownEmail = document.getElementById('dropdownEmail');
+
+        profileMenuBtn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            profileDropdown.style.display = profileDropdown.style.display === 'none' ? 'block' : 'none';
+        });
+
+        document.addEventListener('click', function(e) {
+            if (!profileMenuBtn.contains(e.target) && !profileDropdown.contains(e.target)) {
+                profileDropdown.style.display = 'none';
+            }
+        });
+
+        // update dropdown email as user types
+        emailInput.addEventListener('input', function() {
+            const val = emailInput.value.trim();
+            dropdownEmail.textContent = val || 'Not signed in';
+        });
+
+        // hover effects
+        document.querySelectorAll('#profileDropdown a').forEach(item => {
+            item.addEventListener('mouseenter', function() {
+                this.style.backgroundColor = '#f8fafc';
+            });
+            item.addEventListener('mouseleave', function() {
+                this.style.backgroundColor = 'transparent';
+            });
+        });
+    </script>
+</body>
+</html>

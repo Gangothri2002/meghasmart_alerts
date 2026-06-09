@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alerts - Megha Smart</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <a href="/dashboard" class="sidebar-header" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 12px; margin-bottom: 32px; padding-bottom: 20px; border-bottom: 1px solid rgba(255, 255, 255, 0.12); cursor: pointer; transition: all 0.3s ease;">
+                <svg width="40" height="40" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M40 20L60 35V65H20V35L40 20Z" fill="white" stroke="white" stroke-width="2"/>
+                    <circle cx="40" cy="42" r="5" fill="white"/>
+                    <circle cx="32" cy="50" r="3" fill="white" opacity="0.7"/>
+                    <circle cx="48" cy="50" r="3" fill="white" opacity="0.7"/>
+                </svg>
+                <h2 style="font-size: 18px; font-weight: 800; letter-spacing: -0.5px; margin: 0;">Megha Smart</h2>
+            </a>
+
+            <nav class="sidebar-menu">
+                <a href="/dashboard" class="menu-item">
+                    <span class="icon">📊</span>
+                    <span>Dashboard</span>
+                </a>
+                <a href="/clients" class="menu-item">
+                    <span class="icon">👥</span>
+                    <span>Clients</span>
+                </a>
+                <a href="/community-devices" class="menu-item">
+                    <span class="icon">🏘️</span>
+                    <span>Community Device Mapping</span>
+                </a>
+                <a href="/retail-devices" class="menu-item">
+                    <span class="icon">🏪</span>
+                    <span>Retail Devices</span>
+                </a>
+                <a href="/alerts" class="menu-item active">
+                    <span class="icon">🚨</span>
+                    <span>Alert</span>
+                </a>
+            </nav>
+
+            <div class="sidebar-footer">
+                <a href="/logout" class="logout-btn">
+                    <span class="icon">🔓</span>
+                    <span>Logout</span>
+                </a>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="header">
+                <div>
+                    <h1>Alert Management System</h1>
+                    <p style="color: #6b7280; margin-top: 4px;">Real-time alerts with priority levels, acknowledgment, and escalation</p>
+                </div>
+            </div>
+
+            <!-- Alert Statistics -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">🔴</div>
+                    <div class="stat-content">
+                        <p class="stat-label">Critical</p>
+                        <p class="stat-value"><%= alerts.filter(a => a.severity === 'High' && a.status === 'Active').length %></p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">🟠</div>
+                    <div class="stat-content">
+                        <p class="stat-label">Medium</p>
+                        <p class="stat-value"><%= alerts.filter(a => a.severity === 'Medium').length %></p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">🟡</div>
+                    <div class="stat-content">
+                        <p class="stat-label">Low</p>
+                        <p class="stat-value"><%= alerts.filter(a => a.severity === 'Low').length %></p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">✅</div>
+                    <div class="stat-content">
+                        <p class="stat-label">Resolved</p>
+                        <p class="stat-value"><%= alerts.filter(a => a.status === 'Resolved').length %></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Filters & Search -->
+            <div class="card">
+                <div class="filters-section">
+                    <div class="filter-group">
+                        <input type="text" id="searchInput" class="search-input" placeholder="🔍 Search by device ID, flat, or type..." style="width: 100%; padding: 12px 16px; border: 2px solid #e5e7eb; border-radius: 10px; font-size: 14px; transition: 0.3s;">
+                    </div>
+                    <div class="filter-buttons">
+                        <button class="filter-btn active" data-filter="all">All Alerts</button>
+                        <button class="filter-btn" data-filter="active">🔴 Active Only</button>
+                        <button class="filter-btn" data-filter="high">⚠️ Critical Only</button>
+                        <button class="filter-btn" data-filter="resolved">✅ Resolved Only</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Alerts Display -->
+            <div class="card">
+                <div class="card-header">
+                    <h2>Active & Recent Alerts</h2>
+                    <p class="info-text">Showing <%= alerts.length %> of <%= totalAlerts %> alerts | Active: <%= activeAlerts %></p>
+                </div>
+
+                <% if (alerts.filter(a => a.status === 'Active').length === 0) { %>
+                    <div class="empty-state">
+                        <p style="font-size: 32px; margin-bottom: 10px;">✅</p>
+                        <p style="font-size: 16px; font-weight: 600;">No Active Alerts</p>
+                        <p style="color: #6b7280; margin-top: 5px;">All systems are operating normally. Last 50 alerts shown below.</p>
+                    </div>
+                <% } %>
+
+                <div class="alerts-list">
+                    <% alerts.forEach(alert => { %>
+                        <div class="alert-item alert-<%= alert.status.toLowerCase() %> severity-<%= alert.severity.toLowerCase() %>" data-status="<%= alert.status %>" data-severity="<%= alert.severity %>">
+                            <div class="alert-left">
+                                <div class="alert-icon">
+                                    <%= alert.icon %>
+                                </div>
+                                <div class="alert-header-content">
+                                    <h3 class="alert-title"><%= alert.alertType %></h3>
+                                    <p class="alert-description"><%= alert.description %></p>
+                                </div>
+                            </div>
+
+                            <div class="alert-middle">
+                                <div class="alert-info-group">
+                                    <span class="info-label">Device ID</span>
+                                    <code class="device-code"><strong><%= alert.deviceId %></strong></code>
+                                </div>
+                                <div class="alert-info-group">
+                                    <span class="info-label">Location</span>
+                                    <span class="info-value"><%= alert.flatNo %></span>
+                                </div>
+                                <div class="alert-info-group">
+                                    <span class="info-label">Detected Value</span>
+                                    <span class="info-value"><strong><%= alert.detectedValue %></strong> <%= alert.unit %></span>
+                                </div>
+                                <div class="alert-info-group">
+                                    <span class="info-label">Ticket</span>
+                                    <span class="ticket-id"><%= alert.ticketId %></span>
+                                </div>
+                            </div>
+
+                            <div class="alert-right">
+                                <div class="alert-meta">
+                                    <span class="severity-badge <%= alert.severity.toLowerCase() %>">
+                                        <%= alert.severity %>
+                                    </span>
+                                    <span class="status-badge <%= alert.status.toLowerCase() %>">
+                                        <% if (alert.status === 'Active') { %>
+                                            🔴 Active
+                                        <% } else { %>
+                                            ✅ Resolved
+                                        <% } %>
+                                    </span>
+                                </div>
+                                <p class="alert-time">
+                                    <span class="icon">⏱️</span>
+                                    <%= alert.timestamp.toLocaleString('en-US', {month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit'}) %>
+                                </p>
+                                <div class="alert-actions" style="margin-top: 8px;">
+                                    <% if (alert.status === 'Active') { %>
+                                        <button class="action-btn acknowledge-btn" data-id="<%= alert.id %>" title="Acknowledge">👁️</button>
+                                        <button class="action-btn resolve-btn" data-id="<%= alert.id %>" title="Resolve">✓</button>
+                                    <% } else { %>
+                                        <button class="action-btn details-btn" data-id="<%= alert.id %>" title="Details">📋</button>
+                                    <% } %>
+                                </div>
+                            </div>
+                        </div>
+                    <% }); %>
+                </div>
+
+                <!-- Pagination -->
+                <div class="pagination">
+                    <% if (currentPage > 1) { %>
+                        <a href="/alerts?page=1" class="pagination-btn">⬅️ First</a>
+                        <a href="/alerts?page=<%= currentPage - 1 %>" class="pagination-btn">◀ Previous</a>
+                    <% } %>
+
+                    <span class="pagination-info">Page <%= currentPage %> of <%= totalPages %></span>
+
+                    <% if (currentPage < totalPages) { %>
+                        <a href="/alerts?page=<%= currentPage + 1 %>" class="pagination-btn">Next ▶</a>
+                        <a href="/alerts?page=<%= totalPages %>" class="pagination-btn">Last ➡️</a>
+                    <% } %>
+                </div>
+            </div>
+
+            
+        </main>
+
+        <script>
+            // Search functionality
+            document.getElementById('searchInput').addEventListener('keyup', function(e) {
+                const searchTerm = e.target.value.toLowerCase();
+                const items = document.querySelectorAll('.alert-item');
+                
+                items.forEach(item => {
+                    const deviceId = item.querySelector('.device-code').textContent.toLowerCase();
+                    const flatNo = item.querySelector('.info-value').textContent.toLowerCase();
+                    const alertType = item.querySelector('.alert-title').textContent.toLowerCase();
+                    
+                    if (deviceId.includes(searchTerm) || flatNo.includes(searchTerm) || alertType.includes(searchTerm)) {
+                        item.style.display = '';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+
+            // Filter alerts
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    const filter = this.dataset.filter;
+                    const items = document.querySelectorAll('.alert-item');
+                    
+                    items.forEach(item => {
+                        const status = item.dataset.status;
+                        const severity = item.dataset.severity;
+                        
+                        if (filter === 'all') {
+                            item.style.display = '';
+                        } else if (filter === 'active' && status === 'Active') {
+                            item.style.display = '';
+                        } else if (filter === 'resolved' && status === 'Resolved') {
+                            item.style.display = '';
+                        } else if (filter === 'high' && severity === 'High') {
+                            item.style.display = '';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+
+            // Acknowledge alert
+            document.querySelectorAll('.acknowledge-btn').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const alertId = this.dataset.id;
+                    alert('👁️ Alert Acknowledged!\n\nAlert ID: ' + alertId + '\n\nNotification sent to supervisor.\n✓ Escalation triggered if needed.');
+                });
+            });
+
+            // Resolve alert
+            document.querySelectorAll('.resolve-btn').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const alertId = this.dataset.id;
+                    alert('✓ Alert Resolved!\n\nAlert ID: ' + alertId + '\n\nStatus updated and logged in history.\nAll notifications sent.');
+                });
+            });
+
+            // Details button
+            document.querySelectorAll('.details-btn').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const item = this.closest('.alert-item');
+                    const ticketId = item.querySelector('.ticket-id').textContent;
+                    alert('📋 Alert Details\n\nTicket ID: ' + ticketId + '\n\nAcknowledged by: Admin User\nResolved at: [timestamp]\n\nFull history and notes available in detailed view.');
+                });
+            });
+        </script>
+    </div>
+</body>
+</html>
